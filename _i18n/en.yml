@@ -32,3 +32,9 @@ links:
 
   news: News
   contact: Contact
+
+sample:
+  documentationTitle: Focus on writing good documentation
+  firstMessage: Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
+  firstLink: Get started now
+  secondLink: View it on GitHub
