@@ -1,6 +1,6 @@
 site:
-  title: OSORI
-  subtitle: Open SOuRce DB Integration
+  header: OSORI
+  subheader: Open SOuRce DB Integration
   tagline: We are providing trustworthy service for open source and license data, to use them safely.
 
 main:
@@ -29,6 +29,6 @@ links:
   noWarranty: No Warranty
   docLicense: Doc. License
   codeLicense: Code License
-  
+
   news: News
   contact: Contact
