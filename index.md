@@ -4,10 +4,10 @@ layout: minimal
 nav_exclude: true
 ---
 
-<div class="mt-4">
-    <h2> {% t site.header %} </h2>
-    <h3> {% t site.subheader %} </h3>
-    <h4> {% t site.tagline %} </h4>
+<div class="text-center">
+    <h2 class="fw-700 fs-8 header"> {% t site.header %} </h2>
+    <h3 class="fw-700 fs-6 header"> {% t site.subheader %} </h3>
+    {% t site.tagline %}
 </div>
 
 ----
