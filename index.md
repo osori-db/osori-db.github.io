@@ -4,8 +4,7 @@ layout: minimal
 nav_exclude: true
 ---
 
-{% t site.title %}
-{% t site.subtitle %}
+
 {% t site.tagline %}
 
 ----
