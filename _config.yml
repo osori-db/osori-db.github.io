@@ -7,7 +7,11 @@ url: https://osori-db.github.io
 aux_links:
   Template Repository: https://github.com/osori-db/osori-db.github.io
 
-lang: ["en", "ko"]
+plugins:
+  - jekyll-multiple-languages-plugin
+
+languages: ["en", "ko"]
+exclude_from_localizations: ["javascript", "images", "css"]
 defaultLang: en
 languageNames:
   ko: Korean
