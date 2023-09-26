@@ -4,10 +4,9 @@ layout: minimal
 nav_exclude: true
 ---
 
-# {% t site.title %}
-## {% t site.subtitle %}
-
-{% t site.tagline %}
+<h2> {% t site.title %} </h2>
+<h3> {% t site.subtitle %} </h3>
+<h4> {% t site.tagline %} </h4>
 
 ----
 
