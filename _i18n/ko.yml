@@ -1,0 +1,30 @@
+site:
+  title: OSORI
+  subtitle: Open SOuRce DB Integration
+  tagline: 오픈소스 및 라이선스 데이터를 안전하게 사용할 수 있도록 신뢰할 수 있는 서비스를 제공하고 있습니다.
+
+main:
+  openSourceRepositories: Open Source Repositories
+  openSourceLicenses: Open Source Licenses
+
+links:
+  about: About
+    motivation: Motivation
+    charter: Charter
+    members: Members
+    logo: Logo
+  documentations: Documentations
+  guidelines: Guidelines
+  faq: FAQ
+  guide: Guide
+    userTips: User Tips
+    apiDoc: API Doc
+    contributionGuide: Contribution Guide
+  license: License
+    osoriLicenseAndNotice: OSORI License and Notice
+    noticeOnUsageRestrictionByHeavyTraffic: Notice on usage restriction by heavy traffic
+    noWarranty: No Warranty
+    docLicense: Doc. License
+    codeLicense: Code License
+  news: News
+  contact: Contact
