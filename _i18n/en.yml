@@ -9,22 +9,26 @@ main:
 
 links:
   about: About
-    motivation: Motivation
-    charter: Charter
-    members: Members
-    logo: Logo
+  motivation: Motivation
+  charter: Charter
+  members: Members
+  logo: Logo
+
   documentations: Documentations
   guidelines: Guidelines
   faq: FAQ
+
   guide: Guide
-    userTips: User Tips
-    apiDoc: API Doc
-    contributionGuide: Contribution Guide
+  userTips: User Tips
+  apiDoc: API Doc
+  contributionGuide: Contribution Guide
+
   license: License
-    osoriLicenseAndNotice: OSORI License and Notice
-    noticeOnUsageRestrictionByHeavyTraffic: Notice on usage restriction by heavy traffic
-    noWarranty: No Warranty
-    docLicense: Doc. License
-    codeLicense: Code License
+  osoriLicenseAndNotice: OSORI License and Notice
+  noticeOnUsageRestrictionByHeavyTraffic: Notice on usage restriction by heavy traffic
+  noWarranty: No Warranty
+  docLicense: Doc. License
+  codeLicense: Code License
+  
   news: News
   contact: Contact
