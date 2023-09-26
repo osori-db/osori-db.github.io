@@ -4,7 +4,7 @@ layout: minimal
 nav_exclude: true
 ---
 
-<div class="mt-4" markdown="1">
+<div class="mt-4">
     <h2> {% t site.header %} </h2>
     <h3> {% t site.subheader %} </h3>
     <h4> {% t site.tagline %} </h4>
