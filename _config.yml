@@ -1,11 +1,9 @@
-title: OSORI DB
-description: Initial Github Pages for OSORI DB
+title: OSORI
+description: Github Page for OSORI
 theme: just-the-docs
-
 url: https://osori-db.github.io
 
-aux_links:
-  Template Repository: https://github.com/osori-db/osori-db.github.io
+color_scheme: dark
 
 plugins:
   - jekyll-multiple-languages-plugin
