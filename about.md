@@ -4,14 +4,14 @@ layout: about
 nav_order: 1
 ---
 
-# {% t site.sample.documentationTitle %}
+# {% t sample.documentationTitle %}
 {: .fs-9 }
 
-{% t site.sample.firstMessage %}
+{% t sample.firstMessage %}
 {: .fs-6 .fw-300 }
 
-[{% t site.sample.firstLink %}](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[{% t site.sample.secondLink %}][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+[{% t sample.firstLink %}](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
+[{% t sample.secondLink %}][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
 
 ---
 
