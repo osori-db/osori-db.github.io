@@ -6,11 +6,11 @@ nav_exclude: true
 
 {% include header_custom.html %}
 
-<div class="text-center">
+<span class="text-center">
     <h2 class="fw-700 fs-8 header"> {% t site.header %} </h2>
     <h3 class="fw-700 fs-6 header"> {% t site.subheader %} </h3>
     {% t site.tagline %}
-</div>
+</span>
 
 ----
 
