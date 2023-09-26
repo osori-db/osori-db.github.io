@@ -4,9 +4,11 @@ layout: minimal
 nav_exclude: true
 ---
 
-<h2> {% t site.title %} </h2>
-<h3> {% t site.subtitle %} </h3>
-<h4> {% t site.tagline %} </h4>
+<div class="mt-4" markdown="1">
+    <h2> {% t site.header %} </h2>
+    <h3> {% t site.subheader %} </h3>
+    <h4> {% t site.tagline %} </h4>
+</div>
 
 ----
 
