@@ -1,7 +1,12 @@
 .header {
     color: #00efff;
+    font-style: italic;
+}
+
+h3.header {
+    margin-top: 0px;
 }
 
 .banner {
-    background-image: url("../images/ic_banner_night@2x.png");
+    background-image: url("../../assets/images/ic_banner_night@2x.png");
 }
