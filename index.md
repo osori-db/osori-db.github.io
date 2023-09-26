@@ -4,11 +4,9 @@ layout: minimal
 nav_exclude: true
 ---
 
-<span class="text-center">
-    <h2 class="fw-700 fs-8 header"> {% t site.header %} </h2>
-    <h3 class="fw-700 fs-6 header"> {% t site.subheader %} </h3>
-    {% t site.tagline %}
-</span>
+{% include header_custom.html %}
+{% include homepage_banner.html %}
+
 
 ----
 
