@@ -4,6 +4,8 @@ theme: just-the-docs
 url: https://osori-db.github.io
 
 color_scheme: dark_theme
+logo: "/assets/images/ic_logo_osori.png"
+favicon_ico: "/assets/images/favicon.ico"
 
 plugins:
   - jekyll-multiple-languages-plugin
