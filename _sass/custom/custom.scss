@@ -27,3 +27,13 @@ h3.header {
     background-image: url("../../assets/images/ic_banner_night.png");
     background-size: cover;
 }
+
+.homepage-links-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.open-source-count-container {
+    display: flex;
+    flex-direction: row;
+}

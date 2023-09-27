@@ -1,16 +1,3 @@
 @import "./color_schemes/dark";
-@import "./layout";
-
-.main-content-wrap {
-    @include container;
-
-    padding-top: 0px;
-    padding-bottom: 0px;
-
-    @include mq(md) {
-        padding-top: 0px;
-        padding-bottom: 0px;
-    }
-}
 
 $body-background-color: #000621;
