@@ -8,8 +8,8 @@
         <a href="/license" class="fs-4">{% t links.license %}</a>
         <a href="/news" class="fs-4">{% t links.news %}</a>
         <a href="/faq" class="fs-4">{% t links.faq %}</a>
-        <div class="homepage-dropdown pl-8">
-            <button class="changeLanguageBtn" onclick="showLanguageOptions()">
+        <div class="homepage-dropdown pl-8 changeLanguageClick" onclick="showLanguageOptions()">
+            <button class="changeLanguageBtn">
                 <img src="../assets/images/ic_langauge.png" class="pr-2">
                 English
                 <i class="fa-solid fa-chevron-down pl-3"></i>
@@ -25,7 +25,7 @@
             document.getElementById("languageDropdown").classList.toggle("show");
         }
         window.onclick = function (e) {
-            if (!e.target.matches('.changeLanguageBtn')) {
+            if (!e.target.matches('.changeLanguageClick')) {
                 var languageDropdown = document.getElementById("languageDropdown");
                 if (languageDropdown.classList.contains('show')) {
                     languageDropdown.classList.remove('show');
