@@ -67,3 +67,14 @@ body {
 .homepage-header-container {
     height: 80px;
 }
+
+.homepage-links-container + hr {
+    display: none;
+}
+
+.homepage-header-container a {
+    padding: 30px 20px;
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none;
+}
