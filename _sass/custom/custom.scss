@@ -1,23 +1,22 @@
 @font-face{
-    font-family:"helvetica-neue-lt-std-97-black-condensed";
-    src:url("https://candyfonts.com/wp-data/2019/04/06/51168/HelveticaNeueLTStd-BlkCn.otf") format("woff"),
-    url("https://candyfonts.com/wp-data/2019/04/06/51168/HelveticaNeueLTStd-BlkCn.otf") format("opentype"),
-    url("https://candyfonts.com/wp-data/2019/04/06/51168/HelveticaNeueLTStd-BlkCn.otf") format("truetype");
+    font-family: HelveticaNeueLTStd97BlackCondensedOblique;
+    src: url("../../assets/fonts/HelveticaNeueLTStd97BlackCondensedOblique.otf") format("opentype");
 }
 
 .header {
     color: #00efff;
-    font-style: italic;
-    font-family: helvetica-neue-lt-std-97-black-condensed;
+    font-family: HelveticaNeueLTStd97BlackCondensedOblique, Helvetica;
     text-shadow: 0px 1px 1px #4d4d4d;
 }
 
 h2.header {
     padding-top: 5.1em;
+    margin-bottom: 0.1em !important;
 }
 
 h3.header {
     margin-top: 0px;
+    margin-bottom: 0.3em !important;
 }
 
 .banner {
@@ -26,4 +25,5 @@ h3.header {
 
 .banner-dark {
     background-image: url("../../assets/images/ic_banner_night.png");
+    background-size: cover;
 }
