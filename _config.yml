@@ -3,7 +3,7 @@ description: Github Page for OSORI
 theme: just-the-docs
 url: https://osori-db.github.io
 
-color_scheme: dark
+color_scheme: dark_theme
 
 plugins:
   - jekyll-multiple-languages-plugin
