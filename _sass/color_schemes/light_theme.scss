@@ -1,1 +1,11 @@
 @import "./color_schemes/light";
+
+$body-background-color: rgba(78, 173, 254, 0.1);
+
+.footer-container {
+    border-top: 1px solid #ced0ce;
+}
+
+.contact-link {
+    color: #757575;
+}
