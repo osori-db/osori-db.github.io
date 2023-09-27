@@ -8,5 +8,29 @@
         <a href="/license" class="fs-4">{% t links.license %}</a>
         <a href="/news" class="fs-4">{% t links.news %}</a>
         <a href="/faq" class="fs-4">{% t links.faq %}</a>
+        <div class="dropdown">
+            <button class="changeLanguageBtn" onclick="showLanguageOptions()">
+                <img src="../assets/images/ic_langauge.png">
+                English
+                <i class="fa-solid fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content" id="languageDropdown">
+                <a href="#">Korean</a>
+            </div>
+        </div>
     </div>
+
+    <script>
+        function showLanguageOptions() {
+            document.getElementById("languageDropdown").classList.toggle("show");
+        }
+        window.onclick = function (e) {
+            if (!e.target.matches('.changeLanguageBtn')) {
+                var languageDropdown = document.getElementById("languageDropdown");
+                if (languageDropdown.classList.contains('show')) {
+                    languageDropdown.classList.remove('show');
+                }
+            }
+        }
+    </script>
 </div>

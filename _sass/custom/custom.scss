@@ -7,7 +7,8 @@ body {
     font-family: Arial, Helvetica, sans-serif !important;
 }
 
-.header, .subheader {
+.header,
+.subheader {
     font-family: HelveticaNeueLTStd97BlackCondensedOblique, Helvetica;
     text-shadow: 0px 1px 1px #4d4d4d;
 }
@@ -30,6 +31,7 @@ body {
 
 .banner {
     height: 40.625rem;
+    width: 100vw;
 }
 
 .homepage-links-container {
@@ -47,7 +49,8 @@ body {
     text-decoration: none;
 }
 
-.dark-mode, .light-mode {
+.dark-mode,
+.light-mode {
     cursor: pointer;
 }
 
@@ -63,7 +66,8 @@ body {
     }
 }
 
-.homepage-header-container, .footer-container {
+.homepage-header-container,
+.footer-container {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -71,7 +75,7 @@ body {
     padding: 0px 80px;
 }
 
-.homepage-links-container + hr {
+.homepage-links-container+hr {
     display: none;
 }
 
@@ -87,7 +91,44 @@ body {
     height: 40px;
 }
 
-.homepage-header-brand, .links-section {
+.homepage-header-brand,
+.links-section {
     display: flex;
     flex: 1;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .changeLanguageBtn {
+    color: #ffffff;
+    padding: 30px 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.show {
+    display: block;
 }
