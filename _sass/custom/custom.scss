@@ -47,6 +47,10 @@ body {
     text-decoration: none;
 }
 
+.dark-mode, .light-mode {
+    cursor: pointer;
+}
+
 .footer-container {
     height: 80px;
     padding: 26px 80px 0px 80px !important;
@@ -66,6 +70,10 @@ body {
 
 .homepage-header-container {
     height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px 80px;
 }
 
 .homepage-links-container + hr {
@@ -77,4 +85,17 @@ body {
     color: #ffffff;
     text-align: center;
     text-decoration: none;
+}
+
+.homepage-header-logo {
+    width: 130px !important;
+    height: 40px;
+}
+
+.homepage-header-brand {
+    justify-content: flex-start;
+}
+
+.homepage-header-links {
+    justify-content: flex-end;
 }
