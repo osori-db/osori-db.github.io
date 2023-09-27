@@ -79,6 +79,10 @@ body {
     display: none;
 }
 
+.homepage-header-link {
+    display: flex;
+}
+
 .homepage-header-links a {
     padding: 30px 20px;
     color: #ffffff;
@@ -97,17 +101,21 @@ body {
     flex: 1;
 }
 
-.dropdown {
-    float: left;
+.homepage-dropdown {
+    float: right;
     overflow: hidden;
 }
 
-.dropdown .changeLanguageBtn {
+.changeLanguageBtn {
     color: #ffffff;
-    padding: 30px 20px;
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0px 10px;
 }
 
-.dropdown-content {
+.homepage-dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
@@ -116,17 +124,13 @@ body {
     z-index: 1;
 }
 
-.dropdown-content a {
+.homepage-dropdown-content a {
     float: none;
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-}
-
-.dropdown-content a:hover {
-    background-color: #ddd;
 }
 
 .show {
