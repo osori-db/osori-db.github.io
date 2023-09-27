@@ -51,11 +51,6 @@ body {
     cursor: pointer;
 }
 
-.footer-container {
-    height: 80px;
-    padding: 26px 80px 0px 80px !important;
-}
-
 .main-content-wrap {
     @include container;
 
@@ -68,7 +63,7 @@ body {
     }
 }
 
-.homepage-header-container {
+.homepage-header-container, .footer-container {
     height: 80px;
     display: flex;
     flex-direction: row;
@@ -80,7 +75,7 @@ body {
     display: none;
 }
 
-.homepage-header-container a {
+.homepage-header-links a {
     padding: 30px 20px;
     color: #ffffff;
     text-align: center;
@@ -92,10 +87,7 @@ body {
     height: 40px;
 }
 
-.homepage-header-brand {
-    justify-content: flex-start;
-}
-
-.homepage-header-links {
-    justify-content: flex-end;
+.homepage-header-brand, .links-section {
+    display: flex;
+    flex: 1;
 }
