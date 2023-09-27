@@ -4,6 +4,6 @@ layout: minimal
 nav_exclude: true
 ---
 
-{% include header_custom.html %}
+{% include homepage_header.html %}
 {% include homepage_banner.html %}
 {% include homepage_content.html %}
