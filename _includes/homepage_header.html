@@ -14,18 +14,18 @@
                 <button class="change-language-btn language-btn" onclick="showLanguageOptions()">
                     <img src="../assets/images/ic_langauge.png" class="pr-2">
                     {% if site.lang == languages[0] }
-                    {{ site.languageNames[0] }}
+                    {{ site.languageNames.en }}
                     {% else %}
-                    {{ site.languageNames[1]] }}
+                    {{ site.languageNames.ko }}
                     {% endif %}
                 </button>
                 <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
             </div>
             <div class="homepage-dropdown-content" id="language-dropdown">
                 {% if site.lang == languages[0] }
-                <a href="#"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames[1] }}</a>
+                <a href="#"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames.ko }}</a>
                 {% else %}
-                <a href="#"><i class="fa-solid fa-earth-americas"></i> {{ site.languageNames[0]] }}</a>
+                <a href="#"><i class="fa-solid fa-earth-americas"></i> {{ site.languageNames.en }}</a>
                 {% endif %}
             </div>
         </div>
