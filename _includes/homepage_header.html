@@ -14,9 +14,9 @@
                 <button class="change-language-btn language-btn" onclick="showLanguageOptions()">
                     <img src="../assets/images/ic_langauge.png" class="pr-2">
                     {% if site.lang == languages[0] }
-                    <a href="#"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames[1] }}</a>
+                    {{ site.languageNames[0] }}
                     {% else %}
-                    <a href="#"><i class="fa-solid fa-earth-americas"></i> {{ site.languageNames[0]] }}</a>
+                    {{ site.languageNames[1]] }}
                     {% endif %}
                 </button>
                 <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>

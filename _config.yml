@@ -14,5 +14,5 @@ languages: ["en", "ko"]
 exclude_from_localizations: ["javascript", "images", "css"]
 defaultLang: en
 languageNames:
-  ko: 한국어
   en: English
+  ko: 한국어
