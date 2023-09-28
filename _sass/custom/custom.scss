@@ -106,15 +106,18 @@ body {
     overflow: hidden;
 }
 
-.changeLanguageBtn {
+.language-div {
     color: #ffffff;
     height: 100%;
     background-color: inherit;
     border: none;
-    cursor: pointer;
     padding: 0px 10px;
     display: flex;
     align-items: center;
+}
+
+.change-language-btn {
+    cursor: pointer;
 }
 
 .homepage-dropdown-content {
@@ -127,8 +130,8 @@ body {
     border: 1px solid #54619a;
     border-radius: 26px;
     right: 5.6rem;
-    margin-top: -14px;
-    border-radius: 3px;
+    margin-top: -18px;
+    border-radius: 6px;
 }
 
 .homepage-dropdown-content a {
