@@ -117,6 +117,14 @@ body {
 }
 
 .change-language-btn {
+    height: 100%;
+    background-color: inherit;
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.change-language-dropdown, .change-language-btn {
     cursor: pointer;
 }
 
