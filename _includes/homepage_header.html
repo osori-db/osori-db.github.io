@@ -10,9 +10,24 @@
         <a href="/faq" class="fs-4">{% t links.faq %}</a>
         <div class="homepage-dropdown pl-8">
             <div class="language-div">
+                <div>
+                    1. {{ site.languageNames.en }}
+                </div>
+                <div>
+                    2. {{ site.lang }}
+                </div>
+                <div>
+                    3. {{ site.languages[0] }}
+                </div>
+                <div>
+                    4. {{ site.languages[0] == site.lang }}
+                </div>
+                <div>
+                    5. {{ site.lang == "en" }}
+                </div>
                 <button class="change-language-btn language-btn" onclick="showLanguageOptions()">
                     <img src="../assets/images/ic_langauge.png" class="pr-2">
-                    {% if site.lang == site.languages[0] }
+                    {% if site.lang == site.languages[0] %}
                     {{ site.languageNames.en }}
                     {% else %}
                     {{ site.languageNames.ko }}
@@ -21,7 +36,7 @@
                 <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
             </div>
             <div class="homepage-dropdown-content" id="language-dropdown">
-                {% if site.lang == site.languages[0] }
+                {% if site.lang == site.languages[0] %}
                 <a href="{{site.url}}/ko"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames.ko }}</a>
                 {% else %}
                 <a href="{{site.url}}"><i class="fa-solid fa-earth-americas"></i> {{ site.languageNames.en }}</a>
