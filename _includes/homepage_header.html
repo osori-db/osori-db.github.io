@@ -26,7 +26,7 @@
             document.getElementById("language-dropdown").classList.toggle("show");
         }
         window.onclick = function (e) {
-            if (!e.target.matches('.change-language-btn')) {
+            if (!e.target.matches('.change-language-btn') || !e.target.matches('.change-language-dropdown')) {
                 var languageDropdown = document.getElementById("language-dropdown");
                 if (languageDropdown.classList.contains('show')) {
                     languageDropdown.classList.remove('show');
