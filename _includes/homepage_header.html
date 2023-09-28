@@ -9,9 +9,10 @@
         <a href="/news" class="fs-4">{% t links.news %}</a>
         <a href="/faq" class="fs-4">{% t links.faq %}</a>
         <div class="homepage-dropdown pl-8">
-            <div class="language-div change-language-btn">
-                <img src="../assets/images/ic_langauge.png" class="pr-2">
-                English
+            <div class="language-div">
+                <button class="change-language-btn" onclick="showLanguageOptions()">
+                    <img src="../assets/images/ic_langauge.png" class="pr-2"> English
+                </button>
                 <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
             </div>
             <div class="homepage-dropdown-content" id="language-dropdown">
