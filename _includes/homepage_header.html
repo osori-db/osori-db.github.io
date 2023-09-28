@@ -10,7 +10,18 @@
         <a href="/faq" class="fs-4">{% t links.faq %}</a>
         <div class="homepage-dropdown pl-8">
             <div class="language-div">
-                {{ site.baseurl_root }}
+                <div>
+                    1. {{ site.languageNames.en }}
+                </div>
+                <div>
+                    2. {{ site.lang }}
+                </div>
+                <div>
+                    3. {{ site.languages[0] }}
+                </div>
+                <div>
+                    4. {{ site.url }}
+                </div>
                 <button class="change-language-btn language-btn" onclick="showLanguageOptions()">
                     <img src="../assets/images/ic_langauge.png" class="pr-2">
                     {% if site.lang == languages[0] }
