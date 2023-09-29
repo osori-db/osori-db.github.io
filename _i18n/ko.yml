@@ -8,25 +8,28 @@ main:
   openSourceLicenses: Open Source Licenses
 
 links:
-  about: ~에 대한
-  motivation: 동기 부여
-  charter: 전세
-  members: 회원
-  logo: 심벌 마크
+  about: 오소리 프로젝트 소개
+  motivation: 추진 배경
+  charter: 거버넌스
+  members: 멤버 리스트
+  logo: 로고 소개
 
-  faq: FAQ
+  faq: 자주 하는 질문
 
-  guide: 가이드
-  userTips: 사용자 팁
-  apiDoc: API 문서
-  contributionGuide: 기여 가이드
+  guide: 사용/기여 가이드
+  userTips: 활용 가이드
+  restrictionAndSignal: Restriction 항목 및 신호등 의미
+  userTipsLicense: 라이선스 항목 정의
+  oss: OSS 항목 정의
+  apiDoc: API Doc.
+  contributionGuide: 컨트리뷰션 가이드
 
-  license: 특허
-  osoriLicenseAndNotice: OSORI License and Notice
-  noticeOnUsageRestrictionByHeavyTraffic: 교통 정체로 인한 이용 제한 안내
-  noWarranty: 보증 없음
-  docLicense: 문서. 특허
-  codeLicense: 코드 라이센스
+  license: 오소리 라이선스
+  osoriLicenseAndNotice: 오소리 데이터 라이선스 및 사용 주의 사항
+  noticeOnUsageRestrictionByHeavyTraffic: 과도한 트래픽에 관한 제한 조항
+  noWarranty: 보증 부인
+  docLicense: 문서 라이선스
+  codeLicense: 코드 라이선스
   
   news: 소식
   contact: 연락하다
