@@ -36,13 +36,13 @@ body {
 .homepage-links-container {
     display: flex;
     flex-direction: column;
+    padding: 60px 80px;
+    justify-content: center;
 }
 
-.osori-container {
-    padding: 60px 80px;
+.homepage-projects-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .contact-link {
@@ -185,6 +185,15 @@ body {
     width: 40px;
 }
 
-.osori-links-container {
+.homepage-links-container {
     width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.links-section {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 33.33%;
 }

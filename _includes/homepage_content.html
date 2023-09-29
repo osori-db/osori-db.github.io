@@ -1,5 +1,5 @@
 <div class="homepage-links-container">
-    <div class="osori-container">
+    <div class="homepage-projects-container">
         <div class="open-source-div mr-5">
             <div class="d-flex">
                 <div class="project-icon-div">
@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="open-source-label fs-4">
-                Open Source Repositories
+                {% t main.openSourceRepositories %}
             </div>
         </div>
         <div class="open-source-div">
@@ -23,16 +23,40 @@
                 </div>
             </div>
             <div class="open-source-label fs-4">
-                Open Source License
+                {% t main.openSourceLicenses %}
             </div>
         </div>
-
-        <div class="osori-links-div">
-            <div>About</div>
-            <div>Guide</div>
-            <div>License</div>
-            <div>News</div>
-            <div>FAQ</div>
+    </div>
+    <div class="homepage-links-container">
+        <div class="links-section">
+            <div class="links-header fs-5">
+                <img src="../assets/images/ic_feature_about.png" class="mr-1">
+                {% t links.about %}
+            </div>
+        </div>
+        <div class="links-section">
+            <div class="links-header fs-5">
+                <img src="../assets/images/ic_feature_guide.png" class="mr-1">
+                {% t links.guide %}
+            </div>
+        </div>
+        <div class="links-section">
+            <div class="links-header fs-5">
+                <img src="../assets/images/ic_feature_license.png" class="mr-1">
+                {% t links.license %}
+            </div>
+        </div>
+        <div class="links-section">
+            <div class="links-header fs-5">
+                <img src="../assets/images/ic_feature_news.png" class="mr-1">
+                {% t links.news %}
+            </div>
+        </div>
+        <div class="links-section">
+            <div class="links-header fs-5">
+                <img src="../assets/images/ic_feature_faq.png" class="mr-1">
+                {% t links.faq %}
+            </div>
         </div>
     </div>
 </div>

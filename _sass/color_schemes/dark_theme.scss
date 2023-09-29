@@ -39,8 +39,12 @@ $body-background-color: #000621;
     color: #ffffff;
 }
 
-.open-source-div {
+.open-source-div, .homepage-links-container {
     border: solid 1px #54619a;
     background-color: #0e142f;
     color: #ffffff;
+}
+
+.links-header {
+    color: #00efff;
 }
