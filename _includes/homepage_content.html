@@ -29,9 +29,17 @@
     </div>
     <div class="homepage-anchors-container mt-6">
         <div class="links-section">
-            <div class="links-header fs-5">
+            <div>
                 <img src="../assets/images/ic_feature_about.png" class="mr-1">
-                {% t links.about %}
+                <a href="/about" class="links-header fs-5">{% t links.about %}</a>
+            </div>
+            <div>
+                <ul>
+                    <li><a href="/about" class="links-item fs-4">{% t links.motivation %}</a></li>
+                    <li><a href="/about" class="links-item fs-4">{% t links.charter %}</a></li>
+                    <li><a href="/about" class="links-item fs-4">{% t links.members %}</a></li>
+                    <li><a href="/about" class="links-item fs-4">{% t links.logo %}</a></li>
+                </ul>
             </div>
         </div>
         <div class="links-section">

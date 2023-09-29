@@ -98,7 +98,7 @@ body {
 }
 
 .homepage-header-brand,
-.links-section {
+.footer-link-section {
     display: flex;
     flex: 1;
 }
@@ -199,4 +199,8 @@ body {
     justify-content: center;
     align-items: start;
     width: 33.33%;
+}
+
+.links-header, .links-item {
+    text-decoration: none;
 }
