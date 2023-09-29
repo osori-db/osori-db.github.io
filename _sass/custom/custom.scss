@@ -196,6 +196,7 @@ body {
 
 .links-section {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: start;
     width: 33.33%;
@@ -206,10 +207,10 @@ body {
     text-align: center;
 }
 
-.links-section > div > ul {
-    list-style: none !important;
-}
-
 .links-header, .links-item {
     text-decoration: none;
+}
+
+.links-item {
+    display: block;
 }
