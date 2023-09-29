@@ -165,8 +165,23 @@ body {
 
 .open-source-label {
     width: 100%;
+    margin-top: 27px;
 }
 
 .open-source-count {
     font-weight: 700;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.project-icon-div {
+    display: flex;
+    justify-content: start;
+    width: 100%;
+}
+
+.project-icon-div image {
+    height: 40px;
+    width: 40px;
 }
