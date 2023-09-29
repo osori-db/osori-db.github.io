@@ -192,10 +192,12 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 26px;
+    padding: 30px 30px 70px 30px;
 }
 
 .links-section {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: start;
@@ -211,6 +213,16 @@ body {
     text-decoration: none;
 }
 
+.links-header {
+    font-weight: 700;
+}
+
 .links-item {
     display: block;
+}
+
+.links-header-icon {
+    width: 24px;
+    height: 24px;
+    margin-bottom: -3px;
 }
