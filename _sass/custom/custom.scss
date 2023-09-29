@@ -36,7 +36,7 @@ body {
 .homepage-links-container {
     display: flex;
     flex-direction: column;
-    padding: 60px 80px;
+    padding: 60px 80px 120px 80px;
     
 }
 
@@ -193,6 +193,7 @@ body {
     flex-wrap: wrap;
     border-radius: 26px;
     padding: 30px 30px 70px 30px;
+    align-items: start;
 }
 
 .links-section {
@@ -222,7 +223,7 @@ body {
 }
 
 .links-header-icon {
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     margin-bottom: -3px;
 }
