@@ -201,6 +201,15 @@ body {
     width: 33.33%;
 }
 
+.links-section > div {
+    width: 100%;
+    text-align: center;
+}
+
+.links-section > div > ul {
+    list-style: none !important;
+}
+
 .links-header, .links-item {
     text-decoration: none;
 }
