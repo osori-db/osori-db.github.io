@@ -40,8 +40,10 @@ body {
 }
 
 .open-source-count-container {
+    padding: 60px 80px;
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .contact-link {
@@ -163,4 +165,8 @@ body {
 
 .open-source-label {
     width: 100%;
+}
+
+.open-source-count {
+    font-weight: 700;
 }
