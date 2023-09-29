@@ -31,7 +31,6 @@ body {
 
 .banner {
     height: 40.625rem;
-    width: 100vw;
 }
 
 .homepage-links-container {
@@ -39,7 +38,7 @@ body {
     flex-direction: column;
 }
 
-.open-source-count-container {
+.osori-container {
     padding: 60px 80px;
     display: flex;
     flex-direction: row;
@@ -184,4 +183,8 @@ body {
 .project-icon-div image {
     height: 40px;
     width: 40px;
+}
+
+.osori-links-container {
+    width: 100%;
 }
