@@ -37,12 +37,13 @@ body {
     display: flex;
     flex-direction: column;
     padding: 60px 80px;
-    justify-content: center;
+    
 }
 
 .homepage-projects-container {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
 
 .contact-link {
@@ -185,10 +186,12 @@ body {
     width: 40px;
 }
 
-.homepage-links-container {
+.homepage-anchors-container {
     width: 100%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 26px;
 }
 
 .links-section {
