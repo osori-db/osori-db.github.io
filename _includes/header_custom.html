@@ -12,15 +12,31 @@
     </div>
     <div class="homepage-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
-        <a href="{{site.url}}/ko"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames.ko }}</a>
+        <a id="kor-lang-link"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames.ko }}</a>
         {% else %}
-        <a href="{{site.url}}"><i class="fa-solid fa-earth-americas mr-1"></i> {{ site.languageNames.en }}</a>
+        <a id="eng-lang-link"><i class="fa-solid fa-earth-americas mr-1"></i> {{ site.languageNames.en }}</a>
         {% endif %}
     </div>
 </div>
 
 <script>
-    console.log(window.location.href);
+    var currentURL = window.location.href;
+
+    if (currentURL.includes('/ko')) {
+        var anchor = document.getElementById('eng-lang-link');
+        var index = currentURL.lastIndexOf('/');
+        var firstSubstring = currentURL.substring(0, index - 3);
+        var secondSubstring = currentURL.substring(index + 1);
+
+        anchor.href = firstSubstring + secondSubstring;
+    } else {
+        var anchor = document.getElementById('kor-lang-link');
+        var index = currentURL.lastIndexOf('/');
+        var firstSubstring = currentURL.substring(0, index);
+        var secondSubstring = currentURL.substring(index + 1);
+
+        anchor.href = firstSubstring + 'ko/' + secondSubstring;
+    }
 
     function showLanguageOptions() {
         document.getElementById("language-dropdown").classList.toggle("show");
