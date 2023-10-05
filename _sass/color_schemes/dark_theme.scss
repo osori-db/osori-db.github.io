@@ -55,5 +55,20 @@ $body-background-color: #000621;
 
 .btn-primary {
     background-color: #00efff !important;
+    background-image: none !important;
     color: $body-background-color !important;
+}
+
+.btn {
+    background-color: #000621 !important;
+    border: solid 1px $body-background-color  !important;
+    color: #00efff !important;
+}
+
+a {
+    color: #00efff !important;
+}
+
+.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link {
+    background-color: rgba(0, 239, 255, 0.3);
 }
