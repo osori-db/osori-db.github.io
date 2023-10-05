@@ -37,7 +37,11 @@ body {
     display: flex;
     flex-direction: column;
     padding: 60px 80px 120px 80px;
+    background-color: rgba(78, 173, 254, 0.1);
+}
 
+.homepage-links-container + footer {
+    background-color: rgba(78, 173, 254, 0.1);
 }
 
 .homepage-projects-container {
@@ -77,7 +81,7 @@ body {
     padding: 0px 80px;
 }
 
-.homepage-links-container+hr {
+.homepage-links-container + hr, .main + hr {
     display: none;
 }
 
@@ -267,8 +271,4 @@ body {
 
 .main {
     max-width: calc(100vw - 34rem);
-}
-
-.main + hr {
-    display: none;
 }
