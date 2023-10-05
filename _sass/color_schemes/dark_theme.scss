@@ -20,7 +20,7 @@ $body-background-color: #000621;
 }
 
 .homepage-header-container {
-    background-color: #000621;
+    background-color: $body-background-color;
 }
 
 .dark-mode {
@@ -32,7 +32,7 @@ $body-background-color: #000621;
 }
 
 .homepage-dropdown-content {
-    background-color: #000621;
+    background-color: $body-background-color;
 }
 
 .links-item, .homepage-dropdown-content a {
@@ -47,4 +47,13 @@ $body-background-color: #000621;
 
 .links-header {
     color: #00efff;
+}
+
+.side-bar {
+    background-color: $body-background-color;
+}
+
+.btn-primary {
+    background-color: #00efff;
+    color: $body-background-color;
 }
