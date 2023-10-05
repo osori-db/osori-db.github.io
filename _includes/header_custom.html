@@ -1,6 +1,6 @@
 <div class="homepage-dropdown pl-8">
     <div class="language-div">
-        <button class="change-language-btn language-btn" onclick="showLanguageOptions()">
+        <button class="change-language-btn shared-language-btn" onclick="showLanguageOptions()">
             <img src="../assets/images/ic_langauge.png" class="pr-2">
             {% if site.lang == site.languages[0] %}
             {{ site.languageNames.en }}
@@ -20,6 +20,8 @@
 </div>
 
 <script>
+    console.log(window.location.href);
+
     function showLanguageOptions() {
         document.getElementById("language-dropdown").classList.toggle("show");
     }
