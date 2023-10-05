@@ -14,9 +14,9 @@ body {
 }
 
 .header {
-    padding-top: 3.8em;
-    margin-top: 0px !important;
-    margin-bottom: 0.1em !important;
+    padding-top: 3.8rem;
+    margin-top: 0rem !important;
+    margin-bottom: 0.1rem !important;
 }
 
 .subheader {
@@ -36,7 +36,7 @@ body {
 .homepage-links-container {
     display: flex;
     flex-direction: column;
-    padding: 60px 80px 120px 80px;
+    padding: 3.75rem 5rem 7.5rem 5rem;
 }
 
 .homepage-projects-container {
@@ -73,7 +73,7 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px 80px;
+    padding: 0rem 0.625;
 }
 
 .homepage-links-container + hr, main + hr {
@@ -85,7 +85,7 @@ body {
 }
 
 .homepage-header-links a {
-    padding: 30px 20px;
+    padding: 1.875rem 1.25rem;
     color: #ffffff;
     text-align: center;
     text-decoration: none;
@@ -102,7 +102,7 @@ body {
     flex: 1;
 }
 
-.homepage-dropdown {
+.homepage-dropdown, .header-dropdown {
     float: right;
     overflow: hidden;
 }
@@ -112,7 +112,7 @@ body {
     height: 100%;
     background-color: inherit;
     border: none;
-    padding: 0px 10px;
+    padding: 0rem 0.625rem;
     display: flex;
     align-items: center;
 }
@@ -138,22 +138,23 @@ body {
     cursor: pointer;
 }
 
-.homepage-dropdown-content {
+.homepage-dropdown-content,
+.header-dropdown-content {
     display: none;
     position: absolute;
     min-width: 140px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     z-index: 1;
     border: 1px solid #54619a;
-    border-radius: 26px;
     right: 5.6rem;
     margin-top: -18px;
     border-radius: 6px;
 }
 
-.homepage-dropdown-content a {
+.homepage-dropdown-content a,
+.header-dropdown-content a {
     float: none;
-    padding: 12px 16px;
+    padding: 0.75rem 1rem;
     text-decoration: none;
     display: block;
     text-align: left;
@@ -166,14 +167,14 @@ body {
 .open-source-div {
     max-width: 425px;
     width: 100%;
-    padding: 30px;
+    padding: 1.875rem;
     border-radius: 26px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .open-source-label {
     width: 100%;
-    margin-top: 27px;
+    margin-top: 1.688rem;
 }
 
 .open-source-count {
@@ -200,7 +201,7 @@ body {
     flex-direction: row;
     flex-wrap: wrap;
     border-radius: 26px;
-    padding: 30px 30px 70px 30px;
+    padding: 1.875rem 1.875rem 4.375rem 1.875rem;
     align-items: start;
 }
 
@@ -278,4 +279,8 @@ body {
 
 .main {
     max-width: calc(100vw - 34rem);
+}
+
+.homepage-links-container + hr + footer > .footer-container {
+    padding: 0rem 5rem;
 }

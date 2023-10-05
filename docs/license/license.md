@@ -2,6 +2,7 @@
 title: License
 layout: page
 nav_order: 3
+permalink: /docs/license
 ---
 
 # {% t sample.documentationTitle %}

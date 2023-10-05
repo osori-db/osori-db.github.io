@@ -16,3 +16,5 @@ defaultLang: en
 languageNames:
   en: English
   ko: 한국어
+
+permalink: pretty

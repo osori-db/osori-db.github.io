@@ -29,11 +29,14 @@
     color: #ffa800;
 }
 
-.homepage-dropdown-content {
+.homepage-dropdown-content,
+.header-dropdown-content {
     background-color: #ffffff;
 }
 
-.links-item, .homepage-dropdown-content a {
+.links-item, 
+.homepage-dropdown-content a,
+.header-dropdown-content a {
     color: #000000 !important;
 }
 
@@ -59,6 +62,6 @@
     background-color: rgba(78, 173, 254, 0.1);
 }
 
-.homepage-links-container + footer > .footer-container {
+hr + footer > .footer-container {
     background-color: rgba(78, 173, 254, 0.1);
 }
