@@ -1,14 +1,14 @@
 <div class="homepage-dropdown pl-8">
     <div class="language-div">
         <button class="change-language-btn shared-language-btn" onclick="showLanguageOptions()">
-            <img src="../assets/images/ic_langauge.png" class="pr-2">
+            <i class="fa-solid fa-globe pr-2"></i>
             {% if site.lang == site.languages[0] %}
             {{ site.languageNames.en }}
             {% else %}
             {{ site.languageNames.ko }}
             {% endif %}
         </button>
-        <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
+        <i class="change-language-btn fa-solid fa-chevron-down pl-3 chevron-icon" onclick="showLanguageOptions()"></i>
     </div>
     <div class="homepage-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
@@ -28,14 +28,14 @@
         var firstSubstring = currentURL.substring(0, index - 3);
         var secondSubstring = currentURL.substring(index + 1);
 
-        anchor.href = firstSubstring + secondSubstring;
+        anchor.href = firstSubstring + '/' + secondSubstring;
     } else {
         var anchor = document.getElementById('kor-lang-link');
         var index = currentURL.lastIndexOf('/');
         var firstSubstring = currentURL.substring(0, index);
         var secondSubstring = currentURL.substring(index + 1);
 
-        anchor.href = firstSubstring + 'ko/' + secondSubstring;
+        anchor.href = firstSubstring + '/ko/' + secondSubstring;
     }
 
     function showLanguageOptions() {
