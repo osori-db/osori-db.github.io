@@ -51,6 +51,14 @@
     background-color: #ffffff !important;
 }
 
-.shared-language-btn {, .chevron-icon
+.shared-language-btn, .chevron-icon {
     color: #000000;
+}
+
+.homepage-links-container {
+    background-color: rgba(78, 173, 254, 0.1);
+}
+
+.homepage-links-container + footer > .footer-container {
+    background-color: rgba(78, 173, 254, 0.1);
 }
