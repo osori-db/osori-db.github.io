@@ -34,18 +34,22 @@
     background-color: #ffffff;
 }
 
-.links-item, 
 .homepage-dropdown-content a,
 .header-dropdown-content a {
     color: #000000 !important;
 }
 
-.links-item:hover,
-.links-item:focus {
-    color: $purple-000;
+.links-item {
+    color: #000000 !important;
+
+    &:hover,
+    &:focus {
+        color: $purple-000 !important;
+    }
 }
 
-.open-source-div, .homepage-anchors-container {
+.open-source-div,
+.homepage-anchors-container {
     border: solid 1px #4eadfe;
     background-color: #ffffff;
     color: #000000;
@@ -59,7 +63,8 @@
     background-color: #ffffff !important;
 }
 
-.shared-language-btn, .chevron-icon {
+.shared-language-btn,
+.chevron-icon {
     color: #000000;
 }
 
@@ -67,6 +72,6 @@
     background-color: rgba(78, 173, 254, 0.1);
 }
 
-.homepage-links-container + hr + footer > .footer-container {
+.homepage-links-container+hr+footer>.footer-container {
     background-color: rgba(78, 173, 254, 0.1);
 }

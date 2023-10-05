@@ -53,6 +53,12 @@ body {
 .dark-mode,
 .light-mode {
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+        font-size: 21px;
+        transition: all 0.1s ease-out;
+    }
 }
 
 .main-content-wrap {
@@ -83,7 +89,8 @@ body {
     padding: 0rem 0.625rem;
 }
 
-.homepage-links-container + hr, main + hr {
+.homepage-links-container+hr,
+main+hr {
     display: none;
 }
 
@@ -109,7 +116,8 @@ body {
     flex: 1;
 }
 
-.homepage-dropdown, .header-dropdown {
+.homepage-dropdown,
+.header-dropdown {
     float: right;
     overflow: hidden;
 }
@@ -288,6 +296,6 @@ body {
     max-width: calc(100vw - 34rem);
 }
 
-.homepage-links-container + hr + footer > .footer-container {
+.homepage-links-container+hr+footer>.footer-container {
     padding: 0rem 5rem;
 }
