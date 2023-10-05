@@ -50,10 +50,10 @@ $body-background-color: #000621;
 }
 
 .side-bar {
-    background-color: $body-background-color;
+    background-color: $body-background-color !important;
 }
 
 .btn-primary {
-    background-color: #00efff;
-    color: $body-background-color;
+    background-color: #00efff !important;
+    color: $body-background-color !important;
 }
