@@ -40,7 +40,7 @@ body {
     background-color: rgba(78, 173, 254, 0.1);
 }
 
-.homepage-links-container + footer {
+.homepage-links-container + footer > .footer-container {
     background-color: rgba(78, 173, 254, 0.1);
 }
 
@@ -266,7 +266,11 @@ body {
 }
 
 .site-title {
-    padding: 1.25rem 2rem 0rem 0.313rem;
+    padding: 1.25rem 2rem 0rem 1.563rem;
+
+    &:hover {
+        background-image: none !important;
+    }
 }
 
 .main {
