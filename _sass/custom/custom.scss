@@ -37,7 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     padding: 60px 80px 120px 80px;
-    
+
 }
 
 .homepage-projects-container {
@@ -206,12 +206,13 @@ body {
     width: 33.33%;
 }
 
-.links-section > div {
+.links-section>div {
     width: 100%;
     text-align: center;
 }
 
-.links-header, .links-item {
+.links-header,
+.links-item {
     text-decoration: none;
 }
 
@@ -227,4 +228,14 @@ body {
     width: 21px;
     height: 21px;
     margin-bottom: -3px;
+}
+
+@media (min-width: 66.5rem) {
+    .side-bar {
+        max-width: 23.75rem;
+    }
+
+    .main {
+        margin-left: 26rem;
+    }
 }
