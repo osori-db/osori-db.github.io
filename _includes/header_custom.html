@@ -20,22 +20,29 @@
 </div>
 
 <script>
+    const OCCURRENCE = 3;
     var currentURL = window.location.href;
 
     if (currentURL.includes('/ko')) {
         var anchor = document.getElementById('eng-lang-link');
-        var index = currentURL.lastIndexOf('/');
-        var firstSubstring = currentURL.substring(0, index - 3);
-        var secondSubstring = currentURL.substring(index + 1);
+        var index = getIndex(currentURL, '/', OCCURRENCE);
+
+        var firstSubstring = currentURL.substring(0, index);
+        var secondSubstring = currentURL.substring(index + 4);
 
         anchor.href = firstSubstring + '/' + secondSubstring;
     } else {
         var anchor = document.getElementById('kor-lang-link');
-        var index = currentURL.lastIndexOf('/');
+        var index = getIndex(currentURL, '/', OCCURRENCE);
+
         var firstSubstring = currentURL.substring(0, index);
         var secondSubstring = currentURL.substring(index + 1);
 
         anchor.href = firstSubstring + '/ko/' + secondSubstring;
+    }
+
+    function getIndex(str, searchKey, occurrence) {
+        return str.split(searchKey, occurrence).join(searchKey).length;
     }
 
     function showLanguageOptions() {
