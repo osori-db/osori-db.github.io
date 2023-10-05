@@ -262,5 +262,9 @@ body {
 }
 
 .site-title {
-    padding: 1.25rem 2rem 0rem 0.125rem;
+    padding: 1.25rem 2rem 0rem 0.313rem;
+}
+
+.main {
+    max-width: calc(100vw - 34rem);
 }

@@ -61,10 +61,24 @@ $body-background-color: #000621;
     color: #00efff !important;
 }
 
+.btn:hover {
+    background-color: #00efff !important;
+    background-image: none !important;
+    color: $body-background-color !important;
+    border: solid 1px $body-background-color !important;
+}
+
 .btn.btn-primary {
     background-color: #00efff !important;
     background-image: none !important;
     color: $body-background-color !important;
+}
+
+.btn.btn-primary:hover {
+    background-image: none !important;
+    background-color: #000621 !important;
+    border: solid 1px #00efff !important;
+    color: #00efff !important;
 }
 
 a {
@@ -84,7 +98,11 @@ a {
         &:hover,
         &.active {
             background-color: rgba(0, 239, 255, 0.3);
-            background-image: none;
+            background-image: none !important;
         }
     }
 }
+
+.site-title:hover {
+    background-image: none !important;
+  }

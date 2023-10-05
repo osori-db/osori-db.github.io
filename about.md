@@ -36,8 +36,6 @@ nav_order: 1
 {% t sample.seventhMessage %}
 
 
-----
-
 [Jekyll]: https://jekyllrb.com
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Liquid]: https://github.com/Shopify/liquid/wiki
