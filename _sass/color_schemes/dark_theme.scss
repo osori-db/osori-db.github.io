@@ -35,11 +35,13 @@ $body-background-color: #000621;
     background-color: $body-background-color;
 }
 
-.links-item, .homepage-dropdown-content a {
+.links-item,
+.homepage-dropdown-content a {
     color: #ffffff;
 }
 
-.open-source-div, .homepage-anchors-container {
+.open-source-div,
+.homepage-anchors-container {
     border: solid 1px #54619a;
     background-color: #0e142f;
     color: #ffffff;
@@ -55,7 +57,7 @@ $body-background-color: #000621;
 
 .btn {
     background-color: #000621 !important;
-    border: solid 1px $body-background-color  !important;
+    border: solid 1px #00efff !important;
     color: #00efff !important;
 }
 
@@ -69,7 +71,20 @@ a {
     color: #00efff !important;
 }
 
-.site-nav > .nav-list:nth-child(1):not(.nav-category-list) > .nav-list-item:not(.external):nth-child(1) > .nav-list-link {
-    background-color: rgba(0, 239, 255, 0.3);
-    background-image: none;
+.nav-list {
+    .nav-list-link {
+
+        padding-left: 1rem;
+
+        &.active {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &.active {
+            background-color: rgba(0, 239, 255, 0.3);
+            background-image: none;
+        }
+    }
 }

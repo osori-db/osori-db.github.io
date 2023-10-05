@@ -238,6 +238,11 @@ body {
     .main {
         margin-left: 26rem;
     }
+
+    .site-header,
+    .site-nav {
+        width: 18.75rem;
+    }
 }
 
 .side-bar {
@@ -250,4 +255,12 @@ body {
 
 .site-footer {
     display: none;
+}
+
+.btn {
+    font-weight: 700;
+}
+
+.site-title {
+    padding: 1.25rem 2rem 0rem 0.125rem;
 }
