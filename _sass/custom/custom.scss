@@ -268,3 +268,7 @@ body {
 .main {
     max-width: calc(100vw - 34rem);
 }
+
+.main + hr {
+    display: none;
+}

@@ -59,14 +59,63 @@ $body-background-color: #000621;
     background-color: #000621 !important;
     border: solid 1px #00efff !important;
     color: #00efff !important;
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(blue, 0.25);
+    }
+
+    &:focus:hover,
+    &.selected:focus {
+        box-shadow: 0 0 0 3px rgba(blue, 0.25);
+    }
+
+    &:hover,
+    &.zeroclipboard-is-hover {
+        color: darken($link-color, 2%);
+    }
+
+    &:hover,
+    &:active,
+    &.zeroclipboard-is-hover,
+    &.zeroclipboard-is-active {
+        text-decoration: none;
+        background-color: darken($base-button-color, 1%);
+    }
+
+    &:active,
+    &.selected,
+    &.zeroclipboard-is-active {
+        background-color: darken($base-button-color, 3%);
+        background-image: none;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.15);
+    }
+
+    &.selected:hover {
+        background-color: darken(#dcdcdc, 5%);
+    }
+
+    &:disabled,
+    &.disabled {
+
+        &,
+        &:hover {
+            color: rgba(102, 102, 102, 0.5);
+            cursor: default;
+            background-color: rgba(229, 229, 229, 0.5);
+            background-image: none;
+            box-shadow: none;
+        }
+    }
 }
 
-.btn:hover {
-    background-color: #00efff !important;
-    background-image: none !important;
-    color: $body-background-color !important;
-    border: solid 1px $body-background-color !important;
-}
+// .btn:hover {
+//     background-color: #00efff !important;
+//     background-image: none !important;
+//     color: $body-background-color !important;
+//     border: solid 1px $body-background-color !important;
+// }
 
 .btn.btn-primary {
     background-color: #00efff !important;
@@ -74,12 +123,12 @@ $body-background-color: #000621;
     color: $body-background-color !important;
 }
 
-.btn.btn-primary:hover {
-    background-image: none !important;
-    background-color: #000621 !important;
-    border: solid 1px #00efff !important;
-    color: #00efff !important;
-}
+// .btn.btn-primary:hover {
+//     background-image: none !important;
+//     background-color: #000621 !important;
+//     border: solid 1px #00efff !important;
+//     color: #00efff !important;
+// }
 
 a {
     color: #00efff !important;
@@ -105,4 +154,4 @@ a {
 
 .site-title:hover {
     background-image: none !important;
-  }
+}
