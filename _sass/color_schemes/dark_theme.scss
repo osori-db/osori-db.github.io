@@ -41,6 +41,11 @@ $body-background-color: #000621;
     color: #ffffff !important;
 }
 
+.links-item:hover,
+.links-item:focus {
+    color: #00efff;
+}
+
 .open-source-div,
 .homepage-anchors-container {
     border: solid 1px #54619a;

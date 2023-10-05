@@ -73,6 +73,13 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.homepage-header-container {
+    padding: 0rem 5rem;
+}
+
+.footer-container {
     padding: 0rem 0.625rem;
 }
 
@@ -86,7 +93,7 @@ body {
 
 .homepage-header-links a {
     padding: 1.875rem 1.25rem;
-    color: #ffffff;
+    color: #ffffff !important;
     text-align: center;
     text-decoration: none;
 }

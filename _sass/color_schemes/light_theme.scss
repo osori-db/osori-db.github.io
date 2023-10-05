@@ -40,6 +40,11 @@
     color: #000000 !important;
 }
 
+.links-item:hover,
+.links-item:focus {
+    color: $purple-000;
+}
+
 .open-source-div, .homepage-anchors-container {
     border: solid 1px #4eadfe;
     background-color: #ffffff;
