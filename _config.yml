@@ -16,6 +16,7 @@ defaultLang: en
 languageNames:
   en: English
   ko: 한국어
+default_locale_in_subfolder: true
 
 permalink: pretty
 
