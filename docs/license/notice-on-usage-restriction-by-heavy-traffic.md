@@ -5,6 +5,6 @@ nav_order: 2
 parent: License
 
 namespace: notice-on-usage-restriction-by-heavy-traffic
-permalink: /docs/license/notice-on-usage-restriction-by-heavy-traffic
+permalink: /docs/license/notice-on-usage-restriction-by-heavy-traffic/
 ---
 {% tf notice-on-usage-restriction-by-heavy-traffic.md %}
