@@ -1,1 +1,86 @@
 <script src="https://kit.fontawesome.com/df40bd7bba.js" crossorigin="anonymous"></script>
+<script>
+    var isKorean = currentURL.includes('/ko');
+    // for dynamic values for href of anchor tags
+    const LINK_DOCS = '/docs';
+    const LINK_KO = '/ko';
+    const LINKS = {
+        ABOUT: {
+            name: 'About',
+            url: '/about/',
+        },
+        MOTIVATION: {
+            name: 'Motivation',
+            url: '/about/motivation/',
+        },
+        CHARTER: {
+            name: 'Charter',
+            url: '/about/charter/',
+        },
+        MEMBERS: {
+            name: 'Members',
+            url: '/about/members/',
+        },
+        LOGO: {
+            name: 'Logo',
+            url: '/about/logo/',
+        },
+
+        GUIDE: {
+            name: 'Guide',
+            url: '/guide/',
+        },
+        USER_TIPS: {
+            name: 'User Tips',
+            url: '/guide/user-tips/',
+        },
+        API_DOC: {
+            name: 'API Doc',
+            url: '/guide/api-doc/',
+        },
+        CONTRIBUTION_GUIDE: {
+            name: 'Contribution Guide',
+            url: '/guide/contribution-guide/',
+        },
+
+        LICENSE: {
+            name: 'License',
+            url: '/license/',
+        },
+        OSORI_LICENSE_AND_NOTICE: {
+            name: 'OSORI License and Notice',
+            url: '/license/osori-license-and-notice/',
+        },
+        NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC: {
+            name: 'Notice on Usage Restriction by Heavy Traffic',
+            url: '/license/notice-on-usage-restriction-by-heavy-traffic/',
+        },
+        NO_WARRANTY: {
+            name: 'No Warranty',
+            url: '/license/no-warranty/',
+        },
+        DOC_LICENSE: {
+            name: 'Doc. License',
+            url: '/license/doc-license/',
+        },
+        CODE_LICENSE: {
+            name: 'Code License',
+            url: '/license/code-license/',
+        },
+
+        NEWS: {
+            name: 'News',
+            url: '/news/',
+        },
+        FAQ: {
+            name: 'FAQ',
+            url: '/faq/',
+        }
+    };
+
+    var anchorList = document.getElementsByTagName('a');
+    console.log(isKorean);
+    for (var i = 0; i < anchorList.length; i++) {
+        console.log(anchorList[i].href);
+    }
+</script>
