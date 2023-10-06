@@ -1,5 +1,5 @@
 ---
-title: About
+title: {% t links.about %}
 layout: about
 nav_order: 1
 has_children: true
