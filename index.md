@@ -3,6 +3,7 @@ title: Home
 layout: minimal
 nav_exclude: true
 search_exclude: true
+permalink: /
 ---
 
 {% include homepage_header.html %}
