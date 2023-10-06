@@ -1,5 +1,6 @@
 title: OSORI
-description: Github Page for OSORI
+description: Github Pages for OSORI
+baseurl: ""
 theme: just-the-docs
 url: https://osori-db.github.io
 
@@ -16,7 +17,6 @@ defaultLang: en
 languageNames:
   en: English
   ko: 한국어
-default_locale_in_subfolder: true
 
 permalink: pretty
 
