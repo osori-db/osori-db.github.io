@@ -12,7 +12,7 @@
     </div>
     <div class="header-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
-        {% capture link2 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
+        {% capture link1 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
         <a id="kor-lang-link" href="{{ link1 }}"><i class="fa-solid fa-earth-asia mr-1"></i> {% t global.korean %}</a>
         {% else %}
         {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
