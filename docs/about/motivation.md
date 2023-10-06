@@ -1,5 +1,5 @@
 ---
-title: Motivation
+title: pages.motivation
 layout: page
 nav_order: 1
 parent: About

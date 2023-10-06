@@ -7,7 +7,7 @@ main:
   openSourceRepositories: Open Source Repositories
   openSourceLicenses: Open Source Licenses
 
-links:
+pages:
   about: 오소리 프로젝트 소개
   motivation: 추진 배경
   charter: 거버넌스
@@ -18,9 +18,6 @@ links:
 
   guide: 사용/기여 가이드
   userTips: 활용 가이드
-  restrictionAndSignal: Restriction 항목 및 신호등 의미
-  userTipsLicense: 라이선스 항목 정의
-  oss: OSS 항목 정의
   apiDoc: API Doc
   contributionGuide: 컨트리뷰션 가이드
 

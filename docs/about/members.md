@@ -1,5 +1,5 @@
 ---
-title: Members
+title: page.members
 layout: page
 nav_order: 3
 parent: About

@@ -1,5 +1,5 @@
 ---
-title: User Tips
+title: pages.userTips
 layout: page
 nav_order: 1
 parent: Guide

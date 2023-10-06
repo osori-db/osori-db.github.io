@@ -7,7 +7,7 @@ main:
   openSourceRepositories: Open Source Repositories
   openSourceLicenses: Open Source Licenses
 
-links:
+pages:
   about: About
   motivation: Motivation
   charter: Charter
@@ -18,9 +18,6 @@ links:
 
   guide: Guide
   userTips: User Tips
-  restrictionAndSignal: Restriction and Signal
-  userTipsLicense: License
-  oss: OSS
   apiDoc: API Doc
   contributionGuide: Contribution Guide
 

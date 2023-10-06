@@ -1,5 +1,5 @@
 ---
-title: News
+title: pages.news
 layout: page
 nav_order: 4
 

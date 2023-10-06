@@ -1,5 +1,5 @@
 ---
-title: API Doc
+title: pages.apiDoc
 layout: page
 nav_order: 2
 parent: Guide
