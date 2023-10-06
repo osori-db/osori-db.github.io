@@ -96,125 +96,128 @@
         }
     };
 
-    var anchorList = document.getElementsByTagName('a');
-    console.log(anchorList);
-    for (var i = 0; i < anchorList.length; i++) {
-        if (isKorean) {
-            switch (anchorList[i].innerHTML) {
-                case LINKS.ABOUT.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.ABOUT.url;
-                    break;
-                case LINKS.MOTIVATION.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.MOTIVATION.url;
-                    break;
-                case LINKS.CHARTER.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CHARTER.url;
-                    break;
-                case LINKS.MEMBERS.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.MEMBERS.url;
-                    break;
-                case LINKS.LOGO.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.LOGO.url;
-                    break;
+    window.addEventListener('load', (event) => {
+        var anchorList = document.getElementsByTagName('a');
+        console.log(isKorean);
+        console.log(anchorList);
+        for (var i = 0; i < anchorList.length; i++) {
+            if (isKorean) {
+                switch (anchorList[i].innerHTML) {
+                    case LINKS.ABOUT.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.ABOUT.url;
+                        break;
+                    case LINKS.MOTIVATION.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.MOTIVATION.url;
+                        break;
+                    case LINKS.CHARTER.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CHARTER.url;
+                        break;
+                    case LINKS.MEMBERS.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.MEMBERS.url;
+                        break;
+                    case LINKS.LOGO.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.LOGO.url;
+                        break;
 
-                case LINKS.GUIDE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.GUIDE.url;
-                    break;
-                case LINKS.USER_TIPS.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.USER_TIPS.url;
-                    break;
-                case LINKS.API_DOC.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.API_DOC.url;
-                    break;
-                case LINKS.CONTRIBUTION_GUIDE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CONTRIBUTION_GUIDE.url;
-                    break;
+                    case LINKS.GUIDE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.GUIDE.url;
+                        break;
+                    case LINKS.USER_TIPS.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.USER_TIPS.url;
+                        break;
+                    case LINKS.API_DOC.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.API_DOC.url;
+                        break;
+                    case LINKS.CONTRIBUTION_GUIDE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CONTRIBUTION_GUIDE.url;
+                        break;
 
-                case LINKS.LICENSE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.LICENSE.url;
-                    break;
-                case LINKS.OSORI_LICENSE_AND_NOTICE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.OSORI_LICENSE_AND_NOTICE.url;
-                    break;
-                case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
-                    break;
-                case LINKS.NO_WARRANTY.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NO_WARRANTY.url;
-                    break;
-                case LINKS.DOC_LICENSE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.DOC_LICENSE.url;
-                    break;
-                case LINKS.CODE_LICENSE.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CODE_LICENSE.url;
-                    break;
+                    case LINKS.LICENSE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.LICENSE.url;
+                        break;
+                    case LINKS.OSORI_LICENSE_AND_NOTICE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.OSORI_LICENSE_AND_NOTICE.url;
+                        break;
+                    case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
+                        break;
+                    case LINKS.NO_WARRANTY.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NO_WARRANTY.url;
+                        break;
+                    case LINKS.DOC_LICENSE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.DOC_LICENSE.url;
+                        break;
+                    case LINKS.CODE_LICENSE.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.CODE_LICENSE.url;
+                        break;
 
-                case LINKS.NEWS.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NEWS.url;
-                    break;
-                case LINKS.FAQ.nameKo:
-                    anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.FAQ.url;
-                    break;
+                    case LINKS.NEWS.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.NEWS.url;
+                        break;
+                    case LINKS.FAQ.nameKo:
+                        anchorList[i].href = LINK_KO + LINK_DOCS + LINKS.FAQ.url;
+                        break;
+                }
+            }
+
+            else {
+                switch (anchorList[i].innerHTML) {
+                    case LINKS.ABOUT.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.ABOUT.url;
+                        break;
+                    case LINKS.MOTIVATION.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.MOTIVATION.url;
+                        break;
+                    case LINKS.CHARTER.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.CHARTER.url;
+                        break;
+                    case LINKS.MEMBERS.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.MEMBERS.url;
+                        break;
+                    case LINKS.LOGO.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.LOGO.url;
+                        break;
+
+                    case LINKS.GUIDE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.GUIDE.url;
+                        break;
+                    case LINKS.USER_TIPS.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.USER_TIPS.url;
+                        break;
+                    case LINKS.API_DOC.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.API_DOC.url;
+                        break;
+                    case LINKS.CONTRIBUTION_GUIDE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.CONTRIBUTION_GUIDE.url;
+                        break;
+
+                    case LINKS.LICENSE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.LICENSE.url;
+                        break;
+                    case LINKS.OSORI_LICENSE_AND_NOTICE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.OSORI_LICENSE_AND_NOTICE.url;
+                        break;
+                    case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
+                        break;
+                    case LINKS.NO_WARRANTY.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.NO_WARRANTY.url;
+                        break;
+                    case LINKS.DOC_LICENSE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.DOC_LICENSE.url;
+                        break;
+                    case LINKS.CODE_LICENSE.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.CODE_LICENSE.url;
+                        break;
+
+                    case LINKS.NEWS.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.NEWS.url;
+                        break;
+                    case LINKS.FAQ.name:
+                        anchorList[i].href = LINK_DOCS + LINKS.FAQ.url;
+                        break;
+                }
             }
         }
-
-        else {
-            switch (anchorList[i].innerHTML) {
-                case LINKS.ABOUT.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.ABOUT.url;
-                    break;
-                case LINKS.MOTIVATION.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.MOTIVATION.url;
-                    break;
-                case LINKS.CHARTER.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.CHARTER.url;
-                    break;
-                case LINKS.MEMBERS.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.MEMBERS.url;
-                    break;
-                case LINKS.LOGO.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.LOGO.url;
-                    break;
-
-                case LINKS.GUIDE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.GUIDE.url;
-                    break;
-                case LINKS.USER_TIPS.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.USER_TIPS.url;
-                    break;
-                case LINKS.API_DOC.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.API_DOC.url;
-                    break;
-                case LINKS.CONTRIBUTION_GUIDE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.CONTRIBUTION_GUIDE.url;
-                    break;
-
-                case LINKS.LICENSE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.LICENSE.url;
-                    break;
-                case LINKS.OSORI_LICENSE_AND_NOTICE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.OSORI_LICENSE_AND_NOTICE.url;
-                    break;
-                case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
-                    break;
-                case LINKS.NO_WARRANTY.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.NO_WARRANTY.url;
-                    break;
-                case LINKS.DOC_LICENSE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.DOC_LICENSE.url;
-                    break;
-                case LINKS.CODE_LICENSE.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.CODE_LICENSE.url;
-                    break;
-
-                case LINKS.NEWS.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.NEWS.url;
-                    break;
-                case LINKS.FAQ.name:
-                    anchorList[i].href = LINK_DOCS + LINKS.FAQ.url;
-                    break;
-            }
-        }
-    };
+    });
 </script>
