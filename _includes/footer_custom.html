@@ -12,17 +12,19 @@
         if (tempTheme && (tempTheme === "dark_theme" || tempTheme === "light_theme")) {
             jtd.setTheme(tempTheme);
         }
-        
-        const toggleDarkMode = document.querySelector('.dark-mode');
-        jtd.addEvent(toggleDarkMode, 'click', function () {
-            jtd.setTheme('dark_theme');
-            sessionStorage.setItem("theme", "dark_theme");
-        });
 
-        const toggleLightMode = document.querySelector('.light-mode');
-        jtd.addEvent(toggleLightMode, 'click', function () {
-            jtd.setTheme('light_theme');
-            sessionStorage.setItem("theme", "light_theme");
-        });
+        onload = (event) => {
+            const toggleDarkMode = document.querySelector('.dark-mode');
+            jtd.addEvent(toggleDarkMode, 'click', function () {
+                jtd.setTheme('dark_theme');
+                sessionStorage.setItem("theme", "dark_theme");
+            });
+
+            const toggleLightMode = document.querySelector('.light-mode');
+            jtd.addEvent(toggleLightMode, 'click', function () {
+                jtd.setTheme('light_theme');
+                sessionStorage.setItem("theme", "light_theme");
+            });
+        }
     </script>
 </div>
