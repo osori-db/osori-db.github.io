@@ -2,6 +2,7 @@
 title: Home
 layout: minimal
 nav_exclude: true
+search_exclude: true
 ---
 
 {% include homepage_header.html %}

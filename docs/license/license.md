@@ -4,7 +4,7 @@ layout: page
 nav_order: 3
 has_children: true
 has_toc: true
-permalink: /docs/license
+permalink: /docs/license/
 ---
 
 # {% t sample.documentationTitle %}

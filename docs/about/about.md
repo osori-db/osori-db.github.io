@@ -4,7 +4,7 @@ layout: about
 nav_order: 1
 has_children: true
 has_toc: true
-permalink: /docs/about
+permalink: /docs/about/
 ---
 
 # {% t sample.documentationTitle %}
