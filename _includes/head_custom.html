@@ -1,86 +1,104 @@
 <script src="https://kit.fontawesome.com/df40bd7bba.js" crossorigin="anonymous"></script>
 <script>
-    var isKorean = currentURL.includes('/ko');
     var currentURL = window.location.href;
+    var isKorean = currentURL.includes('/ko');
     
     const LINK_DOCS = '/docs';
     const LINK_KO = '/ko';
     const LINKS = {
         ABOUT: {
             name: 'About',
+            nameKo: '오소리 프로젝트 소개',
             url: '/about/',
         },
         MOTIVATION: {
             name: 'Motivation',
+            nameKo: '추진 배경',
             url: '/about/motivation/',
         },
         CHARTER: {
             name: 'Charter',
+            nameKo: '거버넌스',
             url: '/about/charter/',
         },
         MEMBERS: {
             name: 'Members',
+            nameKo: '멤버 리스트',
             url: '/about/members/',
         },
         LOGO: {
             name: 'Logo',
+            nameKo: '로고 소개',
             url: '/about/logo/',
         },
 
         GUIDE: {
             name: 'Guide',
+            nameKo: '사용/기여 가이드',
             url: '/guide/',
         },
         USER_TIPS: {
             name: 'User Tips',
+            nameKo: '활용 가이드',
             url: '/guide/user-tips/',
         },
         API_DOC: {
             name: 'API Doc',
+            nameKo: 'API Doc',
             url: '/guide/api-doc/',
         },
         CONTRIBUTION_GUIDE: {
             name: 'Contribution Guide',
+            nameKo: '컨트리뷰션 가이드',
             url: '/guide/contribution-guide/',
         },
 
         LICENSE: {
             name: 'License',
+            nameKo: '오소리 라이선스',
             url: '/license/',
         },
         OSORI_LICENSE_AND_NOTICE: {
             name: 'OSORI License and Notice',
+            nameKo: '오소리 데이터 라이선스 및 사용 주의 사항',
             url: '/license/osori-license-and-notice/',
         },
         NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC: {
             name: 'Notice on Usage Restriction by Heavy Traffic',
+            nameKo: '과도한 트래픽에 관한 제한 조항',
             url: '/license/notice-on-usage-restriction-by-heavy-traffic/',
         },
         NO_WARRANTY: {
             name: 'No Warranty',
+            nameKo: '보증 부인',
             url: '/license/no-warranty/',
         },
         DOC_LICENSE: {
             name: 'Doc. License',
+            nameKo: '문서 라이선스',
             url: '/license/doc-license/',
         },
         CODE_LICENSE: {
             name: 'Code License',
+            nameKo: '코드 라이선스',
             url: '/license/code-license/',
         },
 
         NEWS: {
             name: 'News',
+            nameKo: '소식',
             url: '/news/',
         },
         FAQ: {
             name: 'FAQ',
+            nameKo: '자주 하는 질문',
             url: '/faq/',
         }
     };
 
     var anchorList = document.getElementsByTagName('a');
     console.log(isKorean);
+    console.log(links);
     for (var i = 0; i < anchorList.length; i++) {
         console.log(anchorList[i].href);
     }
