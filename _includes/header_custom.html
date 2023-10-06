@@ -12,39 +12,16 @@
     </div>
     <div class="header-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
-        <a id="kor-lang-link"><i class="fa-solid fa-earth-asia mr-1"></i> {{ site.languageNames.ko }}</a>
+        {% capture link2 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
+        <a id="kor-lang-link" href="{{ link1 }}"><i class="fa-solid fa-earth-asia mr-1"></i> {% t global.korean %}</a>
         {% else %}
-        <a id="eng-lang-link"><i class="fa-solid fa-earth-americas mr-1"></i> {{ site.languageNames.en }}</a>
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+        <a id="eng-lang-link" href="{{ link2 }}"><i class="fa-solid fa-earth-americas mr-1"></i> {% t global.english %}</a>
         {% endif %}
     </div>
 </div>
 
 <script>
-    const OCCURRENCE = 3;
-    var currentURL = window.location.href;
-
-    if (currentURL.includes('/ko')) {
-        var anchor = document.getElementById('eng-lang-link');
-        var index = getIndex(currentURL, '/', OCCURRENCE);
-
-        var firstSubstring = currentURL.substring(0, index);
-        var secondSubstring = currentURL.substring(index + 4);
-
-        anchor.href = firstSubstring + '/' + secondSubstring;
-    } else {
-        var anchor = document.getElementById('kor-lang-link');
-        var index = getIndex(currentURL, '/', OCCURRENCE);
-
-        var firstSubstring = currentURL.substring(0, index);
-        var secondSubstring = currentURL.substring(index + 1);
-
-        anchor.href = firstSubstring + '/ko/' + secondSubstring;
-    }
-
-    function getIndex(str, searchKey, occurrence) {
-        return str.split(searchKey, occurrence).join(searchKey).length;
-    }
-
     function showLanguageOptions() {
         document.getElementById("language-dropdown").classList.toggle("show");
     }
