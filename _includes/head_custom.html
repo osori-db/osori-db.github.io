@@ -2,7 +2,7 @@
 <script>
     var currentURL = window.location.href;
     var isKorean = currentURL.includes('/ko');
-    
+
     const LINK_DOCS = '/docs';
     const LINK_KO = '/ko';
     const LINKS = {
@@ -97,9 +97,123 @@
     };
 
     var anchorList = document.getElementsByTagName('a');
-    console.log(isKorean);
-    console.log(LINKS);
-    for (var i = 0; i < anchorList.length; i++) {
-        console.log(anchorList[i].href);
-    }
+    anchorList.forEach(anchor => {
+        if (isKorean) {
+            switch (anchor.innerHTML) {
+                case LINKS.ABOUT.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.ABOUT.url;
+                    break;
+                case LINKS.MOTIVATION.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.MOTIVATION.url;
+                    break;
+                case LINKS.CHARTER.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CHARTER.url;
+                    break;
+                case LINKS.MEMBERS.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.MEMBERS.url;
+                    break;
+                case LINKS.LOGO.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.LOGO.url;
+                    break;
+
+                case LINKS.GUIDE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.GUIDE.url;
+                    break;
+                case LINKS.USER_TIPS.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.USER_TIPS.url;
+                    break;
+                case LINKS.API_DOC.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.API_DOC.url;
+                    break;
+                case LINKS.CONTRIBUTION_GUIDE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CONTRIBUTION_GUIDE.url;
+                    break;
+
+                case LINKS.LICENSE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.LICENSE.url;
+                    break;
+                case LINKS.OSORI_LICENSE_AND_NOTICE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.OSORI_LICENSE_AND_NOTICE.url;
+                    break;
+                case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
+                    break;
+                case LINKS.NO_WARRANTY.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NO_WARRANTY.url;
+                    break;
+                case LINKS.DOC_LICENSE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.DOC_LICENSE.url;
+                    break;
+                case LINKS.CODE_LICENSE.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CODE_LICENSE.url;
+                    break;
+
+                case LINKS.NEWS.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NEWS.url;
+                    break;
+                case LINKS.FAQ.nameKo:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.FAQ.url;
+                    break;
+            }
+        } 
+        
+        else {
+            switch (anchor.innerHTML) {
+                case LINKS.ABOUT.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.ABOUT.url;
+                    break;
+                case LINKS.MOTIVATION.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.MOTIVATION.url;
+                    break;
+                case LINKS.CHARTER.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CHARTER.url;
+                    break;
+                case LINKS.MEMBERS.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.MEMBERS.url;
+                    break;
+                case LINKS.LOGO.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.LOGO.url;
+                    break;
+
+                case LINKS.GUIDE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.GUIDE.url;
+                    break;
+                case LINKS.USER_TIPS.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.USER_TIPS.url;
+                    break;
+                case LINKS.API_DOC.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.API_DOC.url;
+                    break;
+                case LINKS.CONTRIBUTION_GUIDE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CONTRIBUTION_GUIDE.url;
+                    break;
+
+                case LINKS.LICENSE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.LICENSE.url;
+                    break;
+                case LINKS.OSORI_LICENSE_AND_NOTICE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.OSORI_LICENSE_AND_NOTICE.url;
+                    break;
+                case LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NOTICE_ON_USAGE_RESTRICTION_BY_HEAVY_TRAFFIC.url;
+                    break;
+                case LINKS.NO_WARRANTY.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NO_WARRANTY.url;
+                    break;
+                case LINKS.DOC_LICENSE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.DOC_LICENSE.url;
+                    break;
+                case LINKS.CODE_LICENSE.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.CODE_LICENSE.url;
+                    break;
+
+                case LINKS.NEWS.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.NEWS.url;
+                    break;
+                case LINKS.FAQ.name:
+                    anchor.href = LINK_DOCS + LINK_KO + LINKS.FAQ.url;
+                    break;
+            }
+        }
+    });
 </script>
