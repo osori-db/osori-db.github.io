@@ -161,9 +161,17 @@ main+hr {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
     z-index: 1;
     border: 1px solid #54619a;
+    border-radius: 6px;
+}
+
+.homepage-dropdown-content {
     right: 5.6rem;
     margin-top: -18px;
-    border-radius: 6px;
+}
+
+.header-dropdown-content {
+    right: 0.7rem;
+    margin-top: -8px;
 }
 
 .homepage-dropdown-content a,
