@@ -19,7 +19,6 @@ languageNames:
 
 permalink: pretty
 
-callouts_level: loud
 callouts:
   highlight:
     color: yellow
