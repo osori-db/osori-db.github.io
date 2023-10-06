@@ -6,12 +6,12 @@ site:
 main:
   openSourceRepositories: Open Source Repositories
   openSourceLicenses: Open Source Licenses
-  
+
 global:
   korean: 한국어
   english: English
 
-links:
+title:
   about: 오소리 프로젝트 소개
   motivation: 추진 배경
   charter: 거버넌스

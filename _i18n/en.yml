@@ -11,7 +11,7 @@ global:
   korean: 한국어
   english: English
 
-links:
+title:
   about: About
   motivation: Motivation
   charter: Charter
