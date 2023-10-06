@@ -1,6 +1,6 @@
 <div class="header-dropdown pl-8">
     <div class="language-div">
-        <button class="change-language-btn shared-language-btn" onclick="showLanguageOptions()">
+        <button class="change-language-btn shared-language-btn" onclick="showLanguageChoices()">
             <i class="fa-solid fa-globe pr-2"></i>
             {% if site.lang == site.languages[0] %}
             {{ site.languageNames.en }}
@@ -8,7 +8,7 @@
             {{ site.languageNames.ko }}
             {% endif %}
         </button>
-        <i class="change-language-btn fa-solid fa-chevron-down pl-3 chevron-icon" onclick="showLanguageOptions()"></i>
+        <i class="change-language-btn fa-solid fa-chevron-down pl-3 chevron-icon" onclick="showLanguageChoices()"></i>
     </div>
     <div class="header-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
@@ -20,7 +20,6 @@
 </div>
 
 <script>
-    // for language toggle on documentation pages header
     const OCCURRENCE = 3;
     var currentURL = window.location.href;
 
@@ -46,7 +45,7 @@
         return str.split(searchKey, occurrence).join(searchKey).length;
     }
 
-    function showLanguageOptions() {
+    function showLanguageChoices() {
         document.getElementById("language-dropdown").classList.toggle("show");
     }
 

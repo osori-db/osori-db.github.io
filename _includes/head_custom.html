@@ -3,6 +3,12 @@
     // for dynamic values for href of anchor tags
     var isKorean = currentURL.includes('/ko');
     var currentURL = window.location.href;
+
+    var anchorList = document.getElementsByTagName('a');
+    console.log(isKorean);
+    for (var i = 0; i < anchorList.length; i++) {
+        console.log(anchorList[i].href);
+    }
     
     const LINK_DOCS = '/docs';
     const LINK_KO = '/ko';
@@ -79,10 +85,4 @@
             url: '/faq/',
         }
     };
-
-    var anchorList = document.getElementsByTagName('a');
-    console.log(isKorean);
-    for (var i = 0; i < anchorList.length; i++) {
-        console.log(anchorList[i].href);
-    }
 </script>
