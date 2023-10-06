@@ -9,3 +9,4 @@ namespace: about
 permalink: /docs/about/
 ---
 {% tf about.md %}
+{% t pages.title %}
