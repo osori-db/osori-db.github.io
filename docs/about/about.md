@@ -1,5 +1,5 @@
 ---
-title: pages.about
+title: About
 layout: about
 nav_order: 1
 has_children: true
@@ -9,4 +9,3 @@ namespace: about
 permalink: /docs/about/
 ---
 {% tf about.md %}
-{% t pages.title %}

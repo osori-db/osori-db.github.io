@@ -1,5 +1,5 @@
 ---
-title: pages.logo
+title: Logo
 layout: page
 nav_order: 4
 parent: About

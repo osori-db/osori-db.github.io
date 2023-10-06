@@ -1,5 +1,5 @@
 ---
-title: pages.codeLicense
+title: Code License
 layout: page
 nav_order: 5
 parent: License

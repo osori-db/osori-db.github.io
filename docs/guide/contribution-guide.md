@@ -1,5 +1,5 @@
 ---
-title: pages.contributionGuide
+title: Contribution Guide
 layout: page
 nav_order: 3
 parent: Guide

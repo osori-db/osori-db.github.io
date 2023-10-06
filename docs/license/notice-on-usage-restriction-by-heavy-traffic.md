@@ -1,5 +1,5 @@
 ---
-title: pages.noticeOnUsageRestrictionByHeavyTraffic
+title: Notice on Usage Restriction by Heavy Traffic
 layout: page
 nav_order: 2
 parent: License

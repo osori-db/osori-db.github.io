@@ -1,5 +1,5 @@
 ---
-title: pages.docLicense
+title: Doc. License
 layout: page
 nav_order: 4
 parent: License

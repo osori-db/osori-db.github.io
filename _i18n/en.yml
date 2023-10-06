@@ -7,7 +7,7 @@ main:
   openSourceRepositories: Open Source Repositories
   openSourceLicenses: Open Source Licenses
 
-pages:
+links:
   about: About
   motivation: Motivation
   charter: Charter
