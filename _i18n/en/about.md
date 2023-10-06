@@ -1,3 +1,5 @@
+{% seo title=false %}
+<title>{% t title.about %}</title>
 # About
 {: .fs-9 }
 

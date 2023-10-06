@@ -1,3 +1,5 @@
+{% seo title=false %}
+<title>{% t title.about %}</title>
 # 오소리 프로젝트 소개
 {: .fs-9 }
 
