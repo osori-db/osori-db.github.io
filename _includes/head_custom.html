@@ -1,7 +1,9 @@
 <script src="https://kit.fontawesome.com/df40bd7bba.js" crossorigin="anonymous"></script>
 <script>
-    var isKorean = currentURL.includes('/ko');
     // for dynamic values for href of anchor tags
+    var isKorean = currentURL.includes('/ko');
+    var currentURL = window.location.href;
+    
     const LINK_DOCS = '/docs';
     const LINK_KO = '/ko';
     const LINKS = {
