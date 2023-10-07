@@ -1,5 +1,5 @@
 ---
-title: title.contributionGuide
+title: Contribution Guide
 layout: default
 nav_order: 3
 parent: Guide

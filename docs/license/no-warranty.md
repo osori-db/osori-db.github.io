@@ -1,5 +1,5 @@
 ---
-title: title.noWarranty
+title: No Warranty
 layout: default
 nav_order: 3
 parent: License
