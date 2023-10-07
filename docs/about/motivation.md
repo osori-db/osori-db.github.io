@@ -7,4 +7,4 @@ parent: About
 namespace: motivation
 permalink: /docs/about/motivation/
 ---
-{% tf motivation.md %}
+{% tf about/motivation.md %}

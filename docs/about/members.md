@@ -7,4 +7,4 @@ parent: About
 namespace: members
 permalink: /docs/about/members/
 ---
-{% tf members.md %}
+{% tf about/members.md %}

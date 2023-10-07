@@ -8,4 +8,4 @@ has_toc: true
 namespace: about
 permalink: /docs/about/
 ---
-{% tf about.md %}
+{% tf about/about.md %}
