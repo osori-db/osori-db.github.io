@@ -11,6 +11,9 @@ global:
   korean: 한국어
   english: English
 
+ko:
+  About: About
+
 title:
   about: 오소리 프로젝트 소개
   motivation: 추진 배경
