@@ -1,6 +1,6 @@
 ---
 title: Code License
-layout: page
+layout: default
 nav_order: 5
 parent: License
 

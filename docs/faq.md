@@ -1,6 +1,6 @@
 ---
 title: FAQ
-layout: page
+layout: default
 nav_order: 5
 
 namespace: faq

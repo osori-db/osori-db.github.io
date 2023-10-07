@@ -1,6 +1,6 @@
 ---
 title: OSORI License and Notice
-layout: page
+layout: default
 nav_order: 1
 parent: License
 

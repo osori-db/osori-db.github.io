@@ -1,6 +1,6 @@
 ---
 title: Motivation
-layout: page
+layout: default
 nav_order: 1
 parent: About
 
