@@ -1,5 +1,5 @@
 ---
-title: About
+title: title.about
 layout: default
 nav_order: 1
 has_children: true
