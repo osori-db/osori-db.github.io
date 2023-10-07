@@ -11,6 +11,10 @@ global:
   korean: 한국어
   english: English
 
+
+en:
+  about: About
+
 title:
   about: About
   motivation: Motivation
