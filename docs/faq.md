@@ -1,5 +1,5 @@
 ---
-title: FAQ
+title: title.faq
 layout: default
 nav_order: 5
 

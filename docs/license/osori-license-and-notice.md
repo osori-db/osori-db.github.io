@@ -1,5 +1,5 @@
 ---
-title: OSORI License and Notice
+title: title.osoriLicenseAndNotice
 layout: default
 nav_order: 1
 parent: License

@@ -1,5 +1,5 @@
 ---
-title: Members
+title: title.members
 layout: default
 nav_order: 3
 parent: About
