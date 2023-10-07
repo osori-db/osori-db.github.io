@@ -1,18 +1,13 @@
-site:
+main:
   header: OSORI
   subheader: Open SOuRce DB Integration
   tagline: 오픈소스 및 라이선스 데이터를 안전하게 사용할 수 있도록 신뢰할 수 있는 서비스를 제공하고 있습니다.
-
-main:
   openSourceRepositories: Open Source Repositories
   openSourceLicenses: Open Source Licenses
 
 global:
   korean: 한국어
   english: English
-
-ko:
-  About: About
 
 title:
   about: 오소리 프로젝트 소개
