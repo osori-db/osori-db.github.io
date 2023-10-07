@@ -3,7 +3,7 @@
   Depends on: page(?), site.
   Results in: HTML for the side bar.
   Includes:
-    title.html, nav.html, nav_footer_custom.html
+    title.html, nav_custom.html, nav_footer_custom.html
   Overwrites: 
     pages_top_size, collections_size, collection_entry,
     collection_key, collection_value, collection, nav_footer_custom.
@@ -24,14 +24,14 @@
           | where_exp:"item", "item.nav_exclude != true"
           | size %}
     {% if pages_top_size > 0 %}
-      {% include_cached nav.html pages=site.html_pages %}
+      {% include_cached nav_custom.html pages=site.html_pages %}
     {% endif %}
     {%- if site.nav_external_links -%}
       <ul class="nav-list">
         {%- for node in site.nav_external_links -%}
           <li class="nav-list-item external">
-            <a href="{{ site.baseurl }}{{ node.url | relative_url}}" class="nav-list-link {% if page.url == node.url %} active{% endif %} external">
-              {% t node.title %}
+            <a href="{{ node.url | absolute_url }}" class="nav-list-link external">
+              {{ node.title }}
               {% unless node.hide_icon %}<svg viewBox="0 0 24 24" aria-labelledby="svg-external-link-title"><use xlink:href="#svg-external-link"></use></svg>{% endunless %}
             </a>
           </li>
@@ -55,15 +55,15 @@
                   </button>
                   {%- endif -%}
                   <div class="nav-category">{{ collection_value.name }}</div>
-                  {% include_cached nav.html pages=collection %}
+                  {% include_cached nav_custom.html pages=collection %}
                 </li>
               </ul>
             {% else %}
               <div class="nav-category">{{ collection_value.name }}</div>
-              {% include_cached nav.html pages=collection %}
+              {% include_cached nav_custom.html pages=collection %}
             {% endif %}
           {% else %}
-            {% include_cached nav.html pages=collection %}
+            {% include_cached nav_custom.html pages=collection %}
           {% endif %}
         {% endif %}
       {% endfor %}
