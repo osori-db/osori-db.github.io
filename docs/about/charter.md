@@ -1,5 +1,5 @@
 ---
-title: Charter
+title: title.charter
 layout: default
 nav_order: 2
 parent: About

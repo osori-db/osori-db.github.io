@@ -1,5 +1,5 @@
 ---
-title: Code License
+title: title.codeLicense
 layout: default
 nav_order: 5
 parent: License

@@ -1,5 +1,5 @@
 ---
-title: News
+title: title.news
 layout: default
 nav_order: 4
 
