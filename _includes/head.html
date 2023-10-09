@@ -56,7 +56,7 @@ Should not be cached, because included files depend on page.
   <meta name="author" content="{{ seo_tag.author.name }}" />
   {% endif %}
 
-  <meta property="og:locale" content="{{ seo_tag.page_locale }}" />
+  <meta property="og:locale" content="{{ site.isoLanguageCodes[site.lang] }}" />
 
 
   <meta name="description" content="{{ site.description }}" />

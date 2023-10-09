@@ -9,14 +9,21 @@ logo: "/assets/images/ic_logo_osori.png"
 favicon_ico: "/assets/images/favicon.ico"
 
 plugins:
+  - jekyll-seo-tag
+  - jekyll-github-metadata
+  - jekyll-include-cache
   - jekyll-multiple-languages-plugin
 
 languages: ["en", "ko"]
 exclude_from_localizations: ["javascript", "images", "css"]
+default_locale_in_subfolder: true
 defaultLang: en
 languageNames:
   en: English
   ko: 한국어
+isoLanguageCodes:
+  en: en_US
+  ko: ko
 
 permalink: pretty
 
