@@ -58,15 +58,15 @@ Should not be cached, because included files depend on page.
 
   <meta property="og:locale" content="{{ seo_tag.page_locale }}" />
 
-  
+
   <meta name="description" content="{{ site.description }}" />
   <meta property="og:description" content="{{ site.description }}" />
   <meta property="twitter:description" content="{{ site.description }}" />
-  
+
 
   {% if site.url %}
-  <link rel="canonical" href="{{ site.url }}" />
-  <meta property="og:url" content="{{ site.url }}" />
+  <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+  <meta property="og:url" content="{{ site.url }}{{ page.url }}"" />
   {% endif %}
 
   <meta property="og:site_name" content="{{ site.title }}" />
@@ -161,10 +161,6 @@ Should not be cached, because included files depend on page.
   {% elsif site.google_site_verification %}
   <meta name="google-site-verification" content="{{ site.google_site_verification }}" />
   {% endif %}
-
-  <script type="application/ld+json">
-{{ seo_tag.json_ld | jsonify }}
-</script>
 
   <!-- End Jekyll SEO tag -->
 
