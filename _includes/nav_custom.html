@@ -36,7 +36,7 @@
     </button>
     {%- endif -%}
     <a href="{{ site.baseurl }}{{ node.url | relative_url}}" class="nav-list-link{% if page.url == node.url %} active{% endif %}">{% t node.title %}</a>
-    <script>console.log(node);</script>
+    <script>console.log('{{node}}');</script>
     {%- if node.has_children -%}
       {%- assign children_list = second_level_pages
             | where: "parent", node.title -%}
