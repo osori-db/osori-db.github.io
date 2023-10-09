@@ -46,13 +46,11 @@ Should not be cached, because included files depend on page.
   {% include_cached favicon.html %}
 
   <!-- Begin Jekyll SEO tag v{{ seo_tag.version }} -->
-  <title>{% t page.title %} | OSORI</title>
+  <title>{% t page.title %} | {{site.title}}</title>
 
   <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
 
-  {% if seo_tag.page_title %}
-  <meta property="og:title" content="{{ seo_tag.page_title }}" />
-  {% endif %}
+  <meta property="og:title" content="{% t page.title %}" />
 
   {% if seo_tag.author.name %}
   <meta name="author" content="{{ seo_tag.author.name }}" />
@@ -60,20 +58,18 @@ Should not be cached, because included files depend on page.
 
   <meta property="og:locale" content="{{ seo_tag.page_locale }}" />
 
-  {% if seo_tag.description %}
-  <meta name="description" content="{{ seo_tag.description }}" />
-  <meta property="og:description" content="{{ seo_tag.description }}" />
-  <meta property="twitter:description" content="{{ seo_tag.description }}" />
-  {% endif %}
+  
+  <meta name="description" content="{{ site.description }}" />
+  <meta property="og:description" content="{{ site.description }}" />
+  <meta property="twitter:description" content="{{ site.description }}" />
+  
 
   {% if site.url %}
-  <link rel="canonical" href="{{ seo_tag.canonical_url }}" />
-  <meta property="og:url" content="{{ seo_tag.canonical_url }}" />
+  <link rel="canonical" href="{{ site.url }}" />
+  <meta property="og:url" content="{{ site.url }}" />
   {% endif %}
 
-  {% if seo_tag.site_title %}
-  <meta property="og:site_name" content="{{ seo_tag.site_title }}" />
-  {% endif %}
+  <meta property="og:site_name" content="{{ site.title }}" />
 
   {% if seo_tag.image %}
   <meta property="og:image" content="{{ seo_tag.image.path }}" />
@@ -114,9 +110,7 @@ Should not be cached, because included files depend on page.
   <meta name="twitter:image:alt" content="{{ seo_tag.image.alt }}" />
   {% endif %}
 
-  {% if seo_tag.page_title %}
-  <meta property="twitter:title" content="{{ seo_tag.page_title }}" />
-  {% endif %}
+  <meta property="twitter:title" content="{% t page.title %}" />
 
   {% if site.twitter %}
   <meta name="twitter:site" content="@{{ site.twitter.username | remove:'@' }}" />
