@@ -46,12 +46,12 @@ Should not be cached, because included files depend on page.
   {% include_cached favicon.html %}
 
   <!-- Begin Jekyll SEO tag v{{ seo_tag.version }} -->
-  {% if seo_tag.title? %}
   <script>
     console.log('{{ page.title }}')
     console.log('{% t page.title}')
     console.log('{{ seo_tag.title }')
   </script>
+  {% if seo_tag.title? %}
   <title>{{ seo_tag.title }}</title>
   {% endif %}
 
