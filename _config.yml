@@ -16,7 +16,6 @@ plugins:
 
 languages: ["en", "ko"]
 exclude_from_localizations: ["javascript", "images", "css"]
-default_locale_in_subfolder: true
 defaultLang: en
 languageNames:
   en: English
