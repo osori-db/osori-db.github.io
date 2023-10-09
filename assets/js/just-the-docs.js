@@ -103,10 +103,11 @@ function initSearch() {
 
         for (var i in docs) {
           {% include lunr/custom-index.js %}
+          console.log(docs);
           this.add({
             id: i,
-            title: {%t {{docs[i].title}} %},
-            content: {%t {{docs[i].content}} %},
+            title: docs[i].title,
+            content: docs[i].content,
             {%- if site.search.rel_url != false %}
             relUrl: docs[i].relUrl
             {%- endif %}
