@@ -2,7 +2,7 @@
 title: title.userTips
 layout: default
 nav_order: 1
-parent: Guide
+parent: title.guide
 
 namespace: user-tips
 permalink: /docs/guide/user-tips/

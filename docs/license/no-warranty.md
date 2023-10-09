@@ -2,7 +2,7 @@
 title: title.noWarranty
 layout: default
 nav_order: 3
-parent: License
+parent: title.license
 
 namespace: no-warranty
 permalink: /docs/license/no-warranty/

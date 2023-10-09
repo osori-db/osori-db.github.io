@@ -2,7 +2,7 @@
 title: title.apiDoc
 layout: default
 nav_order: 2
-parent: Guide
+parent: title.guide
 
 namespace: api-doc
 permalink: /docs/guide/api-doc/

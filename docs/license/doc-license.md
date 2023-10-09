@@ -2,7 +2,7 @@
 title: title.docLicense
 layout: default
 nav_order: 4
-parent: License
+parent: title.license
 
 namespace: doc-license
 permalink: /docs/license/doc-license/

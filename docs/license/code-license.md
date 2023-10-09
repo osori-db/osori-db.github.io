@@ -2,7 +2,7 @@
 title: title.codeLicense
 layout: default
 nav_order: 5
-parent: License
+parent: title.license
 
 namespace: code-license
 permalink: /docs/license/code-license/

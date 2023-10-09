@@ -2,7 +2,7 @@
 title: title.noticeOnUsageRestrictionByHeavyTraffic
 layout: default
 nav_order: 2
-parent: License
+parent: title.license
 
 namespace: notice-on-usage-restriction-by-heavy-traffic
 permalink: /docs/license/notice-on-usage-restriction-by-heavy-traffic/
