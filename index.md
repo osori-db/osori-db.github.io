@@ -1,5 +1,5 @@
 ---
-title: Home
+title: title.home
 layout: minimal
 nav_exclude: true
 search_exclude: true
