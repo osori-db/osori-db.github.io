@@ -47,13 +47,12 @@ Should not be cached, because included files depend on page.
 
   <!-- Begin Jekyll SEO tag v{{ seo_tag.version }} -->
   <script>
-    console.log('{{ page.title }}')
-    console.log('{% t page.title %}')
-    console.log('{{ seo_tag.title }}')
+    console.log('{{ page.title }}');
+    console.log('{% t page.title %}');
+    console.log('{{ seo_tag.title }}');
   </script>
-  {% if seo_tag.title? %}
+  
   <title>{% t page.title %}</title>
-  {% endif %}
 
   <meta name="generator" content="Jekyll v{{ jekyll.version }}" />
 
