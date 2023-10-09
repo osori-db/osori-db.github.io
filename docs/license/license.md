@@ -8,4 +8,4 @@ has_toc: true
 namespace: license
 permalink: /docs/license/
 ---
-{% tf license.md %}
+{% tf license/license.md %}
