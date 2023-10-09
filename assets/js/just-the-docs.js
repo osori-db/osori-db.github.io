@@ -105,8 +105,8 @@ function initSearch() {
           {% include lunr/custom-index.js %}
           this.add({
             id: i,
-            title: docs[i].title,
-            content: docs[i].content,
+            title: {% t docs[i].title %},
+            content: {% t docs[i].content %},
             {%- if site.search.rel_url != false %}
             relUrl: docs[i].relUrl
             {%- endif %}
