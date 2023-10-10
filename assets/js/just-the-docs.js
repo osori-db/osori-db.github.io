@@ -104,7 +104,6 @@ function initSearch() {
 
         for (var i in docs) {
           {% include lunr/custom-index.js %}
-          console.log('{{ title.about }}');
           this.add({
             id: i,
             title: docs[i].title,
