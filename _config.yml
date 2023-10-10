@@ -14,9 +14,8 @@ plugins:
   - jekyll-include-cache
   - jekyll-multiple-languages-plugin
 
-languages: ["en", "ko"]
+languages: ["ko", "en"]
 exclude_from_localizations: ["javascript", "images", "css"]
-defaultLang: en
 languageNames:
   en: English
   ko: 한국어
