@@ -7,4 +7,4 @@ parent: title.guide
 namespace: user-tips
 permalink: /docs/guide/user-tips/
 ---
-{% tf guide/user-tips.md %}
+{% tf user-tips.md %}

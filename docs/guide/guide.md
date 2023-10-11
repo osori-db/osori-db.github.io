@@ -8,4 +8,4 @@ has_toc: true
 namespace: guide
 permalink: /docs/guide/
 ---
-{% tf guide/guide.md %}
+{% tf guide.md %}

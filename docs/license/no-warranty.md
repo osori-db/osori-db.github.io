@@ -7,4 +7,4 @@ parent: title.license
 namespace: no-warranty
 permalink: /docs/license/no-warranty/
 ---
-{% tf license/no-warranty.md %}
+{% tf no-warranty.md %}

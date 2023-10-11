@@ -7,4 +7,4 @@ parent: title.guide
 namespace: contribution-guide
 permalink: /docs/guide/contribution-guide/
 ---
-{% tf guide/contribution-guide.md %}
+{% tf contribution-guide.md %}

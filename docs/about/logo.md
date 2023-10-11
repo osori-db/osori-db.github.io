@@ -7,4 +7,4 @@ parent: title.about
 namespace: logo
 permalink: /docs/about/logo/
 ---
-{% tf about/logo.md %}
+{% tf logo.md %}

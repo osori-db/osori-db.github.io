@@ -7,4 +7,4 @@ parent: title.license
 namespace: osori-license-and-notice
 permalink: /docs/license/osori-license-and-notice/
 ---
-{% tf license/osori-license-and-notice.md %}
+{% tf osori-license-and-notice.md %}

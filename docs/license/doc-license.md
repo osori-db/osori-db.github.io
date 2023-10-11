@@ -7,4 +7,4 @@ parent: title.license
 namespace: doc-license
 permalink: /docs/license/doc-license/
 ---
-{% tf license/doc-license.md %}
+{% tf doc-license.md %}

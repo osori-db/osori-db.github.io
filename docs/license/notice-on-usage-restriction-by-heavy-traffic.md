@@ -7,4 +7,4 @@ parent: title.license
 namespace: notice-on-usage-restriction-by-heavy-traffic
 permalink: /docs/license/notice-on-usage-restriction-by-heavy-traffic/
 ---
-{% tf license/notice-on-usage-restriction-by-heavy-traffic.md %}
+{% tf notice-on-usage-restriction-by-heavy-traffic.md %}
