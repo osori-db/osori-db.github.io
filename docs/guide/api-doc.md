@@ -7,4 +7,4 @@ parent: title.guide
 namespace: api-doc
 permalink: /docs/guide/api-doc/
 ---
-{% tf api-doc.md %}
+{% tf guide/api-doc.md %}

@@ -7,4 +7,4 @@ parent: title.about
 namespace: charter
 permalink: /docs/about/charter/
 ---
-{% tf charter.md %}
+{% tf guide/charter.md %}

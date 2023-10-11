@@ -12,10 +12,10 @@
     </div>
     <div class="header-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
-        {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+        {% capture link1 %}{{ site.baseurl_root }}/en{{ page.url}}{% endcapture %}
         <a id="kor-lang-link" href="{{ link1 }}"><i class="fa-solid fa-earth-asia mr-1"></i> {% t global.english %}</a>
         {% else %}
-        {% capture link2 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
+        {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
         <a id="eng-lang-link" href="{{ link2 }}"><i class="fa-solid fa-earth-americas mr-1"></i> {% t global.korean %}</a>
         {% endif %}
     </div>
