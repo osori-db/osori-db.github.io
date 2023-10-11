@@ -101,8 +101,8 @@ function initSearch() {
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
-          // docs[i].title = getTranslatedTitle(docs[i].title);
-          // docs[i].doc = getTranslatedTitle(docs[i].doc);
+          docs[i].title = getTranslatedTitle(docs[i].title);
+          docs[i].doc = getTranslatedTitle(docs[i].doc);
           
           {% include lunr/custom-index.js %}
           this.add({
@@ -142,7 +142,8 @@ function initSearch() {
       case 'title.members':
         return document.getElementById('title-members').value;
       case 'title.logo':
-        return document.getElementById('title-logo').value;
+        console.log(document.getElementById('title-logo-hidden').value);
+        return document.getElementById('title-logo-hidden').value;
 
       case 'title.guide':
         return document.getElementById('title-guide').value;
@@ -162,9 +163,11 @@ function initSearch() {
       case 'title.noWarranty':
         return document.getElementById('title-no-warranty').value;
       case 'title.docLicense':
-        return document.getElementById('title-doc-license').value;
+        console.log(document.getElementById('title-doc-license-hidden').value);
+        return document.getElementById('title-doc-license-hidden').value;
       case 'title.codeLicense':
-        return document.getElementById('title-code-license').value;
+        console.log(document.getElementById('title-code-license-hidden').value);
+        return document.getElementById('title-code-license-hidden').value;
       
       default:
         return title;
