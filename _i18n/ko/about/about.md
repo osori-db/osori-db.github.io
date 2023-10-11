@@ -1,44 +1,35 @@
-# 오소리 프로젝트 소개
-{: .fs-9 }
+# About : 오소리 프로젝트 소개
 
-Just the Docs는 쉽게 사용자 정의할 수 있고 GitHub 페이지에서 호스팅되는 반응형 Jekyll 테마를 사용하여 문서를 빠르게 시작할 수 있도록 해줍니다.
-{: .fs-6 .fw-300 }
+## 명칭
+오소리(OSORI;Open Source DB Integration)는 “오픈소스 소리내다!” 라는 의미를 담고 있습니다. 자발적인 기여와 협력을 통해 더 나은 오픈소스 생태계를 만들겠다는 의지를 표현하였습니다.
 
-[지금 시작하세요](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub에서 보기][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+## 목적
+오소리 프로젝트는 오픈소스 정보 데이터를 통합∙공개하여 누구나 쉽게 이를 확인할 수 있게 함으로써 보다 투명하고 신뢰성 있는 오픈소스 생태계 구축에 기여하는 것을 목적으로 합니다.
 
----
+## 비전
+- 오픈소스 정보 데이터를 효율적으로 통합하고, 지속적인 관리와 확산이 용이한 DB 스키마를 구축합니다.
+- 교차 검증을 통해 데이터의 신뢰도를 높이고, 누구나 자유롭게 활용할 수 있도록 공개합니다.
+- 누구나 쉽게 데이터를 기여할 수 있는 환경을 제공함으로써, 자발적인 기여를 통해 데이터를 확장합니다.
 
-{: .warning }
-> 이 웹사이트는 Just the Docs 테마의 현재 '기본' 분기 기능을 문서화합니다. 릴리스, 새로운 기능 및 버그 수정 목록은 변경 로그를 참조하세요.
+## 멤버 소개
+- Board Member : 삼성전자, LG전자, 카카오
+- Sponsor : 한국저작권위원회
+- 운영위원 : 홍문기, 정윤환(이상 삼성전자), 김경애, 김소임(이상 LG전자), 황은경, 김영환(이상 카카오)
+- Project Manager : 김소임(LG전자)
 
-Just the Docs는 [Jekyll]로 정적인 웹사이트를 생성하기 위한 테마입니다. [Markdown], [Liquid] 템플릿 언어 및 HTML을 사용하여 웹 페이지의 소스 파일을 작성할 수 있습니다.[^1] Jekyll은 [머리말]이 있는 모든 파일을 HTML로 변환하여 사이트를 구축합니다. [Jekyll 구성] 파일은 사용할 테마를 결정하고 홈페이지 URL과 같은 사이트의 일반 매개변수를 설정합니다.
+## 로고 소개 (TBD)
 
-Jekyll은 테마 자체를 사용하여 Just the Docs 테마 문서 웹사이트를 구축합니다. 이러한 웹 페이지는 이 테마를 사용할 때 *기본적으로* 웹 페이지가 어떻게 보이는지 보여줍니다. 하지만 테마를 쉽게 *사용자 정의*하여 완전히 다르게 보이게 만들 수 있습니다!
-
-이 테마를 사용하는 방법에 대해 자세히 알아보려면 문서를 찾아보세요.
-
-## 시작하기
-
-[Just the Docs 템플릿]은 Just the Docs 테마를 사용하여 새로운 웹 사이트를 만드는 가장 간단하고 빠르며 쉬운 방법을 제공합니다. 사이트 생성을 시작하려면 "[템플릿 사용]"을 클릭하세요!
-
-{: .note }
-테마를 사용하기 위해 [Just the Docs repo]를 복제하거나 포크할 필요는 없습니다***! 테마 문서를 로컬에서 탐색하거나, 테마 개발에 기여하거나, Just the Docs를 기반으로 새 테마를 개발하려는 경우에만 그렇게 해야 합니다.
-
-템플릿으로 생성된 사이트를 [GitHub 페이지]에 게시하도록 쉽게 설정할 수 있습니다. [템플릿 README] 파일에 그 방법과 기타 세부정보가 설명되어 있습니다.
-
-[Jekyll]이 컴퓨터에 설치되어 있으면 생성된 사이트를 *로컬에서* 빌드하고 미리 볼 수도 있습니다. 이를 통해 변경 사항을 커밋하기 전에 테스트하고 GitHub 페이지를 기다리지 않아도 됩니다.[^2] 또한 GitHub 페이지가 아닌 다른 플랫폼에 로컬 빌드를 배포할 수 있습니다.
-
-
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## 연혁
+1. 오소리 프로젝트 최초 논의
+   - 일시 및 장소 : ’22.3.16. @오픈체인 Korea Work Group
+   - 참석자 : 삼성전자, LG전자, 카카오, SKT, SK주식회사, 라인플러스, 엔씨소프트, 현대자동차, 현대오토에버, 카카오뱅크 등 국내 주요 기업 오픈소스 실무자
+2. 오소리 프로젝트 Kick-off 미팅
+   - 일시 및 장소 : ’23.1.19. @삼성전자 서울R&&D캠퍼스
+   - 참석자 : 삼성전자, LG전자, 카카오
+3. 오소리 프로젝트 업무협약 (보도자료 배포)
+   - 일시 및 장소 : ’23.4.26. @한국저작권위원회 서울사무소
+   - 참석자:문화체육관광부, 한국저작권위원회, 삼성전자, LG전자, 카카오
+4. 오소리 프로젝트 대외 발표
+   - ’23.8.31 @공유저작물 및 오픈소스SW 라이선스 콘퍼런스, 김소임/정윤환
+   - ‘23.10.11 @EOST, 정윤환
+   - ‘23.11.15 @SDC23 Korea, 김소임/김영환

@@ -1,44 +1,35 @@
-# About
-{: .fs-9 }
+# About : What is the OSORI project?
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+## Name
+OSORI (Open Source DB Integration) means "Open Source sounds!" It expresses the will to create a better open source ecosystem through voluntary contribution and collaboration.
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+## Goal
+The goal of the OSORI project is to contribute to building a more transparent and reliable open source ecosystem by integrating and disclosing open source information data (e.g. license and any restriction to use), so that anyone can easily check it out.
 
----
+## Vision
+- We build a DB schema that efficiently integrates open source information data, of which is easy to manage and distribute consistently.
+- We increase the reliability of the data through cross-validation and disclose it for its complimentary usage by anyone.
+- We expand volume of the data through voluntary contributions by providing an environment where anyone can easily contribute their data to the OSORI project, 
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See the CHANGELOG for a list of releases, new features, and bug fixes.
+## Member introduction
+- Board Members: Kakao, LG Electronics, Samsung Electronics
+- Sponsors: Korea Copyright Commission
+- Steering Committee: Eunkyung Hwang, Younghwan Kim (both from Kakao), Kyoungae Kim, Soim Kim (both from LG Electronics), Moonki Hong, Yoonhwan Jung (both from Samsung Electronics)
+- Project Manager: Soim Kim (LG Electronics)
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+## Logo introduction (TBD)
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *customize* the theme to make them look completely different!
-
-Browse the docs to learn more about how to use this theme.
-
-## Getting started
-
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
-
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
-
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
-
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## History
+1. First ever proposal of the OSORI project
+   - Date and Place: '22.3.16. @ OpenChain Korea Work Group
+   - Participants: open source delegation from companies such as Kakao, LG Electronics, Samsung Electronics, Hyundai AutoEver, Hyundai Motors, Kakao Bank, Line Plus, NCsoft, SK Holdings, SKT, etc.
+2. Kick-off meeting
+   - Date and place: '23.1.19. @ Samsung Electronics Seoul R&D Campus
+   - Participants: Kakao, LG Electronics, Samsung Electronics
+3. MOU ceremony (Press Release Distribution)
+   - Date and Place: '23.4.26. @Korea Copyright Commission Seoul Office
+   - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
+4. OSORI presentation in public
+   - '23.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
+   - '23.10.11 @ EOST, Yoonhwan Jung
+   - '23.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
