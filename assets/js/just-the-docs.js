@@ -101,41 +101,13 @@ function initSearch() {
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
-          var tempTitle = docs[i].title;
-          switch (tempTitle) {
-            case 'title.home':
-              tempTitle = document.getElementById('title-home').value;
-              break;
-            case 'title.faq':
-              tempTitle = document.getElementById('title-faq').value;
-              break;
-            case 'title.news':
-              tempTitle = document.getElementById('title-news').value;
-              break;
-            case 'title.contact':
-              tempTitle = document.getElementById('title-contact').value;
-              break;
-
-            case 'title.about':
-              tempTitle = document.getElementById('title-about').value;
-              break;
-            case 'title.motivation':
-              tempTitle = document.getElementById('title-motivation').value;
-              break;
-            case 'title.charter':
-              tempTitle = document.getElementById('title-charter').value;
-              break;
-            case 'title.members':
-              tempTitle = document.getElementById('title-members').value;
-              break;
-            case 'title.logo':
-              tempTitle = document.getElementById('title-logo').value;
-              break;
-          }
+          docs[i].title = getTranslatedTitle(docs[i].title);
+          docs[i].doc = getTranslatedTitle(docs[i].doc);
+          
           {% include lunr/custom-index.js %}
           this.add({
             id: i,
-            title: tempTitle,
+            title: docs[i].title,
             content: docs[i].content,
             {%- if site.search.rel_url != false %}
             relUrl: docs[i].relUrl
@@ -149,6 +121,39 @@ function initSearch() {
       console.log('Error loading ajax request. Request status:' + request.status);
     }
   };
+
+  function getTranslatedTitle(title) {
+    switch (title) {
+      case 'title.home':
+        tempTitle = document.getElementById('title-home').value;
+        break;
+      case 'title.faq':
+        tempTitle = document.getElementById('title-faq').value;
+        break;
+      case 'title.news':
+        tempTitle = document.getElementById('title-news').value;
+        break;
+      case 'title.contact':
+        tempTitle = document.getElementById('title-contact').value;
+        break;
+
+      case 'title.about':
+        tempTitle = document.getElementById('title-about').value;
+        break;
+      case 'title.motivation':
+        tempTitle = document.getElementById('title-motivation').value;
+        break;
+      case 'title.charter':
+        tempTitle = document.getElementById('title-charter').value;
+        break;
+      case 'title.members':
+        tempTitle = document.getElementById('title-members').value;
+        break;
+      case 'title.logo':
+        tempTitle = document.getElementById('title-logo').value;
+        break;
+    }
+  }
 
   request.onerror = function(){
     console.log('There was a connection error');
