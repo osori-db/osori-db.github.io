@@ -125,33 +125,27 @@ function initSearch() {
   function getTranslatedTitle(title) {
     switch (title) {
       case 'title.home':
-        tempTitle = document.getElementById('title-home').value;
-        break;
+        return document.getElementById('title-home').value;
       case 'title.faq':
-        tempTitle = document.getElementById('title-faq').value;
-        break;
+        return document.getElementById('title-faq').value;
       case 'title.news':
-        tempTitle = document.getElementById('title-news').value;
-        break;
+        return document.getElementById('title-news').value;
       case 'title.contact':
-        tempTitle = document.getElementById('title-contact').value;
-        break;
+        return document.getElementById('title-contact').value;
 
       case 'title.about':
-        tempTitle = document.getElementById('title-about').value;
-        break;
+        return document.getElementById('title-about').value;
       case 'title.motivation':
-        tempTitle = document.getElementById('title-motivation').value;
-        break;
+        return document.getElementById('title-motivation').value;
       case 'title.charter':
-        tempTitle = document.getElementById('title-charter').value;
-        break;
+        return document.getElementById('title-charter').value;
       case 'title.members':
-        tempTitle = document.getElementById('title-members').value;
-        break;
+        return document.getElementById('title-members').value;
       case 'title.logo':
-        tempTitle = document.getElementById('title-logo').value;
-        break;
+        return document.getElementById('title-logo').value;
+      
+      default:
+        return title;
     }
   }
 
