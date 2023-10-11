@@ -161,9 +161,9 @@ function initSearch() {
       case 'title.noWarranty':
         return document.getElementById('title-no-warranty').value;
       case 'title.docLicense':
-        return document.getElementById('title-doc-license-hidden').value;
+        return document.getElementById('title-doc-license').value;
       case 'title.codeLicense':
-        return document.getElementById('title-code-license-hidden').value;
+        return document.getElementById('title-code-license').value;
       
       default:
         return title;
