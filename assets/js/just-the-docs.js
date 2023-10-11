@@ -88,13 +88,11 @@ function initSearch() {
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
-      console.log(docs)
-
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
-        this.ref('id');
         this.use(lunr.multiLanguage('en', 'ko'));
+        this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
         {%- if site.search.rel_url != false %}
