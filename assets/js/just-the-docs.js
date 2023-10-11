@@ -115,7 +115,6 @@ function initSearch() {
           });
         }
       });
-      console.log(docs);
       searchLoaded(index, docs);
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
@@ -142,8 +141,7 @@ function initSearch() {
       case 'title.members':
         return document.getElementById('title-members').value;
       case 'title.logo':
-        console.log(document.getElementById('title-logo-hidden').value);
-        return document.getElementById('title-logo-hidden').value;
+        return document.getElementById('title-logo').value;
 
       case 'title.guide':
         return document.getElementById('title-guide').value;
@@ -163,10 +161,8 @@ function initSearch() {
       case 'title.noWarranty':
         return document.getElementById('title-no-warranty').value;
       case 'title.docLicense':
-        console.log(document.getElementById('title-doc-license-hidden').value);
         return document.getElementById('title-doc-license-hidden').value;
       case 'title.codeLicense':
-        console.log(document.getElementById('title-code-license-hidden').value);
         return document.getElementById('title-code-license-hidden').value;
       
       default:
