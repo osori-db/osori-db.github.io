@@ -14,14 +14,15 @@ plugins:
   - jekyll-include-cache
   - jekyll-multiple-languages-plugin
 
-languages: ["en", "ko"]
+languages: ["ko", "en"]
 exclude_from_localizations: ["javascript", "images", "css"]
 languageNames:
-  en: English
   ko: 한국어
+  en: English
+  
 isoLanguageCodes:
-  en: en_US
   ko: ko
+  en: en_US
 
 permalink: pretty
 

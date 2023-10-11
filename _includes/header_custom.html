@@ -3,35 +3,35 @@
         <button class="change-language-btn shared-language-btn" onclick="showLanguageOptions()">
             <i class="fa-solid fa-globe pr-2"></i>
             {% if site.lang == site.languages[0] %}
-            {{ site.languageNames.en }}
-            {% else %}
             {{ site.languageNames.ko }}
+            {% else %}
+            {{ site.languageNames.en }}
             {% endif %}
         </button>
         <i class="change-language-btn fa-solid fa-chevron-down pl-3 chevron-icon" onclick="showLanguageOptions()"></i>
     </div>
     <div class="header-dropdown-content" id="language-dropdown">
         {% if site.lang == site.languages[0] %}
-        {% capture link1 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
-        <a id="kor-lang-link" href="{{ link1 }}"><i class="fa-solid fa-earth-asia mr-1"></i> {% t global.korean %}</a>
+        {% capture link1 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
+        <a id="kor-lang-link" href="{{ link1 }}"><i class="fa-solid fa-earth-asia mr-1"></i> {% t global.english %}</a>
         {% else %}
-        {% capture link2 %}{{ site.baseurl_root }}{{ page.url}}{% endcapture %}
-        <a id="eng-lang-link" href="{{ link2 }}"><i class="fa-solid fa-earth-americas mr-1"></i> {% t global.english %}</a>
+        {% capture link2 %}{{ site.baseurl_root }}/ko{{ page.url}}{% endcapture %}
+        <a id="eng-lang-link" href="{{ link2 }}"><i class="fa-solid fa-earth-americas mr-1"></i> {% t global.korean %}</a>
         {% endif %}
     </div>
 </div>
 
 <script>
-    // function showLanguageOptions() {
-    //     document.getElementById("language-dropdown").classList.toggle("show");
-    // }
+    function showLanguageOptions() {
+        document.getElementById("language-dropdown").classList.toggle("show");
+    }
 
-    // window.onclick = function (e) {
-    //     if (!e.target.matches('.change-language-btn')) {
-    //         var languageDropdown = document.getElementById("language-dropdown");
-    //         if (languageDropdown.classList.contains('show')) {
-    //             languageDropdown.classList.remove('show');
-    //         }
-    //     }
-    // }
+    window.onclick = function (e) {
+        if (!e.target.matches('.change-language-btn')) {
+            var languageDropdown = document.getElementById("language-dropdown");
+            if (languageDropdown.classList.contains('show')) {
+                languageDropdown.classList.remove('show');
+            }
+        }
+    }
 </script>
