@@ -115,7 +115,7 @@ function initSearch() {
           });
         }
       });
-
+      console.log(docs);
       searchLoaded(index, docs);
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
