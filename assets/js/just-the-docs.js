@@ -101,8 +101,8 @@ function initSearch() {
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
-          docs[i].title = getTranslatedTitle(docs[i].title);
-          docs[i].doc = getTranslatedTitle(docs[i].doc);
+          // docs[i].title = getTranslatedTitle(docs[i].title);
+          // docs[i].doc = getTranslatedTitle(docs[i].doc);
           
           {% include lunr/custom-index.js %}
           this.add({
