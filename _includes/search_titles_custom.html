@@ -1,3 +1,6 @@
+<input type="hidden" id="is-search-enabled" name="is-search-enabled" value="{{ site.search_enabled }}" />
+
+{% if site.search_enabled != false %}
 <input type="hidden" id="title-home" name="title-home" value="{% t title.home %}" />
 <input type="hidden" id="title-faq" name="title-faq" value="{% t title.faq %}" />
 <input type="hidden" id="title-news" name="title-news" value="{% t title.news %}" />
@@ -24,3 +27,4 @@
 <input type="hidden" id="title-no-warranty" name="title-no-warranty" value="{% t title.noWarranty %}" />
 <input type="hidden" id="title-doc-license" name="title-doc-license" value="{% t title.docLicense %}" />
 <input type="hidden" id="title-code-license" name="title-code-license" value="{% t title.codeLicense %}" />
+{% endif %}
