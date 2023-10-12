@@ -1,19 +1,14 @@
-jtd.onReady(function() {
+jtd.onReady(function () {
     var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
 
     if (isSearchEnabled) {
-        var request = new XMLHttpRequest();
-        request.open('GET', '{{ "assets/js/search-data-eng.json" | relative_url }}', true);
+        fetch('./search-data-eng.json')
+            .then(res => res.json)
+            .then(data => console.log(data));
 
-        request.onload = function () {
-            console.log(request)
-            if (request.status >= 200 && request.status < 400) {
-                var docs = JSON.parse(request.responseText);
-                console.log('docs', docs);
-            } else {
-                console.log('Error loading ajax request. Request status:' + request.status);
-            }
-        };
+        fetch('./search-data.json')
+            .then(res => res.json)
+            .then(data => console.log(data));
 
         if (window.location.href.includes('/en/')) {
             console.log(getTranslatedTitle('title.about'));
