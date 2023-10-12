@@ -1,5 +1,5 @@
 name: OSS Contribution
-description: OSS Information Contribution to OSORI
+description: Add or Modify OSS Information to OSORI
 labels: ["oss", "review required"]
 body:
   - type: markdown
