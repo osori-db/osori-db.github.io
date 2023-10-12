@@ -13,7 +13,7 @@ jtd.onReady(function () {
         })
             .then(res => res.json())
             .then(docs => {
-                const defaultTokenizerSeparator = "/[\s\-/]+/";
+                const defaultTokenizerSeparator = /[\s\-/]+/;
                 var siteTokenizerSeparator = document.getElementById('search-tokenizer-separator').value;
                 if (siteTokenizerSeparator) {
                     lunr.tokenizer.separator = siteTokenizerSeparator;
