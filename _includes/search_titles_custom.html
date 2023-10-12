@@ -1,6 +1,7 @@
 <input type="hidden" id="is-search-enabled" name="is-search-enabled" value="{{ site.search_enabled }}" />
 <input type="hidden" id="is-search-rel-url" name="is-search-rel-url" value="{{ site.search.rel_url }}" />
 <input type="hidden" id="search-tokenizer-separator" name="search-tokenizer-separator" value="{{ site.search.tokenizer_separator }}" />
+<input type="hidden" id="site-variable" name="site-variable" value="{{ site }}" />
 
 {% if site.search_enabled != false %}
 <input type="hidden" id="title-home" name="title-home" value="{% t title.home %}" />

@@ -3,7 +3,7 @@ jtd.onReady(function() {
 
     if (isSearchEnabled) {
         var request = new XMLHttpRequest();
-        request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
+        request.open('GET', '{{ "assets/js/search-data-eng.json" | relative_url }}', true);
 
         request.onload = function () {
             console.log(request)
