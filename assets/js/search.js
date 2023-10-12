@@ -5,9 +5,15 @@ jtd.onReady(function () {
         var baseurl = document.getElementById('baseurl').value;
         var currentDirectory = '/assets/js/';
 
-        fetch(`${baseurl}${currentDirectory}search-data.json`)
-            .then(res => res.json)
+        fetch(`${baseurl}${currentDirectory}search-data.json`, {
+            method: 'GET',
+            headers: {
+                'Accept': 'application/json',
+            }
+        })
+            .then(res => res.json())
             .then(data => {
+                console.log(data);
                 var docs = JSON.parse(data);
 
                 const defaultTokenizerSeparator = "/[\s\-/]+/";
