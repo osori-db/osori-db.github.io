@@ -42,3 +42,5 @@ callouts:
   warning:
     title: Warning
     color: red
+
+search_enabled: true
