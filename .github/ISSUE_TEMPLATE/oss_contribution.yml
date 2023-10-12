@@ -1,0 +1,103 @@
+name: OSS Contribution
+description: OSS Information Contribution to OSORI
+labels: ["oss", "review required"]
+body:
+  - type: markdown
+    id: greeting
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form!
+        
+# OSS
+  - type: input
+    id: oss_master-name
+    attributes:
+      label: Name
+      placeholder: osori-db.github.io
+    validations:
+      required: true
+  - type: input
+    id: oss_master-download_location
+    attributes:
+      label: Download Location
+      placeholder: https://github.com/osori-db/osori-db.github.io
+    validations:
+      required: true
+  - type: input
+    id: oss_master-homepage
+    attributes:
+      label: Homepage
+      placeholder: https://osori-db.github.io/
+    validations:
+      required: false
+  - type: input
+    id: oss_master-publisher
+    attributes:
+      label: Publisher
+    validations:
+      required: false
+  - type: textarea
+    id: oss_master-description
+    attributes:
+      label: Project Description      
+    validations:
+      required: false
+  - type: textarea
+    id: oss_master-compliance_notice
+    attributes:
+      label: Compliance Notice
+    validations:
+      required: false
+  - type: textarea
+    id: oss_master-compliance_notice_ko
+    attributes:
+      label: Compliance Notice in Korean
+    validations:
+      required: false
+  - type: textarea
+    id: oss_master-attribution
+    attributes:
+      label: Attribution
+    validations:
+      required: false
+
+# OSV 
+  - type: input
+    id: oss_version-version
+    attributes:
+      label: Version
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: textarea
+    id: oss_version-description
+    attributes:
+      label: Version Description      
+    validations:
+      required: false
+  - type: textarea
+    id: oss_version-description_ko
+    attributes:
+      label: Version Description in Korean
+    validations:
+      required: false
+  - type: textarea
+    id: oss_version-attribution
+    attributes:
+      label: Version Attribution
+    validations:
+      required: false
+  - type: input
+    id: oss_version-license_combination
+    attributes:
+      label: License Combination
+      placeholder: AND
+    validations:
+      required: false
+  - type: input
+    id: oss_version-release_date
+    attributes:
+      label: "Release Date"
+      placeholder: "2023-11-01"
+    validations:
+      required: false
