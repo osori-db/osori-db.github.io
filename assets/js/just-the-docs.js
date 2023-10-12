@@ -89,6 +89,7 @@ function initSearch() {
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
+      console.log('tokenizer separator', lunr.tokenizer.separator);
 
       var index = lunr(function(){
         this.use(lunr.multiLanguage('en', 'ko'));

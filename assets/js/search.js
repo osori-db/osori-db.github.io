@@ -1,6 +1,5 @@
 window.onload = (event) => {
     console.log(document.getElementById('is-search-enabled').value);
-    console.log('{{ site.search_enabled }}');
 
     if (window.location.href.includes('/eng/')) {
         console.log(getTranslatedTitle('title.about'));
