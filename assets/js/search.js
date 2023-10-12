@@ -1,18 +1,20 @@
 window.onload = (event) => {
     var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
-    console.log('isSearchEnabled', isSearchEnabled);
 
     if (isSearchEnabled) {
         var request = new XMLHttpRequest();
         request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
 
         request.onload = function () {
+            console.log(request)
             if (request.status >= 200 && request.status < 400) {
                 var docs = JSON.parse(request.responseText);
                 console.log('docs', docs);
+            } else {
+                console.log('Error loading ajax request. Request status:' + request.status);
             }
         };
-        
+
         if (window.location.href.includes('/eng/')) {
             console.log(getTranslatedTitle('title.about'));
             console.log('English')
