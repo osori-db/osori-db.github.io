@@ -85,12 +85,6 @@ function initSearch() {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
 
-  if (window.location.href.includes('/eng/')) {
-    console.log('English')
-  } else {
-    console.log('Korean')
-  }
-
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
@@ -181,10 +175,6 @@ function getTranslatedTitle(title) {
     default:
       return title;
   }
-}
-
-function initSearchEng() {
-  console.log('initSearchEng');
 }
 
 function searchLoaded(index, docs) {
@@ -579,12 +569,7 @@ function activateNav() {
 jtd.onReady(function(){
   initNav();
   {%- if site.search_enabled != false %}
-  if (window.location.href.includes('/eng/')) {
-    initSearchEng();
-  } else {
-    console.log('initSearch')
-    initSearch();
-  }
+  initSearch();
   {%- endif %}
   activateNav();
   scrollNav();

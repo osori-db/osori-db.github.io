@@ -1,0 +1,1 @@
+console.log('Search JS is found');
