@@ -2,11 +2,14 @@ jtd.onReady(function () {
     var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
 
     if (isSearchEnabled) {
-        fetch('./search-data-eng.json')
+        var baseurl = document.getElementById('baseurl').value;
+        var currentDirectory = '/assets/js/';
+
+        fetch(`${baseurl}${currentDirectory}search-data-eng.json`)
             .then(res => res.json)
             .then(data => console.log(data));
 
-        fetch('./search-data.json')
+        fetch(`${baseurl}${currentDirectory}search-data.json`)
             .then(res => res.json)
             .then(data => console.log(data));
 
