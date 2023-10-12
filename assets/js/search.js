@@ -1,4 +1,4 @@
-window.onload = (event) => {
+jtd.onReady(function() {
     var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
 
     if (isSearchEnabled) {
@@ -15,7 +15,7 @@ window.onload = (event) => {
             }
         };
 
-        if (window.location.href.includes('/eng/')) {
+        if (window.location.href.includes('/en/')) {
             console.log(getTranslatedTitle('title.about'));
             console.log('English')
         } else {
@@ -72,4 +72,4 @@ window.onload = (event) => {
             }
         }
     }
-};
+});
