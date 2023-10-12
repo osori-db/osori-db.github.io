@@ -103,7 +103,12 @@ main+hr {
     color: #ffffff !important;
     text-align: center;
     text-decoration: none;
+
+    &:hover, &:focus {
+        color: #00efff !important;
+    }
 }
+
 
 .homepage-header-logo {
     width: 130px !important;
