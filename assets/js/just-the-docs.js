@@ -114,6 +114,9 @@ function initSearch() {
             {%- endif %}
           });
         }
+
+        console.log('just-the-docs.js', index);
+        console.log('just-the-docs.js', docs);
       });
       searchLoaded(index, docs);
     } else {

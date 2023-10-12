@@ -5,13 +5,51 @@ jtd.onReady(function () {
         var baseurl = document.getElementById('baseurl').value;
         var currentDirectory = '/assets/js/';
 
-        fetch(`${baseurl}${currentDirectory}search-data-eng.json`)
-            .then(res => res.json)
-            .then(data => console.log(data));
-
         fetch(`${baseurl}${currentDirectory}search-data.json`)
             .then(res => res.json)
-            .then(data => console.log(data));
+            .then(data => {
+                var docs = JSON.parse(data);
+
+                const defaultTokenizerSeparator = "/[\s\-/]+/";
+                var siteTokenizerSeparator = document.getElementById('search-tokenizer-separator').value;
+                if (siteTokenizerSeparator) {
+                    lunr.tokenizer.separator = siteTokenizerSeparator;
+                }
+                else {
+                    lunr.tokenizer.separator = defaultTokenizerSeparator;
+                }
+
+                var index = lunr(function () {
+                    var siteIsSearchRelUrl = document.getElementById('is-search-rel-url').value;
+
+                    this.use(lunr.multiLanguage('en', 'ko'));
+                    this.ref('id');
+                    this.field('title', { boost: 200 });
+                    this.field('content', { boost: 2 });
+                    if (siteIsSearchRelUrl != false) {
+                        this.field('relUrl');
+                    }
+                    this.metadataWhitelist = ['position']
+
+                    for (var i in docs) {
+                        docs[i].title = getTranslatedTitle(docs[i].title);
+                        docs[i].doc = getTranslatedTitle(docs[i].doc);
+
+                        var tempRecord = {
+                            id: i,
+                            title: docs[i].title,
+                            content: docs[i].content,
+                        }
+                        if (siteIsSearchRelUrl != false) {
+                            tempRecord.relUrl = docs[i].relUrl;
+                        }
+                        this.add(tempRecord);
+                    }
+                });
+
+                console.log('search.js', index);
+                console.log('search.js', docs);
+            });
 
         if (window.location.href.includes('/en/')) {
             console.log(getTranslatedTitle('title.about'));
