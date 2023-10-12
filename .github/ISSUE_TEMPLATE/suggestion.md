@@ -2,7 +2,7 @@
 name: Suggestion
 about: Suggest new features or an idea for OSORI
 title: ''
-labels: review required
+labels: suggestion, review required
 assignees: ''
 
 ---

@@ -1,6 +1,6 @@
-name: OSS Contribution
-description: Add or Modify OSS Information to OSORI
-labels: ["oss", "review required"]
+name: Data Contribution
+description: Add or Modify OSS Data Information to OSORI
+labels: ["data contribution", "review required"]
 body:
   - type: markdown
     id: greeting
