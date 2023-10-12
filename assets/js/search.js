@@ -12,10 +12,7 @@ jtd.onReady(function () {
             }
         })
             .then(res => res.json())
-            .then(data => {
-                console.log(data);
-                var docs = JSON.parse(data);
-
+            .then(docs => {
                 const defaultTokenizerSeparator = "/[\s\-/]+/";
                 var siteTokenizerSeparator = document.getElementById('search-tokenizer-separator').value;
                 if (siteTokenizerSeparator) {
@@ -52,17 +49,28 @@ jtd.onReady(function () {
                         this.add(tempRecord);
                     }
                 });
+                searchLoaded(index, docs);
 
                 console.log('search.js', index);
                 console.log('search.js', docs);
             });
 
-        if (window.location.href.includes('/en/')) {
-            console.log(getTranslatedTitle('title.about'));
-            console.log('English')
-        } else {
-            console.log(getTranslatedTitle('title.about'));
-            console.log('Korean')
+        function searchLoaded(index, docs) {
+            var index = index;
+            var docs = docs;
+            var searchInput = document.getElementById('search-input');
+            var searchResults = document.getElementById('search-results');
+            var mainHeader = document.getElementById('main-header');
+            var currentInput;
+            var currentSearchIndex = 0;
+
+            function showSearch() {
+                document.documentElement.classList.add('search-active');
+            }
+
+            function hideSearch() {
+                document.documentElement.classList.remove('search-active');
+            }
         }
 
         function getTranslatedTitle(title) {
