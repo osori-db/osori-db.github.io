@@ -114,6 +114,7 @@ jtd.initSearch = function(document, baseurl) {
         for (var i in docs) {
           docs[i].title = getTranslatedTitle(docs[i].title);
           docs[i].doc = getTranslatedTitle(docs[i].doc);
+          docs[i].relUrl = `${baseurl}${docs[i].relUrl}`;
           
           {% include lunr/custom-index.js %}
           this.add({
@@ -121,7 +122,7 @@ jtd.initSearch = function(document, baseurl) {
             title: docs[i].title,
             content: docs[i].content,
             {%- if site.search.rel_url != false %}
-            relUrl: `${baseurl}${docs[i].relUrl}`
+            relUrl: docs[i].relUrl
             {%- endif %}
           });
         }
