@@ -130,7 +130,7 @@ function initSearch() {
   request.send();
 }
 
-function getTranslatedTitle(title) {
+jtd.getTranslatedTitle(title) {
   switch (title) {
     case 'title.home':
       return document.getElementById('title-home').value;
@@ -628,7 +628,7 @@ jtd.onReady(function(){
 
 window.onload = (event) => {
   console.log(document.getElementById('baseurl').value);
-  console.log(window.jtd.getTranslatedTitle('title.faq'));
+  console.log(jtd.getTranslatedTitle('title.faq'));
 }
 
 {% include js/custom.js %}
