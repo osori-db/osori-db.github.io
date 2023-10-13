@@ -1,4 +1,6 @@
-
+window.onload = function() {
+    window.consoleLog();
+};
 // function initSearch() {
 //     var baseurl = document.getElementById('baseurl').value;
 //     var currentDirectory = '/assets/js/';

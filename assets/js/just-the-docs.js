@@ -566,7 +566,7 @@ function activateNav() {
   }
 }
 
-window.onload = (event) => {
+window.consoleLog = function() {
   var baseurl = document.getElementById('baseurl').value;
   if (baseurl.includes('/en/')) {
     console.log('english')
