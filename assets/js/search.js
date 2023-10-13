@@ -310,7 +310,7 @@ jtd.onReady(function () {
                         }
                     }
 
-                    if (siteIsSearchRelUrl) {
+                    if (siteIsSearchRelUrl != false) {
                         var resultRelUrl = document.createElement('span');
                         resultRelUrl.classList.add('search-result-rel-url');
                         resultRelUrl.innerText = doc.relUrl;
