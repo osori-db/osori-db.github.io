@@ -566,6 +566,15 @@ function activateNav() {
   }
 }
 
+window.onload = (event) => {
+  var baseurl = document.getElementById('baseurl').value;
+  if (baseurl.includes('/en/')) {
+    console.log('english')
+  } else {
+    console.log('korean')
+  }
+};
+
 // Document ready
 
 jtd.onReady(function(){
