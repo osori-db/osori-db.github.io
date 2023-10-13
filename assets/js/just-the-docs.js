@@ -81,9 +81,13 @@ function disableHeadStyleSheet() {
 {%- if site.search_enabled != false %}
 // Site search
 
-function initSearch() {
+jtd.initSearch = function(file) {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
+
+  if (file) {
+    console.log(file);
+  }
 
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
@@ -101,8 +105,8 @@ function initSearch() {
         this.metadataWhitelist = ['position']
 
         for (var i in docs) {
-          docs[i].title = jtd.getTranslatedTitle(docs[i].title);
-          docs[i].doc = jtd.getTranslatedTitle(docs[i].doc);
+          docs[i].title = getTranslatedTitle(docs[i].title);
+          docs[i].doc = getTranslatedTitle(docs[i].doc);
           
           {% include lunr/custom-index.js %}
           this.add({
@@ -130,7 +134,7 @@ function initSearch() {
   request.send();
 }
 
-jtd.getTranslatedTitle = function(title) {
+function getTranslatedTitle(title) {
   switch (title) {
     case 'title.home':
       return document.getElementById('title-home').value;
@@ -571,7 +575,7 @@ function activateNav() {
 jtd.onReady(function(){
   initNav();
   {%- if site.search_enabled != false %}
-  initSearch();
+  jtd.initSearch();
   {%- endif %}
   activateNav();
   scrollNav();
@@ -627,8 +631,9 @@ jtd.onReady(function(){
 })(window.jtd = window.jtd || {});
 
 window.onload = (event) => {
-  console.log(document.getElementById('baseurl').value);
-  console.log(jtd.getTranslatedTitle('title.faq'));
+  var baseurl = document.getElementById('baseurl').value;
+  var currentDirectory = '/assets/js/';
+  jtd.initSearch(`${baseurl}${currentDirectory}search-data.json`)
 }
 
 {% include js/custom.js %}
