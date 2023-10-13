@@ -1,5 +1,11 @@
-window.onload = function() {
+window.onload = function () {
     window.consoleLog();
+    var baseurl = document.getElementById('baseurl').value;
+    if (baseurl.includes('/en/')) {
+        console.log('ENG')
+    } else {
+        console.log('KOR')
+    }
 };
 // function initSearch() {
 //     var baseurl = document.getElementById('baseurl').value;
