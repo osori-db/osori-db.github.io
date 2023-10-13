@@ -81,7 +81,7 @@ function disableHeadStyleSheet() {
 {%- if site.search_enabled != false %}
 // Site search
 
-jtd.initSearch = function(document) {
+jtd.initSearch = function(document, baseurl) {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
 
@@ -95,7 +95,9 @@ jtd.initSearch = function(document) {
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
-        this.use(lunr.multiLanguage('en', 'ko'));
+        if (!baseurl.includes('en')) {
+          this.use(lunr.multiLanguage('en', 'ko'));
+        }
         this.ref('id');
         this.field('title', { boost: 200 });
         this.field('content', { boost: 2 });
@@ -114,7 +116,7 @@ jtd.initSearch = function(document) {
             title: docs[i].title,
             content: docs[i].content,
             {%- if site.search.rel_url != false %}
-            relUrl: docs[i].relUrl
+            relUrl: `${baseurl}${docs[i].relUrl}`
             {%- endif %}
           });
         }
@@ -641,7 +643,7 @@ window.onload = (event) => {
     })
     .then(res => res.json())
     .then(docs => {
-        jtd.initSearch(docs);
+        jtd.initSearch(docs, baseurl);
     });
   }
 }
