@@ -81,12 +81,12 @@ function disableHeadStyleSheet() {
 {%- if site.search_enabled != false %}
 // Site search
 
-jtd.initSearch = function(file) {
+jtd.initSearch = function(document) {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
 
-  if (file) {
-    console.log(file);
+  if (document) {
+    console.log('document', document);
   }
 
   request.onload = function(){
@@ -633,7 +633,17 @@ jtd.onReady(function(){
 window.onload = (event) => {
   var baseurl = document.getElementById('baseurl').value;
   var currentDirectory = '/assets/js/';
-  jtd.initSearch(`${baseurl}${currentDirectory}search-data.json`)
+  fetch(`${baseurl}${currentDirectory}search-data.json`, {
+    method: 'GET',
+    headers: {
+        'Accept': 'application/json',
+    }
+  })
+    .then(res => res.json())
+    .then(docs => {
+        console.log(docs)
+        jtd.initSearch(docs);
+    });
 }
 
 {% include js/custom.js %}
