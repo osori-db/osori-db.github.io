@@ -72,6 +72,7 @@ jtd.onReady(function () {
             }
 
             function update() {
+                console.log('updated method called')
                 currentSearchIndex++;
 
                 var input = searchInput.value;
@@ -316,7 +317,93 @@ jtd.onReady(function () {
                         resultTitle.appendChild(resultRelUrl);
                     }
                 }
+
+                function addHighlightedText(parent, text, start, end, positions) {
+                    var index = start;
+                    for (var i in positions) {
+                        var position = positions[i];
+                        var span = document.createElement('span');
+                        span.innerHTML = text.substring(index, position[0]);
+                        parent.appendChild(span);
+                        index = position[0] + position[1];
+                        var highlight = document.createElement('span');
+                        highlight.classList.add('search-result-highlight');
+                        highlight.innerHTML = text.substring(position[0], index);
+                        parent.appendChild(highlight);
+                    }
+                    var span = document.createElement('span');
+                    span.innerHTML = text.substring(index, end);
+                    parent.appendChild(span);
+                }
             }
+
+            jtd.addEvent(searchInput, 'focus', function(){
+                setTimeout(update, 0);
+              });
+            
+              jtd.addEvent(searchInput, 'keyup', function(e){
+                switch (e.keyCode) {
+                  case 27: // When esc key is pressed, hide the results and clear the field
+                    searchInput.value = '';
+                    break;
+                  case 38: // arrow up
+                  case 40: // arrow down
+                  case 13: // enter
+                    e.preventDefault();
+                    return;
+                }
+                update();
+              });
+            
+              jtd.addEvent(searchInput, 'keydown', function(e){
+                switch (e.keyCode) {
+                  case 38: // arrow up
+                    e.preventDefault();
+                    var active = document.querySelector('.search-result.active');
+                    if (active) {
+                      active.classList.remove('active');
+                      if (active.parentElement.previousSibling) {
+                        var previous = active.parentElement.previousSibling.querySelector('.search-result');
+                        previous.classList.add('active');
+                      }
+                    }
+                    return;
+                  case 40: // arrow down
+                    e.preventDefault();
+                    var active = document.querySelector('.search-result.active');
+                    if (active) {
+                      if (active.parentElement.nextSibling) {
+                        var next = active.parentElement.nextSibling.querySelector('.search-result');
+                        active.classList.remove('active');
+                        next.classList.add('active');
+                      }
+                    } else {
+                      var next = document.querySelector('.search-result');
+                      if (next) {
+                        next.classList.add('active');
+                      }
+                    }
+                    return;
+                  case 13: // enter
+                    e.preventDefault();
+                    var active = document.querySelector('.search-result.active');
+                    if (active) {
+                      active.click();
+                    } else {
+                      var first = document.querySelector('.search-result');
+                      if (first) {
+                        first.click();
+                      }
+                    }
+                    return;
+                }
+              });
+            
+              jtd.addEvent(document, 'click', function(e){
+                if (e.target != searchInput) {
+                  hideSearch();
+                }
+              });
         }
 
         function getTranslatedTitle(title) {
