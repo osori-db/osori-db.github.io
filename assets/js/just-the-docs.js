@@ -626,4 +626,6 @@ jtd.onReady(function(){
 
 })(window.jtd = window.jtd || {});
 
+console.log(document.getElementById('baseurl').value)
+
 {% include js/custom.js %}
