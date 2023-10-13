@@ -90,34 +90,10 @@ function initSearch() {
       var docs = JSON.parse(request.responseText);
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
-      var index = lunr(function(){
-        this.use(lunr.multiLanguage('en', 'ko'));
-        this.ref('id');
-        this.field('title', { boost: 200 });
-        this.field('content', { boost: 2 });
-        {%- if site.search.rel_url != false %}
-        this.field('relUrl');
-        {%- endif %}
-        this.metadataWhitelist = ['position']
-
-        for (var i in docs) {
-          docs[i].title = getTranslatedTitle(docs[i].title);
-          docs[i].doc = getTranslatedTitle(docs[i].doc);
-          
-          {% include lunr/custom-index.js %}
-          this.add({
-            id: i,
-            title: docs[i].title,
-            content: docs[i].content,
-            {%- if site.search.rel_url != false %}
-            relUrl: docs[i].relUrl
-            {%- endif %}
-          });
-        }
-      });
+      var index = {};
       console.log('just-the-docs.js', index);
       console.log('just-the-docs.js', docs);
-      searchLoaded(index, docs);
+      // searchLoaded(index, docs);
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
     }
@@ -563,15 +539,6 @@ function activateNav() {
       target.classList.toggle('active', true);
       target = target.parentNode;
     }
-  }
-}
-
-function consoleLog() {
-  var baseurl = document.getElementById('baseurl').value;
-  if (baseurl.includes('/en/')) {
-    console.log('english')
-  } else {
-    console.log('korean')
   }
 }
 
