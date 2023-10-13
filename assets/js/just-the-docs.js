@@ -127,7 +127,6 @@ jtd.initSearch = function(document, baseurl) {
           });
         }
       });
-      console.log('finalized docs', docs);
       searchLoaded(index, docs);
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);

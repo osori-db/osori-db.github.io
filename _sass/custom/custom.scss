@@ -320,10 +320,36 @@ main+hr {
 @media (min-width: 66.5rem) and (max-width: 75rem) {
     .main {
         max-width: calc(100vw - 27rem);
-        margin-left: 23rem;
+        margin-left: 23.5rem;
     }
 
     .side-bar {
-        min-width: 18.5rem;
+        min-width: 19.5rem;
+    }
+}
+
+@media (min-width: 50rem) and (max-width: 66.438rem) {
+    .main {
+        max-width: calc(100vw - 20rem);
+        margin-left: 17.5rem;
+    }
+}
+
+@media (max-width: 49.938rem) {
+    .main {
+        width: 100%;
+    }
+
+    .main-content-wrap {
+        width: 100%;
+        padding: 0.938rem 1.875rem 0px 1.875rem !important;
+    }
+
+    .main-header {
+        margin: 0.625rem;
+    }
+
+    .site-nav {
+        padding-top: 0.938rem;
     }
 }
