@@ -320,6 +320,7 @@ main+hr {
 @media (min-width: 66.5rem) and (max-width: 75rem) {
     .main {
         max-width: calc(100vw - 27rem);
+        margin-left: 23rem;
     }
 
     .side-bar {

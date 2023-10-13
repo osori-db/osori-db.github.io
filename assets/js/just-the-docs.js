@@ -94,7 +94,7 @@ jtd.initSearch = function(document, baseurl) {
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
-        if (!baseurl.includes('en')) {
+        if (!baseurl.includes('/en')) {
           this.use(lunr.multiLanguage('en', 'ko'));
         } else {
           this.use(lunr.multiLanguage('en'));
@@ -112,7 +112,7 @@ jtd.initSearch = function(document, baseurl) {
           docs[i].doc = getTranslatedTitle(docs[i].doc);
           docs[i].relUrl = `${baseurl}${docs[i].relUrl}`;
 
-          if (baseurl.includes('en') && !docs[i].url.includes('en')) {
+          if (baseurl.includes('/en') && !docs[i].url.includes('/en')) {
             docs[i].url = `/en${docs[i].url}`;
           }
           
