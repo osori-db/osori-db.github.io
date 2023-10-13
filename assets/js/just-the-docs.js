@@ -95,8 +95,13 @@ jtd.initSearch = function(document, baseurl) {
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
+        console.log(baseurl)
         if (!baseurl.includes('en')) {
+          console.log('English & Korean');
           this.use(lunr.multiLanguage('en', 'ko'));
+        } else {
+          console.log('English only');
+          this.use(lunr.en);
         }
         this.ref('id');
         this.field('title', { boost: 200 });
