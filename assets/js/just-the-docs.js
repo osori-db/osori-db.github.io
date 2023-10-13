@@ -628,7 +628,7 @@ jtd.onReady(function(){
 
 window.onload = (event) => {
   console.log(document.getElementById('baseurl').value);
-  console.log(getTranslatedTitle('title.faq'));
+  console.log(window.jtd.getTranslatedTitle('title.faq'));
 }
 
 {% include js/custom.js %}

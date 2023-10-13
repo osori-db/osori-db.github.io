@@ -1,3 +1,3 @@
 window.onload = (event) => {
-    console.log(getTranslatedTitle('title.about'));
+    console.log(window.jtd.getTranslatedTitle('title.about'));
   }
