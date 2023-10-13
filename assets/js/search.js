@@ -453,8 +453,5 @@ function searchLoaded(index, docs) {
 }
 
 jtd.onReady(function () {
-    var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
-    if (isSearchEnabled) {
-        initSearch();
-    }
+    initSearch();
 });
