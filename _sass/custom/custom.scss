@@ -328,7 +328,7 @@ main+hr {
     }
 }
 
-@media (min-width: 50rem) and (max-width: 66.438rem) {
+@media (min-width: 50rem) and (max-width: 66.5rem) {
     .main {
         max-width: calc(100vw - 20rem);
         margin-left: 17.5rem;
@@ -338,6 +338,7 @@ main+hr {
 @media (max-width: 49.938rem) {
     .main {
         width: 100%;
+        max-width: none;
     }
 
     .main-content-wrap {
