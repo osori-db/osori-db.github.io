@@ -101,7 +101,7 @@ jtd.initSearch = function(document, baseurl) {
           this.use(lunr.multiLanguage('en', 'ko'));
         } else {
           console.log('English only');
-          this.use(lunr.en);
+          this.use(lunr.multiLanguage('en'));
         }
         this.ref('id');
         this.field('title', { boost: 200 });
