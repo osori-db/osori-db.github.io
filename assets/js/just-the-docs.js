@@ -85,13 +85,13 @@ jtd.initSearch = function(document) {
   var request = new XMLHttpRequest();
   request.open('GET', '{{ "assets/js/search-data.json" | relative_url }}', true);
 
-  if (document) {
-    console.log('document', document);
-  }
-
   request.onload = function(){
     if (request.status >= 200 && request.status < 400) {
       var docs = JSON.parse(request.responseText);
+      if (document) {
+        docs = document;
+        console.log('document docs', docs)
+      }
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
@@ -574,9 +574,6 @@ function activateNav() {
 
 jtd.onReady(function(){
   initNav();
-  {%- if site.search_enabled != false %}
-  jtd.initSearch();
-  {%- endif %}
   activateNav();
   scrollNav();
 });
@@ -631,19 +628,22 @@ jtd.onReady(function(){
 })(window.jtd = window.jtd || {});
 
 window.onload = (event) => {
-  var baseurl = document.getElementById('baseurl').value;
-  var currentDirectory = '/assets/js/';
-  fetch(`${baseurl}${currentDirectory}search-data.json`, {
-    method: 'GET',
-    headers: {
+  var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
+  
+  if (isSearchEnabled) {
+    var baseurl = document.getElementById('baseurl').value;
+    var currentDirectory = '/assets/js/';
+    fetch(`${baseurl}${currentDirectory}search-data.json`, {
+      method: 'GET',
+      headers: {
         'Accept': 'application/json',
-    }
-  })
+      }
+    })
     .then(res => res.json())
     .then(docs => {
-        console.log(docs)
         jtd.initSearch(docs);
     });
+  }
 }
 
 {% include js/custom.js %}
