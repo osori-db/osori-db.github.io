@@ -90,17 +90,13 @@ jtd.initSearch = function(document, baseurl) {
       var docs = JSON.parse(request.responseText);
       if (document) {
         docs = document;
-        console.log('document docs', docs)
       }
       lunr.tokenizer.separator = {{ site.search.tokenizer_separator | default: site.search_tokenizer_separator | default: "/[\s\-/]+/" }}
 
       var index = lunr(function(){
-        console.log(baseurl)
         if (!baseurl.includes('en')) {
-          console.log('English & Korean');
           this.use(lunr.multiLanguage('en', 'ko'));
         } else {
-          console.log('English only');
           this.use(lunr.multiLanguage('en'));
         }
         this.ref('id');
@@ -115,6 +111,10 @@ jtd.initSearch = function(document, baseurl) {
           docs[i].title = getTranslatedTitle(docs[i].title);
           docs[i].doc = getTranslatedTitle(docs[i].doc);
           docs[i].relUrl = `${baseurl}${docs[i].relUrl}`;
+
+          if (baseurl.includes('en') && !docs[i].url.includes('en')) {
+            docs[i].url = `/en${docs[i].url}`;
+          }
           
           {% include lunr/custom-index.js %}
           this.add({
@@ -127,8 +127,6 @@ jtd.initSearch = function(document, baseurl) {
           });
         }
       });
-      console.log('just-the-docs.js', index);
-      console.log('just-the-docs.js', docs);
       searchLoaded(index, docs);
     } else {
       console.log('Error loading ajax request. Request status:' + request.status);
