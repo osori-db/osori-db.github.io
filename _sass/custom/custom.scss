@@ -316,3 +316,13 @@ main+hr {
 .search-label {
     padding-left: 0.6rem !important;
 }
+
+@media (min-width: 66.5rem) and (max-width: 75rem) {
+    .main {
+        max-width: calc(100vw - 27rem);
+    }
+
+    .side-bar {
+        min-width: 18.5rem;
+    }
+}
