@@ -32,10 +32,12 @@ Should not be cached, because included files depend on page.
   </script>
   {% endif %}
 
+  {% if site.search_enabled != false %}
   <script src="{{ '/assets/js/vendor/lunr.min.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/vendor/lunr.stemmer.support.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/vendor/lunr.ko.js' | relative_url }}"></script>
   <script src="{{ '/assets/js/vendor/lunr.multi.js' | relative_url }}"></script>
+  {% endif %}
 
   <script src="{{ '/assets/js/just-the-docs.js' | relative_url }}"></script>
 
