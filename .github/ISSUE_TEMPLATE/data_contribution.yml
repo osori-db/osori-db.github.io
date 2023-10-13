@@ -1,0 +1,57 @@
+name: Data Contribution
+description: Add or Modify OSS Data Information to OSORI
+labels: ["data contribution", "review required"]
+body:
+  - type: markdown
+    id: greeting
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this form!
+        
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+    validations:
+      required: false
+
+# OSS
+  - type: input
+    id: oss_master-name
+    attributes:
+      label: Name
+      placeholder: osori-db.github.io
+    validations:
+      required: true
+  - type: input
+    id: oss_master-download_location
+    attributes:
+      label: Download Location
+      placeholder: https://github.com/osori-db/osori-db.github.io
+    validations:
+      required: true
+  - type: input
+    id: oss_master-homepage
+    attributes:
+      label: Homepage
+      placeholder: https://osori-db.github.io/
+    validations:
+      required: false
+
+# OSV 
+  - type: input
+    id: oss_version-version
+    attributes:
+      label: Version
+      placeholder: 1.0.0
+    validations:
+      required: false
+  - type: textarea
+    id: oss-license
+    attributes:
+      label: License List
+      placeholder: |
+        - MIT
+        - Apache-2.0
+    validations:
+      required: true
