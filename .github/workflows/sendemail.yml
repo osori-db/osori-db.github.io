@@ -1,8 +1,7 @@
 name: Send email
 
 on:
-  push:
-    branches: ["feature/send-email-github-actions"]
+  workflow_dispatch:
 
 jobs:
   send-email:
