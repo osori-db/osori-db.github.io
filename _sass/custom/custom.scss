@@ -328,7 +328,7 @@ main+hr {
     }
 }
 
-@media (min-width: 50rem) and (max-width: 66.5rem) {
+@media (min-width: 50rem) and (max-width: 66.438rem) {
     .main {
         max-width: calc(100vw - 20rem);
         margin-left: 17.5rem;
@@ -352,5 +352,25 @@ main+hr {
 
     .site-nav {
         padding-top: 0.938rem;
+    }
+
+    body {
+        padding-bottom: 0rem;
+        padding-top: 0.3rem;
+    }
+
+    .header-dropdown {
+        float: left;
+        margin-top: 2rem;
+    }
+
+    .header-dropdown-content {
+        left: 35px;
+        margin-top: 10px;
+        right: auto;
+    }
+
+    .main-header {
+        margin-bottom: 6rem;
     }
 }
