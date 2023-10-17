@@ -328,14 +328,14 @@ main+hr {
     }
 }
 
-@media (min-width: 50rem) and (max-width: 66.438rem) {
+@media (min-width: 50rem) and (max-width: 1063px) {
     .main {
         max-width: calc(100vw - 20rem);
         margin-left: 17.5rem;
     }
 }
 
-@media (max-width: 49.938rem) {
+@media (max-width: 799px) {
     .main {
         width: 100%;
         max-width: none;
@@ -362,6 +362,7 @@ main+hr {
     .header-dropdown {
         float: left;
         margin-top: 2rem;
+        padding-left: 0rem;
     }
 
     .header-dropdown-content {
