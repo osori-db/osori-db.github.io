@@ -266,7 +266,7 @@ main+hr {
     margin-bottom: -3px;
 }
 
-@media (min-width: 66.5rem) {
+@media (min-width: 1065px) {
     .side-bar {
         max-width: 23.75rem;
     }
@@ -317,7 +317,7 @@ main+hr {
     padding-left: 0.6rem !important;
 }
 
-@media (min-width: 66.5rem) and (max-width: 75rem) {
+@media (min-width: 1065px) and (max-width: 75rem) {
     .main {
         max-width: calc(100vw - 27rem);
         margin-left: 23.5rem;
@@ -328,14 +328,14 @@ main+hr {
     }
 }
 
-@media (min-width: 50rem) and (max-width: 1063px) {
+@media (min-width: 801px) and (max-width: 66.5rem) {
     .main {
         max-width: calc(100vw - 20rem);
         margin-left: 17.5rem;
     }
 }
 
-@media (max-width: 799px) {
+@media (max-width: 50rem) {
     .main {
         width: 100%;
         max-width: none;
