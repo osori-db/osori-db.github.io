@@ -328,14 +328,14 @@ main+hr {
     }
 }
 
-@media (min-width: 801px) and (max-width: 66.5rem) {
+@media (min-width: 50rem) and (max-width: 66.5rem) {
     .main {
         max-width: calc(100vw - 20rem);
         margin-left: 17.5rem;
     }
 }
 
-@media (max-width: 50rem) {
+@media (max-width: 799px) {
     .main {
         width: 100%;
         max-width: none;
