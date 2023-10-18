@@ -2,10 +2,18 @@ name: Send email
 
 on:
   workflow_dispatch:
+    inputs:
+      name:
+        description: 'test user argument'
+        type: environment
+        required: true
+        default: g.tajonera
 
 jobs:
   send-email:
     runs-on: ubuntu-latest
+    env:
+      USER: ${{inputs.name}}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
@@ -20,7 +28,4 @@ jobs:
           subject: Github Actions job result
           to: g.tajonera@samsung.com
           from: OSORI
-          body:
-              Hi ${{inputs.name}} from ${{inputs.home}},
-
-              workflow for ${{github.repository}} completed successfully!
+          body: Hi $USER, workflow for ${{github.repository}} completed successfully!
