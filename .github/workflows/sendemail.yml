@@ -6,16 +6,20 @@ on:
       name:
         description: 'test user argument'
         required: true
-        default: 'g.tajonera'
+        default: user
 
 jobs:
   send-email:
     runs-on: ubuntu-latest
     env:
-      USER: ${{inputs.name}}
+      USER: ${{github.event.inputs.name}}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
+      - name: verify input argument
+          run: |
+            echo "USER: $USER"
+            echo "github.event.inputs.name: ${{github.event.inputs.name}}"
       - name: Send email
         uses: dawidd6/action-send-mail@v3
         with:
