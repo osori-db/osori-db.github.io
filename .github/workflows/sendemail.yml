@@ -11,14 +11,13 @@ on:
 jobs:
   send-email:
     runs-on: ubuntu-latest
-    env:
-      USER: ${{github.event.inputs.name}}
+#    env:
+#      USER: ${{github.event.inputs.name}}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: verify input argument
         run: |
-          echo "USER: $USER"
           echo "github.event.inputs.name: ${{github.event.inputs.name}}"
       - name: Send email
         uses: dawidd6/action-send-mail@v3
@@ -31,4 +30,4 @@ jobs:
           subject: Github Actions job result
           to: g.tajonera@samsung.com
           from: OSORI
-          body: Hi $USER, workflow for ${{github.repository}} completed successfully!
+          body: Hi ${{github.event.inputs.name}}, workflow for ${{github.repository}} completed successfully!
