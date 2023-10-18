@@ -20,4 +20,7 @@ jobs:
           subject: Github Actions job result
           to: g.tajonera@samsung.com
           from: OSORI
-          body: workflow for ${{github.repository}} completed successfully!
+          body:
+              Hi ${{inputs.name}} from ${{inputs.home}},
+
+              workflow for ${{github.repository}} completed successfully!
