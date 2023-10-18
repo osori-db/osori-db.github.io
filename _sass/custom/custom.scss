@@ -266,7 +266,7 @@ main+hr {
     margin-bottom: -3px;
 }
 
-@media (min-width: 66.5rem) {
+@media (min-width: 1065px) {
     .side-bar {
         max-width: 23.75rem;
     }
@@ -317,7 +317,11 @@ main+hr {
     padding-left: 0.6rem !important;
 }
 
-@media (min-width: 66.5rem) and (max-width: 75rem) {
+#home-menu-button {
+    display: none;
+}
+
+@media (min-width: 1065px) and (max-width: 75rem) {
     .main {
         max-width: calc(100vw - 27rem);
         margin-left: 23.5rem;
@@ -335,7 +339,7 @@ main+hr {
     }
 }
 
-@media (max-width: 49.938rem) {
+@media (max-width: 799.4px) {
     .main {
         width: 100%;
         max-width: none;
@@ -352,5 +356,60 @@ main+hr {
 
     .site-nav {
         padding-top: 0.938rem;
+    }
+
+    body {
+        padding-bottom: 0rem;
+        padding-top: 0.3rem;
+    }
+
+    .header-dropdown {
+        float: left;
+        margin-top: 2rem;
+        padding-left: 0rem;
+    }
+
+    .header-dropdown-content {
+        left: 35px;
+        margin-top: 10px;
+        right: auto;
+    }
+
+    .main-header {
+        margin-bottom: 6rem;
+    }
+}
+
+@media (max-width: 75rem) {
+    .homepage-header-container {
+        padding: 0rem 2rem;
+    }
+
+    .homepage-links-container + hr + footer > .footer-container {
+        padding: 0rem 2rem;
+    }
+}
+
+@media (min-width: 66.5rem) and (max-width: 75rem) {
+    .homepage-header-links, .homepage-header-links > a {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 0.875em;
+    }
+
+    .homepage-links-container {
+        padding: 3.5rem 4rem 6rem 4rem;
+    }
+
+    .links-header {
+        font-size: 1rem;
+    }
+
+    .links-item {
+        font-size: 0.875rem;
+    }
+
+    .open-source-count {
+        font-size: 2rem;
     }
 }

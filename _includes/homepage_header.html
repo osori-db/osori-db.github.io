@@ -1,6 +1,11 @@
 <div class="homepage-header-container">
-    <div class="homepage-header-brand">
+    <div class="homepage-header-brand" role="banner">
         <a href="#"><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
+        <button id="home-menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <use xlink:href="#svg-menu"></use>
+            </svg>
+        </button>
     </div>
     <div class="homepage-header-links">
         <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
