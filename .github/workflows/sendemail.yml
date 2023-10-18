@@ -5,9 +5,8 @@ on:
     inputs:
       name:
         description: 'test user argument'
-        type: environment
         required: true
-        default: g.tajonera
+        default: 'g.tajonera'
 
 jobs:
   send-email:
