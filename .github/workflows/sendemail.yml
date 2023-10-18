@@ -17,9 +17,9 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: verify input argument
-          run: |
-            echo "USER: $USER"
-            echo "github.event.inputs.name: ${{github.event.inputs.name}}"
+        run: |
+          echo "USER: $USER"
+          echo "github.event.inputs.name: ${{github.event.inputs.name}}"
       - name: Send email
         uses: dawidd6/action-send-mail@v3
         with:
