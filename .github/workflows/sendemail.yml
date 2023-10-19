@@ -3,22 +3,16 @@ name: Send email
 on:
   workflow_dispatch:
     inputs:
-      name:
-        description: 'test user argument'
+      message:
+        description: 'message from contact us form'
         required: true
-        default: user
 
 jobs:
   send-email:
     runs-on: ubuntu-latest
-#    env:
-#      USER: ${{github.event.inputs.name}}
     steps:
       - name: Check out repository code
         uses: actions/checkout@v2
-      - name: verify input argument
-        run: |
-          echo "github.event.inputs.name: ${{github.event.inputs.name}}"
       - name: Send email
         uses: dawidd6/action-send-mail@v3
         with:
@@ -27,7 +21,7 @@ jobs:
           secure: true
           username: ${{secrets.GMAIL_USERNAME}}
           password: ${{secrets.GMAIL_PASSWORD}}
-          subject: Github Actions job result
-          to: g.tajonera@samsung.com
-          from: OSORI
-          body: Hi ${{github.event.inputs.name}}, workflow for ${{github.repository}} completed successfully!
+          subject: Message from OSORI
+          to: g.tajonera@samsung.com, isaac.lim@samsung.com
+          from: automation-sg-osori@lists.openchainproject.org
+          body: ${{github.event.inputs.message}}
