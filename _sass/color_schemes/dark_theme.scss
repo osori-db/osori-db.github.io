@@ -1,9 +1,16 @@
 @import "./color_schemes/dark";
 
 $body-background-color: #000621;
+$dark-blue-border: #54619a;
+$dark-blue-background: #0e142f;
+$teal: #00efff;
+$light-gray: #e6e6e6;
+$white: #ffffff;
+$hover-sidebar-links-color: rgba(0, 239, 255, 0.3);
+
 
 .header {
-    color: #00efff;
+    color: $teal;
 }
 
 .banner {
@@ -12,11 +19,11 @@ $body-background-color: #000621;
 }
 
 .footer-container {
-    border-top: 1px solid #54619a;
+    border-top: 1px solid $dark-blue-border;
 }
 
 .contact-link {
-    color: #e6e6e6 !important;
+    color: $light-gray !important;
 }
 
 .homepage-header-container {
@@ -24,11 +31,11 @@ $body-background-color: #000621;
 }
 
 .dark-mode {
-    color: #00efff;
+    color: $teal;
 }
 
 .light-mode {
-    color: #e6e6e6;
+    color: $light-gray;
 }
 
 .homepage-dropdown-content,
@@ -38,27 +45,27 @@ $body-background-color: #000621;
 
 .homepage-dropdown-content a,
 .header-dropdown-content a {
-    color: #ffffff !important;
+    color: $white !important;
 }
 
 .links-item {
-    color: #ffffff !important;
+    color: $white !important;
 
     &:hover,
     &:focus {
-        color: #00efff !important;
+        color: $teal !important;
     }
 }
 
 .open-source-div,
 .homepage-anchors-container {
-    border: solid 1px #54619a;
-    background-color: #0e142f;
-    color: #ffffff;
+    border: solid 1px $dark-blue-border;
+    background-color: $dark-blue-background;
+    color: $white;
 }
 
 .links-header {
-    color: #00efff;
+    color: $teal;
 }
 
 .side-bar {
@@ -66,9 +73,9 @@ $body-background-color: #000621;
 }
 
 .btn {
-    background-color: #000621 !important;
-    border: solid 1px #00efff !important;
-    color: #00efff !important;
+    background-color: $body-background-color !important;
+    border: solid 1px $teal !important;
+    color: $teal !important;
 
     &:focus,
     &:focus:hover,
@@ -97,13 +104,13 @@ $body-background-color: #000621;
 }
 
 .btn.btn-primary {
-    background-color: #00efff !important;
+    background-color: $teal !important;
     background-image: none !important;
     color: $body-background-color !important;
 }
 
 a {
-    color: #00efff !important;
+    color: $teal !important;
 }
 
 .nav-list {
@@ -118,13 +125,26 @@ a {
 
         &:hover,
         &.active {
-            background-color: rgba(0, 239, 255, 0.3);
+            background-color: $hover-sidebar-links-color;
             background-image: none !important;
         }
     }
 }
 
+.site-button {
+
+    &:hover,
+    &.active {
+        background-color: $hover-sidebar-links-color;
+        background-image: none !important;
+    }
+}
+
 .shared-language-btn,
 .chevron-icon {
-    color: #ffffff;
+    color: $white;
+}
+
+.main-header {
+    background-color: $body-background-color;
 }

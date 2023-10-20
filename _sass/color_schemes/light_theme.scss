@@ -1,7 +1,13 @@
 @import "./color_schemes/light";
 
+$white: #ffffff;
+$black: #000000;
+$homepage-body-background-color: #eef7ff;
+$sky-blue: #4eadfe;
+$hover-sidebar-links-color: #ebedf5;
+
 .header {
-    color: #ffffff;
+    color: $white;
 }
 
 .banner {
@@ -31,16 +37,16 @@
 
 .homepage-dropdown-content,
 .header-dropdown-content {
-    background-color: #ffffff;
+    background-color: $white;
 }
 
 .homepage-dropdown-content a,
 .header-dropdown-content a {
-    color: #000000 !important;
+    color: $black !important;
 }
 
 .links-item {
-    color: #000000 !important;
+    color: $black !important;
 
     &:hover,
     &:focus {
@@ -50,28 +56,59 @@
 
 .open-source-div,
 .homepage-anchors-container {
-    border: solid 1px #4eadfe;
-    background-color: #ffffff;
-    color: #000000;
+    border: solid 1px $sky-blue;
+    background-color: $white;
+    color: $black;
 }
 
 .links-header {
-    color: #4eadfe
+    color: $sky-blue;
 }
 
 .side-bar {
-    background-color: #ffffff !important;
+    background-color: $white !important;
+}
+
+.nav-list {
+    .nav-list-link {
+
+        padding-left: 1rem;
+
+        &.active {
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        &:hover,
+        &.active {
+            background-color: $hover-sidebar-links-color;
+            background-image: none !important;
+        }
+    }
+}
+
+.site-button {
+
+    &:hover,
+    &.active {
+        background-color: $hover-sidebar-links-color;
+        background-image: none !important;
+    }
 }
 
 .shared-language-btn,
 .chevron-icon {
-    color: #000000;
+    color: $black;
 }
 
 .homepage-links-container {
-    background-color: rgba(78, 173, 254, 0.1);
+    background-color: $homepage-body-background-color;
 }
 
 .homepage-links-container+hr+footer>.footer-container {
-    background-color: rgba(78, 173, 254, 0.1);
+    background-color: $homepage-body-background-color;
+}
+
+.main-header {
+    background-color: $white;
 }
