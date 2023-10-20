@@ -7,7 +7,7 @@
             </svg>
         </button>
     </div>
-    <div class="homepage-header-links">
+    <nav class="homepage-header-links" aria-label="Main">
         <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
         <a href="{% tl guide %}" class="fs-4">{% t title.guide %}</a>
         <a href="{% tl license %}" class="fs-4">{% t title.license %}</a>
@@ -33,7 +33,7 @@
                 {% endif %}
             </div>
         </div>
-    </div>
+    </nav>
 
     <script>
         function showLanguageOptions() {

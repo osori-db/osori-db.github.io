@@ -346,7 +346,7 @@ main+hr {
         max-width: none;
     }
 
-    .main-content-wrap {
+    .default-layout-wrap {
         width: 100%;
         padding: 0.938rem 1.875rem 0px 1.875rem !important;
     }
@@ -434,5 +434,11 @@ main+hr {
 
     .open-source-count {
         font-size: 1.875rem !important;
+    }
+}
+
+@media (max-width: 1134px) {
+    .homepage-header-links > a {
+        display: none;
     }
 }
