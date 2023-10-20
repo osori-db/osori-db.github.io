@@ -391,7 +391,7 @@ main+hr {
     }
 }
 
-@media (min-width: 36rem) and (max-width: 75rem) {
+@media (min-width: 50rem) and (max-width: 75rem) {
     .tagline {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -405,13 +405,12 @@ main+hr {
         font-size: 0.875rem !important;
     }
 
-    .open-source-count {
-        font-size: 2rem !important;
+    .homepage-dropdown-content {
+        right: 4rem;
     }
 }
 
 @media (min-width: 66.5rem) and (max-width: 75rem) {
-
     .homepage-header-links,
     .homepage-header-links>a {
         padding-left: 1rem;
@@ -422,10 +421,18 @@ main+hr {
     .homepage-links-container {
         padding: 3.5rem 4rem 6rem 4rem;
     }
+
+    .open-source-count {
+        font-size: 2rem !important;
+    }
 }
 
-@media (min-width: 36rem) and (max-width: 50rem) {
+@media (min-width: 50rem) and (max-width: 66.5rem) {
     .homepage-links-container {
         padding: 3rem 2.5rem 4rem 2.5rem;
+    }
+
+    .open-source-count {
+        font-size: 1.875rem !important;
     }
 }
