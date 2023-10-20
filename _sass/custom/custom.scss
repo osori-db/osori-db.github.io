@@ -442,3 +442,30 @@ main+hr {
         display: none;
     }
 }
+
+@media (min-width: 36rem) and (max-width: 50rem) {
+    .tagline {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .links-header {
+        font-size: 1rem !important;
+    }
+
+    .links-item {
+        font-size: 0.875rem !important;
+    }
+
+    .homepage-dropdown-content {
+        right: 4rem;
+    }
+
+    .homepage-links-container {
+        padding: 3rem 2.5rem 4rem 2.5rem;
+    }
+
+    .open-source-count {
+        font-size: 1.875rem !important;
+    }
+}
