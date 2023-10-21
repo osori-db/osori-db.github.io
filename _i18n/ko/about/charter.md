@@ -1,44 +1,57 @@
-# 거버넌스
-{: .fs-9 }
-
-Just the Docs는 쉽게 사용자 정의할 수 있고 GitHub 페이지에서 호스팅되는 반응형 Jekyll 테마를 사용하여 문서를 빠르게 시작할 수 있도록 해줍니다.
-{: .fs-6 .fw-300 }
-
-[지금 시작하세요](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub에서 보기][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
-
----
-
-{: .warning }
-> 이 웹사이트는 Just the Docs 테마의 현재 '기본' 분기 기능을 문서화합니다. 릴리스, 새로운 기능 및 버그 수정 목록은 변경 로그를 참조하세요.
-
-Just the Docs는 [Jekyll]로 정적인 웹사이트를 생성하기 위한 테마입니다. [Markdown], [Liquid] 템플릿 언어 및 HTML을 사용하여 웹 페이지의 소스 파일을 작성할 수 있습니다.[^1] Jekyll은 [머리말]이 있는 모든 파일을 HTML로 변환하여 사이트를 구축합니다. [Jekyll 구성] 파일은 사용할 테마를 결정하고 홈페이지 URL과 같은 사이트의 일반 매개변수를 설정합니다.
-
-Jekyll은 테마 자체를 사용하여 Just the Docs 테마 문서 웹사이트를 구축합니다. 이러한 웹 페이지는 이 테마를 사용할 때 *기본적으로* 웹 페이지가 어떻게 보이는지 보여줍니다. 하지만 테마를 쉽게 *사용자 정의*하여 완전히 다르게 보이게 만들 수 있습니다!
-
-이 테마를 사용하는 방법에 대해 자세히 알아보려면 문서를 찾아보세요.
-
-## 시작하기
-
-[Just the Docs 템플릿]은 Just the Docs 테마를 사용하여 새로운 웹 사이트를 만드는 가장 간단하고 빠르며 쉬운 방법을 제공합니다. 사이트 생성을 시작하려면 "[템플릿 사용]"을 클릭하세요!
+# 오소리 프로젝트 Charter
 
 {: .note }
-테마를 사용하기 위해 [Just the Docs repo]를 복제하거나 포크할 필요는 없습니다***! 테마 문서를 로컬에서 탐색하거나, 테마 개발에 기여하거나, Just the Docs를 기반으로 새 테마를 개발하려는 경우에만 그렇게 해야 합니다.
+[**오소리 프로젝트 가입 신청서**](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21)
 
-템플릿으로 생성된 사이트를 [GitHub 페이지]에 게시하도록 쉽게 설정할 수 있습니다. [템플릿 README] 파일에 그 방법과 기타 세부정보가 설명되어 있습니다.
+## 명칭
+프로젝트의 명칭은 “오소리”이다. 오소리는 “오픈소스 소리내다!”라는 의미를 담고 있으며, 영문으로는 OSORI(Open Source DB Integration)로 한다.
 
-[Jekyll]이 컴퓨터에 설치되어 있으면 생성된 사이트를 *로컬에서* 빌드하고 미리 볼 수도 있습니다. 이를 통해 변경 사항을 커밋하기 전에 테스트하고 GitHub 페이지를 기다리지 않아도 됩니다.[^2] 또한 GitHub 페이지가 아닌 다른 플랫폼에 로컬 빌드를 배포할 수 있습니다.
+## 목적    
+오소리 프로젝트는 오픈소스 정보 데이터를 통합∙공개하여 누구나 쉽게 이를 확인할 수 있게 함으로써 보다 투명하고 신뢰성 있는 오픈소스 생태계 구축에 기여하는 것을 목적으로 한다.
 
+## 비전 
+1. 오픈소스 정보 데이터를 효율적으로 통합하고, 지속적인 관리와 확산이 용이한 DB 스키마를 구축한다.
+2. 교차 검증을 통해 데이터의 신뢰도를 높이고, 누구나 자유롭게 활용할 수 있도록 공개한다.
+3. 누구나 쉽게 데이터를 기여할 수 있는 환경을 제공함으로써, 자발적인 기여를 통해 데이터를 확장한다.
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+## 라이선스 정책 
+1. 오픈소스 정보 데이터는 ODC-By 1.0 라이선스(Open Data Commons Attribution License v1.0)로 공개한다. 
+2. 소스코드는 Apache 2.0 라이선스로 공개한다. 
+3. 오픈소스 정보 데이터와 소스코드를 제외한 컨텐츠는 CC-BY-2.0으로 공개한다.
+
+## 멤버 구성 
+1. **사용자 [User]**
+   - 누구나 회원 가입 등 별도의 절차 없이 오소리 프로젝트의 사용자로서 제4조에서 정한 라이선스에 따라 오픈소스 정보 데이터 및 기타 컨텐츠를 활용할 수 있다.
+
+2. **회원(기업/개인) [Member (Corporate/Individual)]**
+   - 오픈소스 정보 데이터를 기여하려면 오소리 프로젝트의 멤버로 가입해야 한다. [**오소리 프로젝트 가입신청서**](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21)를 작성하여 제출한 후 운영위원회 승인을 통해 회원이 될 수 있다.
+   - 회원은 개인 자격으로도 가입할 수 있으나, 소속된 기업 또는 기관이 보유한 데이터를 기여하려는 경우에는 기업 회원으로 가입해야 한다.
+
+3. **보드 회원사 [Board Member]**
+   - 오소리 프로젝트에 많은 기여를 한 기업 회원은 보드 회원사가 될 수 있다. 최초 보드 회원사는 삼성전자, LG전자, 카카오로 구성된다.
+   - 추가 보드 회원사는 운영위원회의 승인을 통해 임명할 수 있다.
+   - 각 보드 회원사는 최대 두 명의 운영위원을 지명할 수 있다.
+
+4. **후원사 [Sponsor]**
+   - 오소리 프로젝트의 운영, 관련 서비스 개발 및 확산 등 오소리 프로젝트를 지원한 기업 또는 기관은 오소리 프로젝트 후원사가 될 수 있다. 오소리 프로젝트 후원사 등록 신청서를 작성하여 제출한 후 운영위원회 승인을 통해 후원사가 될 수 있다.
+   - 후원사는 오소리 프로젝트 홈페이지에 법인명과 로고를 게시할 수 있으며, 오소리 프로젝트 명칭과 로고를 홍보에 활용할 수 있다.
+
+## 조직 
+1. **운영위원회 [SC: Steering Committee]**
+   - 권한과 역할
+     - 운영위원회는 프로젝트의 정책, 일정 등 주요 의사 결정을 수행한다.
+     - 운영위원회는 회원, 보드 회원, 후원사 가입 및 등록 신청을 심사하고 승인한다.
+     - 운영위원회는 선거를 통해 프로젝트 매니저(PM: Project Manager)를 임명한다.
+     - 운영위원회는 Charter를 작성하고 개정할 수 있다.
+   - 구성
+     - 운영위원회는 각 보드 회원이 지명한 운영위원으로 구성된다. 각 보드 회원은 최대 두 명의 운영위원을 지명할 수 있다.
+     - 최초 운영위원의 임기는 2024년 12월 31일까지로 하며, 그 후 운영위원의 임기는 1년으로 한다. 운영위원은 연임할 수 있다.
+
+2. **프로젝트 매니저 [PM: Project Manager]**
+   - 권한과 역할
+     - 프로젝트 매니저는 운영위원 회의를 주관한다.
+     - 프로젝트 매니저는 오소리 프로젝트를 대표하여 대외 커뮤니케이션을 담당한다.
+   - 구성
+     - 프로젝트 매니저는 운영위원 중 투표를 통해 선출한다.
+     - 최초 프로젝트 매니저는 김소임(LG전자)이 수행하고, 그 임기는 2024년 12월 31일까지로 한다.
+     - 프로젝트 매니저는 연임 가능하며, 필요 시 증원할 수 있다.
