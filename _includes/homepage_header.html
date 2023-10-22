@@ -23,7 +23,7 @@
                     {{ site.languageNames.en }}
                     {% endif %}
                 </button>
-                <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
+                <i id="chevron-icon" class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
             </div>
             <div class="homepage-dropdown-content" id="language-dropdown">
                 {% if site.lang == site.languages[0] %}
@@ -42,8 +42,15 @@
         window.onclick = function (e) {
             if (!e.target.matches('.change-language-btn')) {
                 var languageDropdown = document.getElementById("language-dropdown");
+                var chevronIcon = document.getElementById("chevron-icon");
+
                 if (languageDropdown.classList.contains('show')) {
                     languageDropdown.classList.remove('show');
+                    chevronIcon.classList.remove('fa-chevron-down');
+                    chevronIcon.classList.add('fa-chevron-up');
+                } else {
+                    chevronIcon.classList.remove('fa-chevron-up');
+                    chevronIcon.classList.add('fa-chevron-down');
                 }
             }
         }
