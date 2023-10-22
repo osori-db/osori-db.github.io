@@ -30,28 +30,6 @@
         </div>
     </nav>
 
-    <script>
-        function openNavOverlay() {
-            document.getElementById("homepage-overlay").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("homepage-overlay").style.width = "0%";
-        }
-        
-        function showLanguageOptions() {
-            document.getElementById("language-dropdown").classList.toggle("show");
-        }
-        window.onclick = function (e) {
-            if (!e.target.matches('.change-language-btn')) {
-                var languageDropdown = document.getElementById("language-dropdown");
-                if (languageDropdown.classList.contains('show')) {
-                    languageDropdown.classList.remove('show');
-                }
-            }
-        }
-    </script>
-
     <div class="homepage-mobile-section">
         <button id="home-menu-button" class="home-site-button btn-reset" aria-label="Toggle menu" aria-pressed="false"
             onclick="closeNavOverlay()">
@@ -75,3 +53,25 @@
     </div>
 
 </div>
+
+<script>
+    function openNavOverlay() {
+        document.getElementById("homepage-overlay").style.width = "100%";
+    }
+
+    function closeNavOverlay() {
+        document.getElementById("homepage-overlay").style.width = "0%";
+    }
+
+    function showLanguageOptions() {
+        document.getElementById("language-dropdown").classList.toggle("show");
+    }
+    window.onclick = function (e) {
+        if (!e.target.matches('.change-language-btn')) {
+            var languageDropdown = document.getElementById("language-dropdown");
+            if (languageDropdown.classList.contains('show')) {
+                languageDropdown.classList.remove('show');
+            }
+        }
+    }
+</script>
