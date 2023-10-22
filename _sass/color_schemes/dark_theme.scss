@@ -152,3 +152,16 @@ a {
 .site-button > .icon, .home-site-button > .icon {
     color: $teal !important;
 }
+
+.overlay {
+    background-color: $body-background-color;
+}
+
+.overlay a {
+    color: $white !important;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: $teal !important;
+}

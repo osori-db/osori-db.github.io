@@ -41,8 +41,12 @@
 </div>
 
 <div id="homepage-overlay" class="overlay">
-
-    <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
+    <div class="homepage-header-brand" role="banner">
+        <a><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
+    </div>
+    <div id="homepage-overlay-content" class="overlay-close-div">
+        <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
+    </div>
 
     <div class="overlay-content">
         <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
@@ -56,10 +60,12 @@
 
 <script>
     function openNavOverlay() {
+        document.getElementById("homepage-overlay-content").style.display = "block";
         document.getElementById("homepage-overlay").style.width = "100%";
     }
 
     function closeNavOverlay() {
+        document.getElementById("homepage-overlay-content").style.width = "none";
         document.getElementById("homepage-overlay").style.width = "0%";
     }
 

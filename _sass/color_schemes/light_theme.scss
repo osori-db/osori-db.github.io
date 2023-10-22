@@ -3,6 +3,7 @@
 $white: #ffffff;
 $black: #000000;
 $homepage-body-background-color: #eef7ff;
+$homepage-header-background-color: #4a4fa0;
 $sky-blue: #4eadfe;
 $hover-sidebar-links-color: #ebedf5;
 
@@ -24,7 +25,7 @@ $hover-sidebar-links-color: #ebedf5;
 }
 
 .homepage-header-container {
-    background-color: #4a4fa0;
+    background-color: $homepage-header-background-color;
 }
 
 .dark-mode {
@@ -115,4 +116,17 @@ $hover-sidebar-links-color: #ebedf5;
 
 .home-site-button > .icon {
     color: $white;
+}
+
+.overlay {
+    background-color: $homepage-header-background-color;
+}
+
+.overlay a {
+    color: $white !important;
+}
+
+.overlay a:hover,
+.overlay a:focus {
+    color: $teal !important;
 }
