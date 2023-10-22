@@ -443,7 +443,7 @@ main+hr {
     }
 }
 
-@media (min-width: 50rem) and (max-width: 66.5rem) {
+@media (min-width: 50rem) and (max-width: 1063.4px) {
     .homepage-links-container {
         padding: 3rem 2.5rem 4rem 2.5rem;
     }
@@ -470,7 +470,7 @@ main+hr {
     }
 }
 
-@media (min-width: 36rem) and (max-width: 50rem) {
+@media (min-width: 36rem) and (max-width: 799.4px) {
     .tagline {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -514,7 +514,7 @@ main+hr {
     }
 }
 
-@media (max-width: 36rem) {
+@media (max-width: 575.4px) {
     .tagline {
         margin-left: 2rem;
         margin-right: 2rem;
@@ -529,7 +529,7 @@ main+hr {
     }
 
     .homepage-links-container {
-        padding: 3rem 2.5rem 4rem 2.5rem;
+        padding: 3rem 2.5rem 3.5rem 2.5rem;
     }
 
     .open-source-count {
@@ -554,7 +554,27 @@ main+hr {
         width: 100%;
     }
 
-    .third-section {
+    .second-section, .third-section {
         margin-top: 4rem;
+    }
+
+    .header {
+        padding-top: 6rem;
+    }
+
+    .homepage-projects-container {
+        flex-wrap: wrap;
+    }
+
+    .homepage-anchors-container.mt-7 {
+        margin-top: 4rem !important;
+    }
+
+    .second-open-souce-div {
+        margin-top: 2rem !important;
+    }
+
+    .open-source-div.mr-5 {
+        margin-right: 0px !important
     }
 }
