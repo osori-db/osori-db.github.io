@@ -384,11 +384,11 @@ main+hr {
     }
 
     .breadcrumb-nav {
-        margin-top: 0.938rem;
+        margin-top: 0.625rem;
     }
 
     .site-title {
-        padding: 0.938rem 2rem 0rem 1.563rem;
+        padding: 0.938rem 2rem 0.5rem 1.563rem;
     }
 }
 
@@ -463,10 +463,61 @@ main+hr {
     }
 
     .home-site-button {
+        cursor: pointer;
         display: flex;
         height: 100%;
-        padding: $gutter-spacing-sm;
+        padding: 1rem 0rem 1rem 1rem;
         align-items: center;
+
+        .icon {
+            width: 2rem;
+            height: 2rem;
+        }
+    }
+
+    .homepage-mobile-section {
+        margin-top: -7px;
+    }
+
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        background-color: rgb(0, 0, 0);
+        background-color: rgba(0, 0, 0, 0.9);
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+
+    .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        color: #ffffff;
+        display: block;
+        transition: 0.3s;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: #f1f1f1;
+    }
+
+    .overlay .close-btn {
+        position: absolute;
+        top: 20px;
+        right: 45px;
+        font-size: 60px;
     }
 }
 
@@ -554,7 +605,8 @@ main+hr {
         width: 100%;
     }
 
-    .second-section, .third-section {
+    .second-section,
+    .third-section {
         margin-top: 4rem;
     }
 

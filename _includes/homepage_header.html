@@ -42,13 +42,36 @@
                 }
             }
         }
+
+        function openNavOverlay() {
+            document.getElementById("homepage-overlay").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("homepage-overlay").style.width = "0%";
+        }
     </script>
 
     <div class="homepage-mobile-section">
-        <button id="home-menu-button" class="home-site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+        <button id="home-menu-button" class="home-site-button btn-reset" aria-label="Toggle menu" aria-pressed="false"
+            onclick="closeNavOverlay()">
             <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
                 <use xlink:href="#svg-menu"></use>
             </svg>
         </button>
     </div>
+</div>
+
+<div id="homepage-overlay" class="overlay">
+
+    <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
+
+    <div class="overlay-content">
+        <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
+        <a href="{% tl guide %}" class="fs-4">{% t title.guide %}</a>
+        <a href="{% tl license %}" class="fs-4">{% t title.license %}</a>
+        <a href="{% tl news %}" class="fs-4">{% t title.news %}</a>
+        <a href="{% tl faq %}" class="fs-4">{% t title.faq %}</a>
+    </div>
+
 </div>
