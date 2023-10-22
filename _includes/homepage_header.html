@@ -31,6 +31,14 @@
     </nav>
 
     <script>
+        function openNavOverlay() {
+            document.getElementById("homepage-overlay").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("homepage-overlay").style.width = "0%";
+        }
+        
         function showLanguageOptions() {
             document.getElementById("language-dropdown").classList.toggle("show");
         }
@@ -41,14 +49,6 @@
                     languageDropdown.classList.remove('show');
                 }
             }
-        }
-
-        function openNavOverlay() {
-            document.getElementById("homepage-overlay").style.width = "100%";
-        }
-
-        function closeNav() {
-            document.getElementById("homepage-overlay").style.width = "0%";
         }
     </script>
 
