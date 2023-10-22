@@ -148,16 +148,3 @@ a {
 .main-header {
     background-color: $body-background-color !important;
 }
-
-@media (max-width: 799.4px) {
-
-    .shared-language-btn,
-    .chevron-icon {
-        color: $teal;
-    }
-
-    .homepage-dropdown-content a,
-    .header-dropdown-content a {
-        color: $teal !important;
-    }
-}

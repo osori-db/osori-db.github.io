@@ -634,7 +634,12 @@ jtd.onReady(function(){
 })(window.jtd = window.jtd || {});
 
 window.onload = (event) => {
-  var isSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
+  var tempIsSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
+  var isSearchEnabled = false;
+
+  if (tempIsSearchEnabled && tempIsSearchEnabled.value && tempIsSearchEnabled.value != 'false') {
+    isSearchEnabled = true;
+  }
   
   if (isSearchEnabled) {
     var baseurl = document.getElementById('baseurl').value;

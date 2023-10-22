@@ -112,11 +112,3 @@ $hover-sidebar-links-color: #ebedf5;
 .main-header {
     background-color: $white !important;
 }
-
-@media (max-width: 799.4px) {
-
-    .shared-language-btn,
-    .chevron-icon {
-        color: $purple-000;
-    }
-}
