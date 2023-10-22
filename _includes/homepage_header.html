@@ -1,11 +1,6 @@
 <div class="homepage-header-container">
     <div class="homepage-header-brand" role="banner">
         <a href="#"><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
-        <button id="home-menu-button" class="site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
-            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
-                <use xlink:href="#svg-menu"></use>
-            </svg>
-        </button>
     </div>
     <nav class="homepage-header-links" aria-label="Main">
         <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
@@ -23,7 +18,7 @@
                     {{ site.languageNames.en }}
                     {% endif %}
                 </button>
-                <i id="chevron-icon" class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
+                <i class="change-language-btn fa-solid fa-chevron-down pl-3" onclick="showLanguageOptions()"></i>
             </div>
             <div class="homepage-dropdown-content" id="language-dropdown">
                 {% if site.lang == site.languages[0] %}
@@ -42,18 +37,18 @@
         window.onclick = function (e) {
             if (!e.target.matches('.change-language-btn')) {
                 var languageDropdown = document.getElementById("language-dropdown");
-                var chevronIcon = document.getElementById("chevron-icon");
-                console.log(chevronIcon)
-
                 if (languageDropdown.classList.contains('show')) {
                     languageDropdown.classList.remove('show');
-                    chevronIcon.classList.remove('fa-chevron-down');
-                    chevronIcon.classList.add('fa-chevron-up');
-                } else {
-                    chevronIcon.classList.remove('fa-chevron-up');
-                    chevronIcon.classList.add('fa-chevron-down');
                 }
             }
         }
     </script>
+
+    <div class="homepage-mobile-section">
+        <button id="home-menu-button" class="home-site-button btn-reset" aria-label="Toggle menu" aria-pressed="false">
+            <svg viewBox="0 0 24 24" class="icon" aria-hidden="true">
+                <use xlink:href="#svg-menu"></use>
+            </svg>
+        </button>
+    </div>
 </div>
