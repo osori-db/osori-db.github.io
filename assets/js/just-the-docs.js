@@ -634,7 +634,7 @@ jtd.onReady(function(){
 })(window.jtd = window.jtd || {});
 
 window.onload = (event) => {
-  var tempIsSearchEnabled = document.getElementById('is-search-enabled').value != 'false';
+  var tempIsSearchEnabled = document.getElementById('is-search-enabled').value;
   var isSearchEnabled = false;
 
   if (tempIsSearchEnabled && tempIsSearchEnabled.value && tempIsSearchEnabled.value != 'false') {

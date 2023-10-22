@@ -326,10 +326,6 @@ main+hr {
     padding-left: 0.6rem !important;
 }
 
-.breadcrumb-nav {
-    margin-top: 0.625rem;
-}
-
 @media (min-width: 1065px) and (max-width: 75rem) {
     .main {
         max-width: calc(100vw - 27rem);
@@ -386,6 +382,14 @@ main+hr {
     .main-header {
         margin-bottom: 6rem;
     }
+
+    .breadcrumb-nav {
+        margin-top: 0.938rem;
+    }
+
+    .site-title {
+        padding: 0.938rem 2rem 0rem 1.563rem;
+    }
 }
 
 @media (max-width: 75rem) {
@@ -433,6 +437,10 @@ main+hr {
     .open-source-count {
         font-size: 2rem !important;
     }
+
+    .banner {
+        height: 34rem;
+    }
 }
 
 @media (min-width: 50rem) and (max-width: 66.5rem) {
@@ -442,6 +450,10 @@ main+hr {
 
     .open-source-count {
         font-size: 1.875rem !important;
+    }
+
+    .banner {
+        height: 30rem;
     }
 }
 
@@ -472,15 +484,32 @@ main+hr {
         font-size: 0.875rem !important;
     }
 
-    .homepage-dropdown-content {
-        right: 4rem;
-    }
-
     .homepage-links-container {
         padding: 3rem 2.5rem 4rem 2.5rem;
     }
 
     .open-source-count {
-        font-size: 1.875rem !important;
+        font-size: 1.75rem !important;
+    }
+
+    .banner {
+        height: 29rem;
+    }
+
+    .open-source-div {
+        padding: 1.438rem;
+    }
+
+    .project-icon-div {
+        height: 35px;
+        align-self: center;
+    }
+
+    .links-section {
+        width: 50%;
+    }
+
+    .third-section {
+        margin-top: 4rem;
     }
 }
