@@ -508,6 +508,12 @@ main+hr {
         text-decoration: none;
         display: block;
         transition: 0.3s;
+        color: $white !important;
+    }
+
+    .overlay a:hover,
+    .overlay a:focus {
+        color: $teal !important;
     }
 
     .overlay .close-btn {

@@ -121,12 +121,3 @@ $hover-sidebar-links-color: #ebedf5;
 .overlay {
     background-color: $homepage-header-background-color;
 }
-
-.overlay a {
-    color: $white !important;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: $teal !important;
-}

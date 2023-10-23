@@ -156,12 +156,3 @@ a {
 .overlay {
     background-color: $body-background-color;
 }
-
-.overlay a {
-    color: $white !important;
-}
-
-.overlay a:hover,
-.overlay a:focus {
-    color: $teal !important;
-}
