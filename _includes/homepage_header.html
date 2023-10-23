@@ -41,19 +41,21 @@
 </div>
 
 <div id="homepage-overlay" class="overlay">
-    <div class="homepage-header-brand" role="banner">
-        <a><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
-    </div>
-    <div class="overlay-close-div">
-        <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
+    <div class="homepage-overlay-header">
+        <div class="homepage-header-brand pt-4 pl-6" role="banner">
+            <a><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
+        </div>
+        <div class="overlay-close-div pr-6">
+            <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
+        </div>
     </div>
 
     <div id="homepage-overlay-content" class="overlay-content">
-        <a href="{% tl about %}" class="fs-4">{% t title.about %}</a>
-        <a href="{% tl guide %}" class="fs-4">{% t title.guide %}</a>
-        <a href="{% tl license %}" class="fs-4">{% t title.license %}</a>
-        <a href="{% tl news %}" class="fs-4">{% t title.news %}</a>
-        <a href="{% tl faq %}" class="fs-4">{% t title.faq %}</a>
+        <a href="{% tl about %}" class="fs-7">{% t title.about %}</a>
+        <a href="{% tl guide %}" class="fs-7">{% t title.guide %}</a>
+        <a href="{% tl license %}" class="fs-7">{% t title.license %}</a>
+        <a href="{% tl news %}" class="fs-7">{% t title.news %}</a>
+        <a href="{% tl faq %}" class="fs-7">{% t title.faq %}</a>
     </div>
 
 </div>
@@ -65,7 +67,7 @@
     }
 
     function closeNavOverlay() {
-        document.getElementById("homepage-overlay-content").style.width = "none";
+        document.getElementById("homepage-overlay-content").style.display = "none";
         document.getElementById("homepage-overlay").style.width = "0%";
     }
 

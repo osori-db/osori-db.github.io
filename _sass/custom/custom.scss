@@ -500,14 +500,14 @@ main+hr {
         position: relative;
         width: 100%;
         text-align: center;
-        margin-top: 30px;
+        top: -215px;
         display: none;
+        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .overlay a {
         padding: 8px;
-        text-decoration: none;
-        display: block;
         transition: 0.3s;
         color: $white !important;
     }
