@@ -44,7 +44,7 @@
     <div class="homepage-header-brand pt-4 pl-6" role="banner">
         <a><img src="../assets/images/ic_logo_osori.png" alt="OSORI" class="homepage-header-logo"></a>
     </div>
-    <div class="overlay-close-div pt-4 pr-6">
+    <div id="close-overlay-div" class="pt-4 pr-6">
         <a href="javascript:void(0)" class="close-btn" onclick="closeNavOverlay()">&times;</a>
     </div>
 
@@ -66,11 +66,13 @@
 <script>
     function openNavOverlay() {
         document.getElementById("homepage-overlay-content").style.display = "flex";
+        document.getElementById("close-overlay-div").style.display = "block";
         document.getElementById("homepage-overlay").style.width = "100%";
     }
 
     function closeNavOverlay() {
         document.getElementById("homepage-overlay-content").style.display = "none";
+        document.getElementById("close-overlay-div").style.display = "none";
         document.getElementById("homepage-overlay").style.width = "0%";
     }
 
