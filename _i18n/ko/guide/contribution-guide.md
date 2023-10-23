@@ -1,44 +1,43 @@
 # 컨트리뷰션 가이드
-{: .fs-9 }
 
-Just the Docs는 쉽게 사용자 정의할 수 있고 GitHub 페이지에서 호스팅되는 반응형 Jekyll 테마를 사용하여 문서를 빠르게 시작할 수 있도록 해줍니다.
-{: .fs-6 .fw-300 }
+## 정의 및 개요
+컨트리뷰션 (Contribution: 기여)은 오픈소스 프로젝트에 참여하고 기여하는 모든 활동을 의미한다. 오소리 프로젝트 역시 다양한 컨트리뷰션 활동을 통해 데이터를 발전시키고자 하는 목적이 있다.
 
-[지금 시작하세요](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub에서 보기][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+이 가이드는 오소리 프로젝트에 기여자(Contributor)로서 참여하는 방법을 설명하고 있다.
 
----
-
-{: .warning }
-> 이 웹사이트는 Just the Docs 테마의 현재 '기본' 분기 기능을 문서화합니다. 릴리스, 새로운 기능 및 버그 수정 목록은 변경 로그를 참조하세요.
-
-Just the Docs는 [Jekyll]로 정적인 웹사이트를 생성하기 위한 테마입니다. [Markdown], [Liquid] 템플릿 언어 및 HTML을 사용하여 웹 페이지의 소스 파일을 작성할 수 있습니다.[^1] Jekyll은 [머리말]이 있는 모든 파일을 HTML로 변환하여 사이트를 구축합니다. [Jekyll 구성] 파일은 사용할 테마를 결정하고 홈페이지 URL과 같은 사이트의 일반 매개변수를 설정합니다.
-
-Jekyll은 테마 자체를 사용하여 Just the Docs 테마 문서 웹사이트를 구축합니다. 이러한 웹 페이지는 이 테마를 사용할 때 *기본적으로* 웹 페이지가 어떻게 보이는지 보여줍니다. 하지만 테마를 쉽게 *사용자 정의*하여 완전히 다르게 보이게 만들 수 있습니다!
-
-이 테마를 사용하는 방법에 대해 자세히 알아보려면 문서를 찾아보세요.
-
-## 시작하기
-
-[Just the Docs 템플릿]은 Just the Docs 테마를 사용하여 새로운 웹 사이트를 만드는 가장 간단하고 빠르며 쉬운 방법을 제공합니다. 사이트 생성을 시작하려면 "[템플릿 사용]"을 클릭하세요!
+## 준비
+오소리 프로젝트에 컨트리뷰션 하기 위해서는 오소리 프로젝트 가입 신청서를 제출해야 하고, 컨트리뷰션 가이드의 행동지침(기여 방법과 형식)을 따라야 한다. 오소리 프로젝트 가입 신청서에는 컨트리뷰션을 하기 위해 필수적으로 동의해야 하는 항목이 존재하는데, 컨트리뷰션 전 반드시 내용을 숙지하고 있어야 한다. 오소리 프로젝트 가입 신청서 작성 및 가입 동의는 회원가입 시에 진행되므로 컨트리뷰션을 진행할 계획이 있다면 내용을 확인하는 것이 필요하다.
 
 {: .note }
-테마를 사용하기 위해 [Just the Docs repo]를 복제하거나 포크할 필요는 없습니다***! 테마 문서를 로컬에서 탐색하거나, 테마 개발에 기여하거나, Just the Docs를 기반으로 새 테마를 개발하려는 경우에만 그렇게 해야 합니다.
+**신청서에 대한 자세한 내용은, 해당 페이지([링크](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21))에서 확인할 수 있다.**
 
-템플릿으로 생성된 사이트를 [GitHub 페이지]에 게시하도록 쉽게 설정할 수 있습니다. [템플릿 README] 파일에 그 방법과 기타 세부정보가 설명되어 있습니다.
+## 유형
+오소리 프로젝트에 참여할 수 있는 방법은 다양하다. 오소리 프로젝트에 존재하는 오타 정정부터 존재하지 않는 데이터를 추가하는 것까지 폭 넓은 컨트리뷰션이 가능하다. 모든 컨트리뷰션은 오소리 위원회에서 데이터의 무결성을 확인한 후, 반영 여부를 결정하여 working day 기준 30일 이내 조치될 것이다. 모든 컨트리뷰션은 오소리 github (링크)를 통하여 진행된다. 데이터 추가/수정, 버그리포트, 의견 및 기능 제안에 대한 컨트리뷰션은 github issue를 생성해서, 번역은 PR 을 생성하여 리뷰 요청이 가능하다.
 
-[Jekyll]이 컴퓨터에 설치되어 있으면 생성된 사이트를 *로컬에서* 빌드하고 미리 볼 수도 있습니다. 이를 통해 변경 사항을 커밋하기 전에 테스트하고 GitHub 페이지를 기다리지 않아도 됩니다.[^2] 또한 GitHub 페이지가 아닌 다른 플랫폼에 로컬 빌드를 배포할 수 있습니다.
+오소리 프로젝트에 어떤 유형의 컨트리뷰션이 있는지 또한 어떻게 참여할 수 있는지에 대해서는 아래에 기술되어 있다.
 
+### 데이터 추가/수정
+오소리 프로젝트에 신규로 추가하고 싶은 오픈소스와 라이선스 정보가 있거나, 기존 데이터에서 수정을 요청할 때 아래와 같이 진행한다.
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+1. github 프로젝트 내에 이슈 탭에서 [New Issue] 선택
+2. 이슈 종류 중 데이터 추가/수정 [Get Started] 선택
+3. 오픈소스 명칭, 라이선스, 버전, 다운로드 저장소 주소 필수 입력
+4. 필요에 따라 부가설명을 Description 에 작성 (ex. 데이터 수정을 요청하는 오류 내용 작성)
+5. 형식에 맞게 작성 후에 [Submit new issue] 선택
+
+### 버그 리포트 (오타 수정 포함)
+오소리 프로젝트에 참여하면서 발생한 버그를 이슈로 올릴 수 있다.
+
+1. github 프로젝트 내에 이슈 탭에서 [New Issue] 선택
+2. 이슈 종류 중 버그리포트 [Get Started] 선택
+3. 버그 설명, 버그 재현 과정, 기대 되는 동작 등 형식에 맞게 작성 후에 [Submit new issue] 선택
+
+### 의견 및 기능 제안
+오소리 프로젝트 사용에 대해 기능 관련 개선점이 필요하다면 의견을 제시할 수 있다.
+
+1. github 프로젝트 내에 이슈 탭에서 [New Issue] 선택
+2. 이슈 종류 중 의견 및 기능 제안 [Get Started] 선택
+3. 자유로운 의견을 Description 항목에 작성 후에 [Submit new issue] 선택
+
+### 번역 하기
+오소리 프로젝트는 한글과 영문 버전으로 서비스를 제공하고 있다. 오소리의 사용성 확대 및 편의성을 위해 이외의 언어로 변역하는 컨트리뷰션은 언제나 환영한다. 번역을 완료한 패치에 대해서는 PR을 생성하여 리뷰 요청을 한다.
