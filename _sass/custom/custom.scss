@@ -18,7 +18,7 @@ body {
 }
 
 .header {
-    padding-top: 3.8rem;
+    padding-top: 12rem;
     margin-top: 0rem !important;
     margin-bottom: 0.1rem !important;
 }
@@ -445,6 +445,10 @@ main+hr {
     .banner {
         height: 34rem;
     }
+
+    .header {
+        padding-top: 9rem;
+    }
 }
 
 @media (min-width: 50rem) and (max-width: 1063.4px) {
@@ -458,6 +462,10 @@ main+hr {
 
     .banner {
         height: 30rem;
+    }
+
+    .header {
+        padding-top: 7rem;
     }
 }
 
@@ -563,6 +571,10 @@ main+hr {
 
     .third-section {
         margin-top: 4rem;
+    }
+
+    .header {
+        padding-top: 6rem;
     }
 }
 
