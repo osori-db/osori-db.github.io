@@ -17,19 +17,17 @@ The goal of the OSORI project is to contribute to building a more transparent an
 - Steering Committee: Eunkyung Hwang, Younghwan Kim (both from Kakao), Kyoungae Kim, Soim Kim (both from LG Electronics), Moonki Hong, Yoonhwan Jung (both from Samsung Electronics)
 - Project Manager: Soim Kim (LG Electronics)
 
-## Logo introduction (TBD)
-
 ## History
 1. First ever proposal of the OSORI project
-   - Date and Place: '22.3.16. @ OpenChain Korea Work Group
+   - Date and Place: 2022.3.16. @ OpenChain Korea Work Group
    - Participants: open source delegation from companies such as Kakao, LG Electronics, Samsung Electronics, Hyundai AutoEver, Hyundai Motors, Kakao Bank, Line Plus, NCsoft, SK Holdings, SKT, etc.
 2. Kick-off meeting
-   - Date and place: '23.1.19. @ Samsung Electronics Seoul R&D Campus
+   - Date and place: 2023.1.19. @ Samsung Electronics Seoul R&D Campus
    - Participants: Kakao, LG Electronics, Samsung Electronics
 3. MOU ceremony (Press Release Distribution)
-   - Date and Place: '23.4.26. @Korea Copyright Commission Seoul Office
+   - Date and Place: 2023.4.26. @Korea Copyright Commission Seoul Office
    - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
 4. OSORI presentation in public
-   - '23.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
-   - '23.10.11 @ EOST, Yoonhwan Jung
-   - '23.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
+   - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
+   - 2023.10.11 @ EOST, Yoonhwan Jung
+   - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim

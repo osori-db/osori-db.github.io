@@ -1,44 +1,86 @@
 # Guide
-{: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+## User Guide
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+### Description about "Restriction" name and "Traffic Light"
+Restriction indicates any usage restrictions about an Open Source Software (OSS) or its license in your usage. There may be multiple restrictions in a single OSS or license.
 
----
+| **Restriction Name** | **Description** | **LEVEL** | **Traffic Light** |
+| --- | --- | --- | --- |
+| Non-Commercial Use | Not allowed for commercial use | 5 | Red |
+| Internal Use Only | Allowed only for internal use in your organization | 4 | Red |
+| No Charge | Not allowed to directly charge for usage | 3 | Yellow |
+| No Sell Software Itself | Prohibits direct sales<br> ex. Font, Common Clauses | 2 | Yellow |
+| No Modification | Prohibits modification | 2 | Yellow |
+| No Change the Name | Prohibits changing the name | 1 | Green |
+| No Advertising | Prohibits advertising | 1 | Green |
+| Platform Limitation | Can be used only on specific platforms<br> ex. Museo Sans Font License: for using Enyo Application | 2 | Yellow |
+| Purpose Restriction | Restricts use for a specific purpose<br> ex. The Happy Bunny License: not allowed for military purposes | 2 | Yellow |
+| Specification Restriction | Restricts use related to specific specifications or standards<br> ex. BUSL-1.1.: Possible to grant use for limited products through<br> "Additional Use Grant" (indicated in License Header) | 2 | Yellow |
+| Redistribution Restriction | Restricts subcomponents of software that can be redistributed<br> (source code, binary files, etc.) | 2 | Yellow |
+| Contract Required | Requires contract<br> ex. commercial software | 5 | Red |
+| Provide Installation Information Required | Requires a duty to provide its installation information<br> ex. GPL-3.0 | 4 | Red |
+| Patent Warning | Possibility under a patent dispution (e.g., FFmpeg, APSL)<br> ex. Patent grant is terminated if a lawsuit is filed against "Apple",<br> instead of the patent itself under APSL. | 4 | Red |
+| Network Triggered | Must comply the obligations even using as a network server<br> ex. AGPL-3.0 | 3 | Yellow |
+| Semi-Copyleft | Restrictions can be nullified by disclosing the code<br> (Copyright holder's requests depending on a distribution type)<br> ex. RUBY | 3 | Yellow |
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See the CHANGELOG for a list of releases, new features, and bug fixes.
+- Level: Indicates severity between 1 to 5, according to a degree of attention needed in your commercial usage.
+- Traffic Light: Color display according to Level
+  - 1: Green
+  - 2-3: Yellow
+  - 4-5: Red
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+### Definition of entities in "License" data table
+- Name: Name of the given License (full name if it's SPDX License)
+- nicknameList: List of alternative names indicating the given License
+- spdx_identifier: Identifier from https://spdx.org/licenses/
+- license_text: Original text of the given License
+- osi_approval: Whether the License has been approved by OSI (https://opensource.org/licenses/)
+- description: Description on the given License (in English)
+- description_ko: Description on the given License (in Korean)
+- obligation_disclosing_src: Scope of source code disclosure in its distribution
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *customize* the theme to make them look completely different!
+| **Category** | **Scope of disclosure and its example** |
+| --- | --- |
+| NONE | No obligation to disclose |
+| ORIGINAL | Original open source |
+| FILE | ex. MPL |
+| MODULE | ex. EPL |
+| LIBRARY | ex. LGPL |
+| DERIVATIVE WORK | ex. the given License specifies to disclose derivative work like EUPL |
+| EXECUTABLE | ex. GPL |
+| DATA | ex. CDLA-Sharing-1.0 |
+| SOFTWARE USING THIS | ex. SSPL, Sleepycat |
+| UNSPECIFIED | Disclosure is required, but its scope is unclear |
 
-Browse the docs to learn more about how to use this theme.
+- obligation_notification: Obligation of notification in distribution
+  - false: Obligation of notification is not existed.
+  - true: Obligation of notification is existed.
+- webpage: Representative web link for the given License
+- webpageList: Additional web links aside from "webpage" above for the given License
+- restrictionList: Constraints condition
 
-## Getting started
-
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
-
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
-
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
-
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
-
-
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+### Definition of entities in "OSS" data table
+- name: Name of the given OSS
+  - It is the same as in purl (https://github.com/package-url/purl-spec).
+- **`nicknameList`**: List of alternative names indicating the given OSS
+- homepage: Homepage of the given OSS
+- download_location: Representative link to download the given OSS
+- purl: Package URL (purl) representing the representative link to the given OSS (https://github.com/package-url/purl-spec)
+- **`downloadLocationList`**: Additional links to download the given OSS
+- **`purlList`** : List of Package URLs corresponding to downloadLocationList
+- description: Summary description of the given OSS
+- compliance_notice: Summary description of the given OSS in terms of compliance in English<br>(Additional info. regarding compliance not described in Restriction)
+- compliance_notice_ko: Summary description of the given OSS in terms of compliance in Korean<br>(Additional info. regarding compliance not described in Restriction)
+- **`version_license_diff`**: True if its license is different according to the release version.
+- **`attribution`**: Matters requiring separate notification
+- **`publisher`**: Distributor or owner (personel or organization)
+- **`oss_version`: Information per a version of the given OSS**
+  - version: Version number
+  - description: Summary explanation per version (in English)
+  - description_ko: Summary explanation per version (in Korean)
+  - license_combination: Logical relationship of dual or multiple licenses indicated in declaredLicenseList (possible values: AND, OR, null)
+  - `declaredLicenseList`: Representative license of the given OSS
+  - `detectedLicenseList`: Additional licenses detected aside from declaredLicense in the given OSS
+  - `restrictionList`: Constraints
+  - release_date: Release date
