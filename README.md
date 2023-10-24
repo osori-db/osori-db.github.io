@@ -1,174 +1,70 @@
-# just-the-docs-template
+# 오소리 프로젝트 소개
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+## 명칭
+오소리(OSORI: Open Source DB Integration)는 “오픈소스 소리내다!” 라는 의미를 담고 있습니다. 자발적인 기여와 협력을 통해 더 나은 오픈소스 생태계를 만들겠다는 의지를 표현하였습니다.
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+## 목적
+오소리 프로젝트는 오픈소스 정보 데이터를 통합∙공개하여 누구나 쉽게 이를 확인할 수 있게 함으로써 보다 투명하고 신뢰성 있는 오픈소스 생태계 구축에 기여하는 것을 목적으로 합니다.
 
-More specifically, the created site:
+## 비전
+- 오픈소스 정보 데이터를 효율적으로 통합하고, 지속적인 관리와 확산이 용이한 DB 스키마를 구축합니다.
+- 교차 검증을 통해 데이터의 신뢰도를 높이고, 누구나 자유롭게 활용할 수 있도록 공개합니다.
+- 누구나 쉽게 데이터를 기여할 수 있는 환경을 제공함으로써, 자발적인 기여를 통해 데이터를 확장합니다.
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+## 멤버 소개
+- Board Member : 삼성전자, LG전자, 카카오
+- Sponsor : 한국저작권위원회
+- 운영위원 : 홍문기, 정윤환(이상 삼성전자), 김경애, 김소임(이상 LG전자), 황은경, 김영환(이상 카카오)
+- Project Manager : 김소임(LG전자)
 
-To get started with creating a site, simply:
+## 연혁
+1. 오소리 프로젝트 최초 논의
+   - 일시 및 장소 : 2022.3.16. @오픈체인 Korea Work Group
+   - 참석자 : 삼성전자, LG전자, 카카오, SKT, SK주식회사, 라인플러스, 엔씨소프트, 현대자동차, 현대오토에버, 카카오뱅크 등 국내 주요 기업 오픈소스 실무자
+2. 오소리 프로젝트 Kick-off 미팅
+   - 일시 및 장소 : 2023.1.19. @삼성전자 서울R&D캠퍼스
+   - 참석자 : 삼성전자, LG전자, 카카오
+3. 오소리 프로젝트 업무협약 (보도자료 배포)
+   - 일시 및 장소 : 2023.4.26. @한국저작권위원회 서울사무소
+   - 참석자:문화체육관광부, 한국저작권위원회, 삼성전자, LG전자, 카카오
+4. 오소리 프로젝트 대외 발표
+   - 2023.8.31 @공유저작물 및 오픈소스SW 라이선스 콘퍼런스, 김소임/정윤환
+   - 2023.10.11 @EOST, 정윤환
+   - 2023.11.15 @SDC23 Korea, 김소임/김영환
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+---------------------------------------------------------------------
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+# About : What is the OSORI project?
 
-After completing the creation of your new site on GitHub, update it as needed:
+## Name
+OSORI (Open Source DB Integration) means "Open Source sounds!" It expresses the will to create a better open source ecosystem through voluntary contribution and collaboration.
 
-## Replace the content of the template pages
+## Goal
+The goal of the OSORI project is to contribute to building a more transparent and reliable open source ecosystem by integrating and disclosing open source information data (e.g. license and any restriction to use), so that anyone can easily check it out.
 
-Update the following files to your own content:
+## Vision
+- We build a DB schema that efficiently integrates open source information data, of which is easy to manage and distribute consistently.
+- We increase the reliability of the data through cross-validation and disclose it for its complimentary usage by anyone.
+- We expand volume of the data through voluntary contributions by providing an environment where anyone can easily contribute their data to the OSORI project, 
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+## Member introduction
+- Board Members: Kakao, LG Electronics, Samsung Electronics
+- Sponsors: Korea Copyright Commission
+- Steering Committee: Eunkyung Hwang, Younghwan Kim (both from Kakao), Kyoungae Kim, Soim Kim (both from LG Electronics), Moonki Hong, Yoonhwan Jung (both from Samsung Electronics)
+- Project Manager: Soim Kim (LG Electronics)
 
-## Changing the version of the theme and/or Jekyll
-
-Simply edit the relevant line(s) in the `Gemfile`.
-
-## Adding a plugin
-
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
-
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
-
-- Add the following to your site's `Gemfile`:
-
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
-
-- And add the following to your site's `_config.yml`:
-
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
-
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
-
-## Publishing your site on GitHub Pages
-
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
-
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
-
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
-
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
-
-2.  Push your updated `_config.yml` to your site on GitHub.
-
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
-
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.1'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v1
-        with:
-          path: "docs/_site/"
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+## History
+1. First ever proposal of the OSORI project
+   - Date and Place: 2022.3.16. @ OpenChain Korea Work Group
+   - Participants: open source delegation from companies such as Kakao, LG Electronics, Samsung Electronics, Hyundai AutoEver, Hyundai Motors, Kakao Bank, Line Plus, NCsoft, SK Holdings, SKT, etc.
+2. Kick-off meeting
+   - Date and place: 2023.1.19. @ Samsung Electronics Seoul R&D Campus
+   - Participants: Kakao, LG Electronics, Samsung Electronics
+3. MOU ceremony (Press Release Distribution)
+   - Date and Place: 2023.4.26. @Korea Copyright Commission Seoul Office
+   - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
+4. OSORI presentation in public
+   - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
+   - 2023.10.11 @ EOST, Yoonhwan Jung
+   - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
+5. --------
