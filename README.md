@@ -67,4 +67,3 @@ The goal of the OSORI project is to contribute to building a more transparent an
    - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
    - 2023.10.11 @ EOST, Yoonhwan Jung
    - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
-5. --------
