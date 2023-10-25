@@ -77,17 +77,5 @@ The goal of the OSORI project is to contribute to building a more transparent an
    - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
 4. OSORI presentation in public
    - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
-  
-# License
-
-## License policy according to disclosing form of our assets
-1. Open source information data: ODC-By 1.0 License (Open Data Commons Attribution License v1.0)
-2. Source code: Apache 2.0 License
-3. Contents excluding the open source information data and the source code: CC-BY-2.0 License
-
-## Disclaimer of warranties
-- The OSORI project strives to provide as accurate information as possible through cross-validation. Nevertheless, there may be incorrect information included.
-- The information provided by the OSORI project cannot be used as a basis for legal disputes.
-- The OSORI project does not guarantee viability for any type of damage caused by the use of our information data, source codes, and any form of assets.
    - 2023.10.11 @ EOST, Yoonhwan Jung
    - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
