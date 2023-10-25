@@ -1,19 +1,19 @@
 # User APIs
 
-This section explains how to use the APIs provided by the OSORI project to users.
+This section explains how to use the APIs provided by the OSORI project for users.
 
 ---
 
 {:.warning }
-> **Limitations on the API usage**: the user APIs are restricted to use under the condition below.<br>
-**If more than 5,000 API calls are attempted in an hour, we block its usage due to Too Many Request exception.**
+> **Limitations on the API usage**: these user APIs are restricted to use under the condition below.<br>
+**If more than 5,000 API are called in an hour, we block its usage due to Too Many Request exception.**
 
 ## Inquiry for the license list
 
 ### `/api/v1/licenses`
 
 {:.note }
-**This is an API that can retrieve data about the licenses provided from the OSORI project.**
+**This is an API that can retrieve data about the license provided from the OSORI project.**
 
 #### Query parameters in the API
 
@@ -22,15 +22,15 @@ This section explains how to use the APIs provided by the OSORI project to users
 | name | License name <br> ex. MIT License |
 | spdxIdentifier | SPDX license identifier <br> ex. MIT |
 | webpage | A URL address for the license notice<br> ex. https://opensource.org/licenses/MIT |
-| equalFlag | Used when specifying the target of search results.<br> - 'Y': Displays the results from exactly matching a keyword <br> - 'N' (default value): Displays all the results containing the keyword |
+| equalFlag | Configuration for specifying the search results based on the given keyword.<br> - 'Y': Displays the results that exactly match the keyword <br> - 'N' (default value): Displays all the results that have the keyword |
 | modifiedDate | Date of modification |
-| page | The number of start page (mandatory) <br> - Default value: 0 |
-| size | The number of retrieved data from the page (mandatory) |
-| sort | Sorting criteria in terms of data entity (mandatory) <br> The available entities for the criteria are as follows. <br> - name <br> - nickname <br> - id <br> - version <br> - oss_version_id |
+| page | The number of start page (mandatory value) <br> - Default value: 0 |
+| size | The number of retrieved data from the page (mandatory value) |
+| sort | Sorting criteria in terms of data entity (mandatory value).<br>The available entities for the criteria are listed as follows. <br> - name <br> - nickname <br> - id <br> - version <br> - oss_version_id |
 | direction | Sorting order <br> - ASC: Ascending (default value) <br> - DESC: Descending |
 
 #### Usage example
-curl --location --request GET '[https://{osiri_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)**`/api/v1/licenses?name=MIT%20License&equalFlag=Y&page=0&size=1&sort=name&direction=ASC`**
+curl --location --request GET '[https://{osori_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)**`/api/v1/licenses?name=MIT%20License&equalFlag=Y&page=0&size=1&sort=name&direction=ASC`**
 
 #### Header in response
 Content-Type application/json
@@ -59,21 +59,21 @@ Content-Type application/json
 
 | **Name** | **Description** |
 | --- | --- |
-| code | Code value for a response status of the API<br> 200: Success |
+| code | Code value representing a response status of the API<br> 200: Success |
 | id | ID of the target retrieved data (primary key) |
 | name | License name |
 | obligation_disclosing_src | Scope of source code disclosure in distribution <br> - NONE <br> - ORIGINAL <br> - FILE <br> - MODULE <br> - LIBRARY <br> - DERIVATIVE WORK <br> - EXECUTABLE <br> - DATA <br> - SOFTWARE USING THIS <br>- UNSPECIFIED |
-| obligation_notification | Obligation of notification in distribution <br> - false: No obligation <br> - true: Obligates notification in its distribution |
+| obligation_notification | Whether or not the obligation of notification exists in distribution <br> - false: No obligation <br> - true: Obligates notification in its distribution |
 | osi_approval | Whether or not the license has been approved by OSI (https://opensource.org/licenses/) |
 | count | Total number of the retrieved data |
-| success | Call result of the API <br> - false: Failure <br> - true: Success |
+| success | Result of the API call<br> - false: Failure <br> - true: Success |
 
 ## Inquiry for detail information of the license
 
-### `/api/v1/licenses/{category}?searchWord={seaarch keyword}`
+### `/api/v1/licenses/{category}?searchWord={search keyword}`
 
 {:.note }
-**This is an API that allows you to retrieve detail information about the licenses provided from the OSORI project.**
+**This is an API that allows you to retrieve detail information about the license provided from the OSORI project.**
 
 #### Query parameters in the API
 
@@ -83,7 +83,7 @@ Content-Type application/json
 | searchWord | Enter the keyword for your search<br> ex. MIT |
 
 #### Usage example
-curl --location --request GET '[https://{osiri_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)/api/v1/licenses/spdx_identifier?searchWord=MIT 
+curl --location --request GET '[https://{osori_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)/api/v1/licenses/spdx_identifier?searchWord=MIT 
 
 #### Header in response
 Content-Type application/json
@@ -129,17 +129,17 @@ Content-Type application/json
 
 | **Name** | **Description** |
 | --- | --- |
-| code | Code value for a response status of the API<br> 200: success |
+| code | Code value representing a response status of the API<br> 200: success |
 | id | ID of the target retrieved data (primary key) |
 | name | License name |
 | obligation_disclosing_src | Scope of source code disclosure in distribution<br> - NONE<br> - ORIGINAL<br> - FILE<br> - MODULE<br> - LIBRARY<br> - DERIVATIVE WORK<br> - EXECUTABLE<br> - DATA<br> - SOFTWARE USING THIS<br> - UNSPECIFIED |
-| obligation_notification | Obligation of notification in distribution<br> - false : no notification obligation<br> - true : notification obligation exists |
+| obligation_notification | Whether or not the obligation of notification exists in distribution <br> - false : no notification obligation<br> - true : notification obligation exists |
 | spdx_idetifier | A name of SPDX identifier |
 | webpage | A URL address for the license notice |
 | description | Description of the license |
 | license_text | License notice text |
 | osi_approval | Whether or not the license has been approved by OSI (https://opensource.org/licenses/) |
-| reviewed | Review status of the license (in OSORI)<br> - false: not reviewed<br> - true: review completed |
+| reviewed | Review status of the license (from the OSORI Steering Committee)<br> - false: not reviewed<br> - true: review completed |
 | nicknameList | List of nicknames for the license |
 | webpageList | List of alternative URLs aside from webpage, such as sources of license notices |
 | restrictionList | List of restrictions imposed by the license |
@@ -158,15 +158,15 @@ Content-Type application/json
 | ossName | Open Source name |
 | version | Open Source version information |
 | downloadLocation | A URL for downloading the given Open Source<br> ex. github/aerogear-attic/aerogear-android-stor |
-| equalFlag | Used when specifying the target of search results.<br> - 'Y': Displays the results from exactly matching a keyword <br> - 'N' (default value): Displays all the results containing the keyword |
+| equalFlag | Configuration for specifying the search results based on the given keyword.<br> - 'Y': Displays the results that exactly match the keyword <br> - 'N' (default value): Displays all the results that have the keyword |
 | modifiedDate | Date of modification |
-| page | The number of start page (mandatory) <br> - Default value: 0 |
-| size | The number of retrieved data from the page (mandatory) |
-| sort | Sorting criteria in terms of data entity (mandatory) <br> The available entities for the criteria are as follows. <br> - name <br> - nickname <br> - id <br> - version <br> - oss_version_id |
+| page | The number of start page (mandatory value) <br> - Default value: 0 |
+| size | The number of retrieved data from the page (mandatory value) |
+| sort | Sorting criteria in terms of data entity (mandatory value) <br> The available entities for the criteria are as follows. <br> - name <br> - nickname <br> - id <br> - version <br> - oss_version_id |
 | direction | Sorting order <br> - ASC: Ascending (default value) <br> - DESC: Descending |
 
 #### Usage example
-curl --location --request GET '[https://{osiri_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)**`/api/v1/oss?ossName=android&equalFlag=Y&page=0&size=10&sort=name&direction=ASC`**
+curl --location --request GET '[https://{osori_base_url}](http://223.255.204.223:8081/api/v1/licenses?modifiedDate=&equalFlag=&page=&size=&sort=&direction=&name=&spdxIdentifier=&webpage=)**`/api/v1/oss?ossName=android&equalFlag=Y&page=0&size=10&sort=name&direction=ASC`**
 
 #### Header in response
 Content-Type application/json
@@ -201,7 +201,7 @@ Content-Type application/json
 
 | **Name** | **Description** |
 | --- | --- |
-| code | Code value for a response status of the API<br> 200: Success |
+| code | Code value representing a response status of the API<br> 200: Success |
 | oss_master_id | ID of the target retrieved Open Source data (primary key) |
 | name | Open source name |
 | version_id | ID of the version for the given Open Source (primary key) |
@@ -211,7 +211,7 @@ Content-Type application/json
 | version_license_diff | True if its license is different according to the release version. |
 | purl | Package URL (purl) of the representative link to the given Open Source (https://github.com/package-url/purl-spec) |
 | count | Total number of the retrieved data |
-| success | Call result of the API <br> - false: Failure <br> - true: Success |
+| success | Result of the API call <br> - false: Failure <br> - true: Success |
 
 ## Inquiry for detail information of the Open Source
 
@@ -224,11 +224,11 @@ Content-Type application/json
 
 | Parameter name | Detail description | 
 |---|---|
-| category | Select the data entity for your search<br> - name<br> download_location |
+| category | Select the data entity for your search<br> - name<br> - download_location |
 | searchWord | Enter the keyword for your search<br> ex. facebook |
 
 #### Usage example
-curl --location --request GET 'https://{osiri_base_url}/api/v1/oss/name/versions?searchWord=facebook'
+curl --location --request GET 'https://{osori_base_url}/api/v1/oss/name/versions?searchWord=facebook'
 
 #### Header in response
 Content-Type application/json
@@ -291,7 +291,7 @@ Content-Type application/json
 
 | **Name** | **Description** |
 | --- | --- |
-| code | Code value for a response status of the API<br> 200: Success |
+| code | Code value representing a response status of the API<br> 200: Success |
 | oss_master_id | ID of the target retrieved Open Source data (primary key) |
 | name | Open source name |
 | download_location | A download URL for the given Open Source |
