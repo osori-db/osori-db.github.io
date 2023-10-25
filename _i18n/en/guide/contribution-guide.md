@@ -6,18 +6,18 @@ Contribution means any activity that participates in and contributes to the OSOR
 This guide explains how to participate as a contributor in the OSORI project.
 
 ## Preparation
-To contribute to the OSORI project, you must submit an application form for joining the project and follow the Code of Conduct (contribution method and format) in the contribution guide. In the OSORI project application form, there are items that must be agreed upon for contributions, which must be familiarized before making a contribution. Since it is carried out at the time of membership application in writing and agreeing to join the OSORI project, it is necessary to check out contents below if planning to proceed with the contribution.
+To contribute to the OSORI project, you must submit an application form for joining the project and follow the Code of Conduct (contribution method and format) in the contribution guide. In the OSORI project application form, there are items that must be agreed upon for contributions, which must be acknowledged before making a contribution. Since it is carried out at the time of membership application submission for your agreement to join the OSORI project, it is necessary to check out contents below if planning to proceed with the contribution.
 
 {:.note }
-**Details of the application form can be found here ([link](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21)).**
+**Details of the application form can be downloaded here ([Individual](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx) or [Corporate](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx)).**
 
 ## Types
-There are many ways to participate in the OSORI project, such as correcting typos that exist in the project and adding any missing data. All the contribution proposals will be addressed within 30 working days after the OSORI Steering Committee confirms their integrity in terms of data and decides whether to reflect them or not. All the contributions are made through the project Github (link). You can create request for review for your contribution by creating a GitHub issue for data addition/modification, bug report, opinion, function proposal, and PR for any document translation.
+There are many ways to participate in the OSORI project, such as correcting typos that exist in the project and adding any missing data. All the contribution proposals will be addressed within 30 working days after confirmation from the OSORI Steering Committee in terms of the data integrity and decides whether to reflect them or not. All the contributions are made through **[the GitHub repository of the OSORI project](https://github.com/osori-db/osori-db.github.io)**. You can create request for review for your contribution by creating a GitHub issue for data addition/modification, bug report, opinion, function proposal, and PR for any document translation.
 
 Below is more detail description for you to clarify all the contribution types as well as ways to participate in the OSORI project.
 
 ### Data Addition/Modification
-When there is information about an open source and license that you want to add to the OSORI project or when requesting modification of existing data, please proceed your contribution as follows.
+When there is data information about an open source and license that you want to contribute or to request modification of the existing data, please proceed your contribution as follows.
 
 1. Select [New Issue] in the Issue tab from the OSORI GitHub repository.
 2. Select [Get Started] for Data Contribution among the types of issues.
