@@ -7,22 +7,20 @@
 
 | **Restriction Name** | **Description** | **LEVEL** | **신호등** |
 | --- | --- | --- | --- |
-| Non-Commercial Use | 상업적 사용 불가 | 5 | 빨강 |
+| Non-Commercial Use | 상업적 사용 불가<br>(기업에서 제공하는 무료 소프트웨어 사용 불가) | 5 | 빨강 |
 | Internal Use Only | 사내 사용만 가능 | 4 | 빨강 |
-| No Charge | 직접적 사용 청구하지 않음 | 3 | 노랑 |
-| No Sell Software itself | 자체 판매 금지<br> ex. Font, Common Clause | 2 | 노랑 |
+| No Charge | 자체 판매를 금지하거나 직접적 사용 비용 청구하지 않음<br>(기업에서 제공하는 무료 소프트웨어 내 탑재 가능) | 3 | 노랑 |
 | No Modification | 수정 금지 | 2 | 노랑 |
 | No Change the Name | 이름 변경 금지 | 1 | 초록 |
-| No Advertising | 홍보 금지 | 1 | 초록 |
-| Platform Limitation | 특정 플랫폼에서만 사용 가능<br> ex. Museo Sans Font License: Enyo Application을 사용하기 위한 목적 | 2 | 노랑 |
-| Purpose Restriction | 특정 목적 사용 제한<br> ex. The Happy Bunny License: 군사용(military) 목적으로 사용 불가 | 2 | 노랑 |
-| Specification Restriction | 특정 Specification 또는 standard와 관련되어 사용 제한<br> ex. BUSL-1.1.: Additional Use Grant를 통해, 제한적인 제품 사용을 허여할 수 있음(License Header에서 Additional Use Grant 명시) | 2 | 노랑 |
+| Platform Limitation | 특정 플랫폼에서만 사용 가능 | 2 | 노랑 |
+| Purpose Restriction | 특정 목적 사용 제한 | 2 | 노랑 |
+| Specification Restriction | 특정 Specification 또는 standard와 관련되어 사용 제한 | 2 | 노랑 |
 | Redistribution Restriction | 재배포할 수 있는 Software의 하위 구성 요소(Source Code, Binary file 등) 제한 | 2 | 노랑 |
-| Contract Required | 계약을 해야하는 경우<br> ex. 상용 SW | 5 | 빨강 |
-| Provide Installation Information Required | 설치 정보 제공 의무<br> ex. GPL-3.0 | 4 | 빨강 |
-| Patent Warning | 특허 분쟁 가능성 (FFmpeg 오픈소스, APSL 라이선스 등)<br> ex. APSL은 오픈소스 프로젝트에 포함된 특허로 한정된 것이 아니라,<br>"Apple" 에 대해 특허 소송을 하면 특허 라이선스 종료 | 4 | 빨강 |
-| Network Triggered | 네트워크 서버 형태로 이용하는 경우에도 의무사항 준수 필요<br> ex. AGPL-3.0 | 3 | 노랑 |
-| Semi-Copyleft | 코드 공개하면 해결되는 Restriction<br> (저작권자 요구, 배포 형태에 따라 다른 요구사항 요구)<br> ex. RUBY | 3 | 노랑 |
+| Contract Required | 별도의 계약이 필요한 경우 | 5 | 빨강 |
+| Provide Installation Information Required | 설치 정보 제공 의무가 존재하는 경우 | 4 | 빨강 |
+| Patent Warning | 특허 분쟁 가능성 | 4 | 빨강 |
+| Network Triggered | 네트워크 서버 형태로 이용하는 경우에도 의무사항 준수 필요 | 3 | 노랑 |
+| Semi-Copyleft | 저작권자요구, 배포형태에 따라 다른 요구사항 요구하지만,<br>코드 공개하면 해결되는 경우 | 3 | 노랑 |
 
 - Level: 상업적으로 사용하여 배포시 주의가 필요한 정도에 따라 1~5로 표시합니다.
 - 신호등: level에 따른 색상 표시
@@ -44,13 +42,13 @@
 | --- | --- |
 | NONE | 공개 의무 없음 |
 | ORIGINAL | 원 오픈소스 |
-| FILE | ex. MPL |
-| MODULE | ex. EPL |
-| LIBRARY | ex. LGPL |
-| DERIVATIVE WORK | ex. EUPL 처럼 파생 저작물이라고만 명시한 경우 |
-| EXECUTABLE | ex. GPL |
-| DATA | ex. CDLA-Sharing-1.0 |
-| SOFTWARE USING THIS | ex. SSPL, Sleepycat |
+| FILE | 파일 단위 소스 코드 |
+| MODULE | 모듈 단위 소스 코드 |
+| LIBRARY | 라이브러리 단위 소스 코드 |
+| DERIVATIVE WORK | 법적으로 파생 저작물의 범위 |
+| EXECUTABLE | 실행 파일을 구성하는 부분의 소스 코드 |
+| DATA | 데이터 자체 |
+| SOFTWARE USING THIS | 해당 소프트웨어를 사용하는 모든 소프트웨어 |
 | UNSPECIFIED | 소스 공개해야 하지만, 공개 범위 정확하지 않은 경우 |
     
 - obligation_notification: 배포시 고지 의무
