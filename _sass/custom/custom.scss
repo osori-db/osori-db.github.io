@@ -619,8 +619,9 @@ main+hr {
     }
 
     .second-section,
-    .third-section {
-        margin-top: 4rem;
+    .third-section,
+    .links-section.mt-10 {
+        margin-top: 2.5rem;
     }
 
     .header {
@@ -633,6 +634,7 @@ main+hr {
 
     .homepage-anchors-container.mt-7 {
         margin-top: 4rem !important;
+        padding: 1.875rem 1.875rem 3.5rem 1.875rem !important;
     }
 
     .second-open-souce-div {

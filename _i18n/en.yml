@@ -12,24 +12,15 @@ global:
 title:
   home: Home
   about: About
-  motivation: Motivation
   charter: Charter
-  members: Members
-  logo: Logo
 
   faq: FAQ
 
   guide: Guide
-  userTips: User Tips
   apiDoc: API Doc
   contributionGuide: Contribution Guide
 
   license: License
-  osoriLicenseAndNotice: OSORI License and Notice
-  noticeOnUsageRestrictionByHeavyTraffic: Notice on Usage Restriction by Heavy Traffic
-  noWarranty: No Warranty
-  docLicense: Doc. License
-  codeLicense: Code License
 
   news: News
   contact: Contact
