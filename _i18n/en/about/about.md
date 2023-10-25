@@ -24,10 +24,10 @@ The goal of the OSORI project is to contribute to building a more transparent an
 2. Kick-off meeting
    - Date and place: 2023.1.19. @ Samsung Electronics Seoul R&D Campus
    - Participants: Kakao, LG Electronics, Samsung Electronics
-3. MOU ceremony (Press Release Distribution)
+3. MOU ceremony (with press release)
    - Date and Place: 2023.4.26. @Korea Copyright Commission Seoul Office
-   - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
+   - Participants: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
 4. OSORI presentation in public
-   - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
+   - 2023.8.31 @ Public Domain & Open Source SW License Conference 2023, Soim Kim and Yoonhwan Jung
    - 2023.10.11 @ EOST, Yoonhwan Jung
    - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
