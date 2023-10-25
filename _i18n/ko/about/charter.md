@@ -1,7 +1,7 @@
 # 오소리 프로젝트 Charter
 
 {: .note }
-[**오소리 프로젝트 가입 신청서**](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21)
+**오소리 프로젝트 가입 신청서 (다운로드 링크: [개인](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [기업](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx))**
 
 ## 명칭
 프로젝트의 명칭은 “오소리”이다. 오소리는 “오픈소스 소리내다!”라는 의미를 담고 있으며, 영문으로는 OSORI(Open Source DB Integration)로 한다.
@@ -21,10 +21,10 @@
 
 ## 멤버 구성 
 1. **사용자 [User]**
-   - 누구나 회원 가입 등 별도의 절차 없이 오소리 프로젝트의 사용자로서 제4조에서 정한 라이선스에 따라 오픈소스 정보 데이터 및 기타 컨텐츠를 활용할 수 있다.
+   - 누구나 회원 가입 등 별도의 절차 없이 오소리 프로젝트의 사용자로서 상기 라이선스 정책에 따라 정한 배포 라이선스에 따라 오픈소스 정보 데이터 및 기타 컨텐츠를 활용할 수 있다.
 
 2. **회원(기업/개인) [Member (Corporate/Individual)]**
-   - 오픈소스 정보 데이터를 기여하려면 오소리 프로젝트의 멤버로 가입해야 한다. [**오소리 프로젝트 가입신청서**](https://www.notion.so/1c245a5d54c547ffaf4b1afb87c4e113?pvs=21)를 작성하여 제출한 후 운영위원회 승인을 통해 회원이 될 수 있다.
+   - 오픈소스 정보 데이터를 기여하려면 오소리 프로젝트의 멤버로 가입해야 한다. **오소리 프로젝트 가입 신청서**(**다운로드 링크**: [**개인**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [**기업**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx))를 작성하여 제출한 후 운영위원회 승인을 통해 회원이 될 수 있다.
    - 회원은 개인 자격으로도 가입할 수 있으나, 소속된 기업 또는 기관이 보유한 데이터를 기여하려는 경우에는 기업 회원으로 가입해야 한다.
 
 3. **보드 회원사 [Board Member]**
