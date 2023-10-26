@@ -1,44 +1,37 @@
 # FAQ
-{: .fs-9 }
 
-Just the Docs gives your documentation a jumpstart with a responsive Jekyll theme that is easily customizable and hosted on GitHub Pages.
-{: .fs-6 .fw-300 }
+## Usage condition
 
-[Get started now](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[View it on GitHub][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+#### Q. I would like to use the OSORI project. I am curious if there are any conditions for it.
 
----
+A. The OSORI project is an open source. It is distributed under an open source license according to the type of its provided asset, so there are no restrictions in its usage and it is complimentary as long as you comply the given license.
 
-{: .warning }
-> This website documents the features of the current `main` branch of the Just the Docs theme. See the CHANGELOG for a list of releases, new features, and bug fixes.
+## License policy
 
-Just the Docs is a theme for generating static websites with [Jekyll]. You can write source files for your web pages using [Markdown], the [Liquid] templating language, and HTML.[^1] Jekyll builds your site by converting all files that have [front matter] to HTML. Your [Jekyll configuration] file determines which theme to use, and sets general parameters for your site, such as the URL of its home page.
+#### Q. I am interested in the license of the services that are provided by the OSORI project.
 
-Jekyll builds this Just the Docs theme docs website using the theme itself. These web pages show how your web pages will look *by default* when you use this theme. But you can easily *customize* the theme to make them look completely different!
+A. The license of the distributed asset differs depending on its form from the OSORI project. For more information, please refer to [**License**](https://osori-db.github.io/en/docs/license/).
 
-Browse the docs to learn more about how to use this theme.
+## Guide for service usage
 
-## Getting started
+#### Q. I cannot understand data provided from the OSORI project as its service. I am wondering if there is a detailed guide for my reference.
 
-The [Just the Docs Template] provides the simplest, quickest, and easiest way to create a new website that uses the Just the Docs theme. To get started with creating a site, just click "[use the template]"!
+A. For an open source that you want to use, the OSORI project provides restriction and its degree of severity as LEVEL and a color of Traffic Light according to its the usage constraints with respect to the given license . For more information, please refer to [**User Guide section**](https://osori-db.github.io/en/docs/guide/#user-guide) in Guide document.
 
-{: .note }
-To use the theme, you do ***not*** need to clone or fork the [Just the Docs repo]! You should do that only if you intend to browse the theme docs locally, contribute to the development of the theme, or develop a new theme based on Just the Docs.
+## Guide for API usage
 
-You can easily set the site created by the template to be published on [GitHub Pages] – the [template README] file explains how to do that, along with other details.
+#### Q. I want to use the service APIs provided by the OSORI project. I am curious about their functions and how I can use them.
 
-If [Jekyll] is installed on your computer, you can also build and preview the created site *locally*. This lets you test changes before committing them, and avoids waiting for GitHub Pages.[^2] And you will be able to deploy your local build to a different platform than GitHub Pages.
+A. You can use them in searching for various information about the open source repository and license provided by the OSORI project. For more information, please refer to the [**API Doc**](https://osori-db.github.io/en/docs/guide/api-doc/)**.
 
+## Guide for contribution
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+#### Q. I want to contribute to the OSORI project. How can I contribute to the project?
+
+A. It depends on the type of your desired contribution. Please refer to the [**Contribution Guide**](https://osori-db.github.io/en/docs/guide/contribution-guide/) for a detailed guide.
+
+## Membership onboarding
+
+#### Q. I want to join the OSORI project as a member. How can I do it?
+
+A. You can be a member of the OSORI project as Individual or Corporate Member. Please download the application form from the link ([**Individual**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [**Corporate**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx)) and fill in all the required fields in the form. Then submit it via clicking "**Contact**" at the bottom left corner of the screen or sending the completed application form to automation-sg-osori@lists.openchainproject.org. For more information, please refer to the [**Membership Composition section**](https://osori-db.github.io/en/docs/about/charter/#membership-composition) in Charter document.

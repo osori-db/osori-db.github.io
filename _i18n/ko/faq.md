@@ -1,44 +1,37 @@
 # 자주 하는 질문
-{: .fs-9 }
 
-Just the Docs는 쉽게 사용자 정의할 수 있고 GitHub 페이지에서 호스팅되는 반응형 Jekyll 테마를 사용하여 문서를 빠르게 시작할 수 있도록 해줍니다.
-{: .fs-6 .fw-300 }
+## 사용 조건
 
-[지금 시작하세요](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub에서 보기][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+#### Q. 오소리 프로젝트를 활용하고자 합니다. 사용을 위한 조건이 따로 있을지 궁금합니다.
 
----
+A. 오소리 프로젝트는 오픈소스입니다. 제공하는 배포물의 형태에 따른 오픈소스 라이선스로 배포되기 때문에, 해당 라이선스를 준수하면 사용하는데 제약이 없으며 무료입니다.
 
-{: .warning }
-> 이 웹사이트는 Just the Docs 테마의 현재 '기본' 분기 기능을 문서화합니다. 릴리스, 새로운 기능 및 버그 수정 목록은 변경 로그를 참조하세요.
+## 라이선스 정책
 
-Just the Docs는 [Jekyll]로 정적인 웹사이트를 생성하기 위한 테마입니다. [Markdown], [Liquid] 템플릿 언어 및 HTML을 사용하여 웹 페이지의 소스 파일을 작성할 수 있습니다.[^1] Jekyll은 [머리말]이 있는 모든 파일을 HTML로 변환하여 사이트를 구축합니다. [Jekyll 구성] 파일은 사용할 테마를 결정하고 홈페이지 URL과 같은 사이트의 일반 매개변수를 설정합니다.
+#### Q. 오소리 프로젝트에서 제공되는 서비스의 라이선스가 궁금합니다.
 
-Jekyll은 테마 자체를 사용하여 Just the Docs 테마 문서 웹사이트를 구축합니다. 이러한 웹 페이지는 이 테마를 사용할 때 *기본적으로* 웹 페이지가 어떻게 보이는지 보여줍니다. 하지만 테마를 쉽게 *사용자 정의*하여 완전히 다르게 보이게 만들 수 있습니다!
+A. 제공하는 항목에 따라 프로젝트에서 제공하는 배포 결과물의 라이선스가 다릅니다. 자세한 정보는 [**오소리 라이선스**](https://osori-db.github.io/docs/license/)를 참조해주십시오.
 
-이 테마를 사용하는 방법에 대해 자세히 알아보려면 문서를 찾아보세요.
+## 서비스 활용 가이드
 
-## 시작하기
+#### Q. 오소리 프로젝트에서 제공하는 정보들이 잘 이해가 되지 않습니다. 참조할 수 있는 세부 가이드가 있는지 궁금합니다.
 
-[Just the Docs 템플릿]은 Just the Docs 테마를 사용하여 새로운 웹 사이트를 만드는 가장 간단하고 빠르며 쉬운 방법을 제공합니다. 사이트 생성을 시작하려면 "[템플릿 사용]"을 클릭하세요!
+A. 오소리 프로젝트는 사용하고자 하는 오픈소스에 대한 배포 라이선스의 사용 제약 조건에 따른 주의 사항 및 주의 정도를 레벨 및 신호등 색깔로 제공합니다. 자세한 내용은 사용 및 기여 가이드 문서의 [**활용 가이드**](https://osori-db.github.io/docs/guide/#%ED%99%9C%EC%9A%A9-%EA%B0%80%EC%9D%B4%EB%93%9C)를 참조해주십시오.
 
-{: .note }
-테마를 사용하기 위해 [Just the Docs repo]를 복제하거나 포크할 필요는 없습니다***! 테마 문서를 로컬에서 탐색하거나, 테마 개발에 기여하거나, Just the Docs를 기반으로 새 테마를 개발하려는 경우에만 그렇게 해야 합니다.
+## API 사용법
 
-템플릿으로 생성된 사이트를 [GitHub 페이지]에 게시하도록 쉽게 설정할 수 있습니다. [템플릿 README] 파일에 그 방법과 기타 세부정보가 설명되어 있습니다.
+#### Q. 오소리 프로젝트에서 제공하는 서비스 API를 활용하고 싶습니다. 기능 및 방법이 궁금합니다.
 
-[Jekyll]이 컴퓨터에 설치되어 있으면 생성된 사이트를 *로컬에서* 빌드하고 미리 볼 수도 있습니다. 이를 통해 변경 사항을 커밋하기 전에 테스트하고 GitHub 페이지를 기다리지 않아도 됩니다.[^2] 또한 GitHub 페이지가 아닌 다른 플랫폼에 로컬 빌드를 배포할 수 있습니다.
+A. 오소리에서 제공하는 오픈소스 저장소 및 라이선스에 대한 다양한 정보를 조회하는데 활용할 수 있습니다. 자세한 내용은 [**API Doc**](https://osori-db.github.io/docs/guide/api-doc/)를 참조해주십시오.
 
+## 컨트리뷰션 방법
 
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+#### Q. 오소리 프로젝트에 기여하고 싶습니다. 기여 방법을 문의드립니다.**
+
+A. 기여하고자 하는 종류에 따라 기여 방법이 다를 수 있습니다. 자세한 가이드는 [**컨트리뷰션 가이드**](https://osori-db.github.io/docs/guide/contribution-guide/)를 참조해주십시오.
+
+## 가입 방법
+
+#### Q. 오소리 프로젝트에 가입하고자 합니다. 가입 방법이 궁금합니다.
+
+A. 개인 자격 또는 기업 자격으로 가입할 수 있습니다. 가입은 가입 신청서 (다운로드 링크: [**개인**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [**기업**](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx)) 제출을 통해 시작되며, 제출처는 화면 왼쪽 하단의 "**문의하기**"를 클릭하시거나, automation-sg-osori@lists.openchainproject.org로 작성된 가입 신청서를 제출하십시오. 자세한 내용은 거버넌스 문서의 [**멤버 구성**](https://osori-db.github.io/docs/about/charter/#%EB%A9%A4%EB%B2%84-%EA%B5%AC%EC%84%B1)을 참조해주십시오.
