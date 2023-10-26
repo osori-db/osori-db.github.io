@@ -1,44 +1,13 @@
-# 소식
-{: .fs-9 }
+# 주요 소식
 
-Just the Docs는 쉽게 사용자 정의할 수 있고 GitHub 페이지에서 호스팅되는 반응형 Jekyll 테마를 사용하여 문서를 빠르게 시작할 수 있도록 해줍니다.
-{: .fs-6 .fw-300 }
+## 오소리 프로젝트 업무 협약식 (2023.4.26)
 
-[지금 시작하세요](#getting-started){: .btn .btn-primary .fs-5 .mb-4 .mb-md-0 .mr-2 }
-[GitHub에서 보기][Just the Docs repo]{: .btn .fs-5 .mb-4 .mb-md-0 }
+### 주요 내용
+삼성전자, LG전자, 카카오는 오픈소스 소프트웨어 라이선스 정보를 10월부터 무료로 제공하기 위해 오소리 프로젝트를 구성하고 업무 협약을 체결하였다. 이는 한국저작권위원회가 각 사의 라이선스 정보를 데이터베이스로 표준화하는 작업을 통해 가능하다. 이 정보는 라이선스 명칭, 버전 정보, 유의사항 등이 포함되어 있으며, 이를 어길 시 저작권 침해에 대한 책임을 지게 된다. 이는 국내 소프트웨어 업계를 발전시키고 저작권 침해 위험을 줄이기 위한 노력의 일환이다.
 
----
-
-{: .warning }
-> 이 웹사이트는 Just the Docs 테마의 현재 '기본' 분기 기능을 문서화합니다. 릴리스, 새로운 기능 및 버그 수정 목록은 변경 로그를 참조하세요.
-
-Just the Docs는 [Jekyll]로 정적인 웹사이트를 생성하기 위한 테마입니다. [Markdown], [Liquid] 템플릿 언어 및 HTML을 사용하여 웹 페이지의 소스 파일을 작성할 수 있습니다.[^1] Jekyll은 [머리말]이 있는 모든 파일을 HTML로 변환하여 사이트를 구축합니다. [Jekyll 구성] 파일은 사용할 테마를 결정하고 홈페이지 URL과 같은 사이트의 일반 매개변수를 설정합니다.
-
-Jekyll은 테마 자체를 사용하여 Just the Docs 테마 문서 웹사이트를 구축합니다. 이러한 웹 페이지는 이 테마를 사용할 때 *기본적으로* 웹 페이지가 어떻게 보이는지 보여줍니다. 하지만 테마를 쉽게 *사용자 정의*하여 완전히 다르게 보이게 만들 수 있습니다!
-
-이 테마를 사용하는 방법에 대해 자세히 알아보려면 문서를 찾아보세요.
-
-## 시작하기
-
-[Just the Docs 템플릿]은 Just the Docs 테마를 사용하여 새로운 웹 사이트를 만드는 가장 간단하고 빠르며 쉬운 방법을 제공합니다. 사이트 생성을 시작하려면 "[템플릿 사용]"을 클릭하세요!
-
-{: .note }
-테마를 사용하기 위해 [Just the Docs repo]를 복제하거나 포크할 필요는 없습니다***! 테마 문서를 로컬에서 탐색하거나, 테마 개발에 기여하거나, Just the Docs를 기반으로 새 테마를 개발하려는 경우에만 그렇게 해야 합니다.
-
-템플릿으로 생성된 사이트를 [GitHub 페이지]에 게시하도록 쉽게 설정할 수 있습니다. [템플릿 README] 파일에 그 방법과 기타 세부정보가 설명되어 있습니다.
-
-[Jekyll]이 컴퓨터에 설치되어 있으면 생성된 사이트를 *로컬에서* 빌드하고 미리 볼 수도 있습니다. 이를 통해 변경 사항을 커밋하기 전에 테스트하고 GitHub 페이지를 기다리지 않아도 됩니다.[^2] 또한 GitHub 페이지가 아닌 다른 플랫폼에 로컬 빌드를 배포할 수 있습니다.
-
-
-[Jekyll]: https://jekyllrb.com
-[Markdown]: https://daringfireball.net/projects/markdown/
-[Liquid]: https://github.com/Shopify/liquid/wiki
-[Front matter]: https://jekyllrb.com/docs/front-matter/
-[Jekyll configuration]: https://jekyllrb.com/docs/configuration/
-[source file for this page]: https://github.com/just-the-docs/just-the-docs/blob/main/index.md
-[Just the Docs Template]: https://just-the-docs.github.io/just-the-docs-template/
-[Just the Docs]: https://just-the-docs.com
-[Just the Docs repo]: https://github.com/just-the-docs/just-the-docs
-[GitHub Pages]: https://pages.github.com/
-[Template README]: https://github.com/just-the-docs/just-the-docs-template/blob/main/README.md
-[use the template]: https://github.com/just-the-docs/just-the-docs-template/generate
+### 세부 기사
+- 연합뉴스, [삼성·LG전자·카카오, 오픈소스SW 라이선스 정보 3만건 공개](https://www.yna.co.kr/view/AKR20230426104200005)
+- Samsung Newsroom, [“안전한 오픈소스 생태계를 위해” 기업과 정부가 함께 하는 ‘오소리 프로젝트’](https://bit.ly/4216C4v)
+- LG전자 뉴스룸, [오픈소스 소프트웨어 생태계의 Oh! 소리 나는 프로젝트?](https://live.lge.co.kr/2305-opensource/)
+- 카카오 보도자료, [카카오, 안전한 오픈소스 생태계 위한 민관 협력 ‘오소리 프로젝트’ 추진](https://www.kakaocorp.com/page/detail/9943?lang=KOR)
+- 한국저작권위원회 보도자료, [안전한 오픈소스SW 사용을 위한 민관협력 프로젝트 추진](https://www.copyright.or.kr/notify/press-release/view.do?brdctsno=51841&pageIndex=2&noticeYn=&brdclasscodeList=&etc2=&etc1=&searchText=&searchkeyword=&brdclasscode=&nationcodeList=&searchTarget=ALL&nationcode=)
