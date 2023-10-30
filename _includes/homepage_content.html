@@ -5,8 +5,7 @@
                 <div class="project-icon-div">
                     <img src="../assets/images/ic_card_projects.png">
                 </div>
-                <div class="open-source-count fs-8">
-                    1,059
+                <div id="repositories-count" class="open-source-count fs-8">
                 </div>
             </div>
             <div class="open-source-label fs-4">
@@ -18,8 +17,7 @@
                 <div class="project-icon-div">
                     <img src="../assets/images/ic_card_projects.png">
                 </div>
-                <div class="open-source-count fs-8">
-                    2,342
+                <div id="licenses-count" class="open-source-count fs-8">
                 </div>
             </div>
             <div class="open-source-label fs-4">
@@ -66,4 +64,22 @@
             </div>
         </div>
     </div>
+
+    <script>
+        window.onload = (event) => {
+            var baseurl = document.getElementById('baseurl').value;
+            var currentDirectory = '/data/';
+            fetch(`${baseurl}${currentDirectory}data.json`, {
+                method: 'GET',
+                headers: {
+                    'Accept': 'application/json',
+                }
+            })
+                .then(res => res.json())
+                .then(object => {
+                    document.getElementById('repositories-count').innerHTML = object.openSourceRepositoriesCount.toLocaleString("en-US");
+                    document.getElementById('licenses-count').innerHTML = object.openSourceLicensesCount.toLocaleString("en-US");
+                });
+        }
+    </script>
 </div>
