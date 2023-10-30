@@ -1,4 +1,10 @@
 {
-    "openSourceRepositoriesCount": 62233,
-    "openSourceLicensesCount": 560
+    "openSourceRepository": {
+        "count": 62233,
+        "url": "https://olis.or.kr/ossList.do?page=1"
+    },
+    "openSourceLicense": {
+        "count": 560,
+        "url": "https://olis.or.kr/licenseList.do?page=1"
+    }
 }

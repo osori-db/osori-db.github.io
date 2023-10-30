@@ -1,7 +1,7 @@
 <input type="hidden" id="baseurl" name="baseurl" value="{{ site.baseurl }}" />
 <div class="homepage-links-container">
     <div class="homepage-projects-container">
-        <div class="open-source-div mr-5">
+        <div id="open-source-repositories-div" class="open-source-div mr-5">
             <div class="d-flex">
                 <div class="project-icon-div">
                     <img src="../assets/images/ic_card_projects.png">
@@ -13,7 +13,7 @@
                 {% t main.openSourceRepositories %}
             </div>
         </div>
-        <div class="open-source-div second-open-souce-div">
+        <div id="open-source-licenses-div" class="open-source-div second-open-souce-div">
             <div class="d-flex">
                 <div class="project-icon-div">
                     <img src="../assets/images/ic_card_projects.png">
@@ -78,8 +78,22 @@
             })
                 .then(res => res.json())
                 .then(object => {
-                    document.getElementById('repositories-count').innerHTML = object.openSourceRepositoriesCount.toLocaleString("en-US");
-                    document.getElementById('licenses-count').innerHTML = object.openSourceLicensesCount.toLocaleString("en-US");
+                    document.getElementById('repositories-count').innerHTML = object.openSourceRepository.count.toLocaleString("en-US");
+                    document.getElementById('licenses-count').innerHTML = object.openSourceLicense.count.toLocaleString("en-US");
+
+                    document.getElementById('open-source-repositories-div').addEventListener('click', function () {
+                        window.open(
+                            object.openSourceRepository.url,
+                            '_blank'
+                        );
+                    });
+
+                    document.getElementById('open-source-licenses-div').addEventListener('click', function () {
+                        window.open(
+                            object.openSourceLicense.url,
+                            '_blank'
+                        );
+                    });
                 });
         }
     </script>
