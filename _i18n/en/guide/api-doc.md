@@ -9,7 +9,7 @@ This section explains how to use the APIs provided by the OSORI project for user
 **If more than 5,000 API are called in an hour, we block its usage due to Too Many Request exception.**
 
 ## Osori User API Base URL
-osori base url: http://223.255.204.223:8082
+OSORI User API v1.0 (Swagger UI): [Link](http://223.255.204.223:8082)
 
 ## Inquiry for the license list
 
