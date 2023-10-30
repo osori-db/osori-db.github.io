@@ -1,4 +1,4 @@
-# User APIs
+# User API Guide
 
 This section explains how to use the APIs provided by the OSORI project for users.
 

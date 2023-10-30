@@ -1,4 +1,4 @@
-# 오소리 프로젝트 Charter
+# 거버넌스
 
 {: .note }
 **오소리 프로젝트 가입 신청서 (다운로드 링크: [개인](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [기업](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx))**
@@ -42,7 +42,7 @@
      - 운영위원회는 프로젝트의 정책, 일정 등 주요 의사 결정을 수행한다.
      - 운영위원회는 회원, 보드 회원, 후원사 가입 및 등록 신청을 심사하고 승인한다.
      - 운영위원회는 선거를 통해 프로젝트 매니저(PM: Project Manager)를 임명한다.
-     - 운영위원회는 Charter를 작성하고 개정할 수 있다.
+     - 운영위원회는 거버넌스 정책/문서를 작성하고 개정할 수 있다.
    - 구성
      - 운영위원회는 각 보드 회원이 지명한 운영위원으로 구성된다. 각 보드 회원은 최대 두 명의 운영위원을 지명할 수 있다.
      - 최초 운영위원의 임기는 2024년 12월 31일까지로 하며, 그 후 운영위원의 임기는 1년으로 한다. 운영위원은 연임할 수 있다.
