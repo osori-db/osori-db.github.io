@@ -8,6 +8,9 @@ This section explains how to use the APIs provided by the OSORI project for user
 > **Limitations on the API usage**: these user APIs are restricted to use under the condition below.<br>
 **If more than 5,000 API are called in an hour, we block its usage due to Too Many Request exception.**
 
+## Osori User API Base URL
+osori base url: http://223.255.204.223:8082
+
 ## Inquiry for the license list
 
 ### `/api/v1/licenses`
