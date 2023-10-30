@@ -12,12 +12,12 @@ global:
 title:
   home: Home
   about: About
-  charter: Charter
+  charter: Governance
 
   faq: FAQ
 
   guide: Guide
-  apiDoc: API Doc
+  apiDoc: User API Guide
   contributionGuide: Contribution Guide
 
   license: License

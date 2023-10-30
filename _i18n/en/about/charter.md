@@ -1,4 +1,4 @@
-# Project Charter
+# Governance
 
 {: .note }
 **Project Application Form (in Korean): download link - [Individual](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B0%9C%EC%9D%B8).docx), [Corporate](https://github.com/osori-db/osori-db.github.io/blob/main/assets/docs/%EC%98%A4%EC%86%8C%EB%A6%AC%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8%20%EA%B0%80%EC%9E%85%EC%8B%A0%EC%B2%AD%EC%84%9C(%EA%B8%B0%EC%97%85).docx))**
@@ -43,7 +43,7 @@ The goal of the OSORI project is to contribute to building a more transparent an
      - Steering Committee makes major decisions such as policies and roadmaps of the project.
      - Steering Committee reviews and approves applications for being Member, Board Member, and Sponsors.
      - Steering Committee appoints Project Manager (PM) through an election. 
-     - Steering Committee can legislate and amend Charter of the OSORI project.
+     - Steering Committee can legislate and amend Governance of the OSORI project.
    - Composition
      - Steering Committee is composed of Steering Committee members assigned by each Board Member. Each Board Member can nominate upto two Steering Committee members as their representatives.
      - The term of office as the initial Steering Committee member shall be valid until December 31, 2024. After that, the term of office shall be one year. A Steering Committee member may serve his or her term consecutively.
