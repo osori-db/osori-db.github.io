@@ -5,7 +5,7 @@
 ### 사용 주의/제약 항목 및 신호등 (제약사항) 의미
 사용 주의/제약 (Restriction) 은 사용하고자 하는 해당 오픈소스 자체 (OSS: Open Source Software) 또는 배포 라이선스 (License) 에 대한 제약 사항을 표시합니다. 하나의 OSS 또는 License에 여러개의 제약 사항이 있을 수 있습니다.
 
-| **Restriction Name** | **Description** | **LEVEL** | **신호등 (제약사항)** |
+| **Restriction Name** | **Description** | **LEVEL** | **신호등<br>(제약사항)** |
 | --- | --- | --- | --- |
 | Non-Commercial Use | 상업적 사용 불가<br>(기업에서 제공하는 무료 소프트웨어 사용 불가) | 5 | 빨강 |
 | Internal Use Only | 사내 사용만 가능 | 4 | 빨강 |
