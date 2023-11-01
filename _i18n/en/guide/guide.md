@@ -2,10 +2,10 @@
 
 ## User Guide
 
-### Description about "Restriction" name and "Traffic Light"
+### Description about "Restriction" name and "Traffic Light" (Restriction in use)
 Restriction indicates any usage restrictions about an Open Source Software (OSS) or its license in your usage. There may be multiple restrictions in a single OSS or license.
 
-| **Restriction Name** | **Description** | **LEVEL** | **Traffic Light** |
+| **Restriction Name** | **Description** | **LEVEL** | **Traffic Light<br>(Restriction in use)** |
 | --- | --- | --- | --- |
 | Non-Commercial Use | Not allowed for commercial use<br> Cannot use the complimentary software from the publishing corp.| 5 | Red |
 | Internal Use Only | Allowed only for internal use in your organization | 4 | Red |
@@ -23,7 +23,7 @@ Restriction indicates any usage restrictions about an Open Source Software (OSS)
 | Semi-Copyleft | Restrictions can be nullified by disclosing the code<br>even though there are various kinds of requirements<br>according to Copyright holder's requests and a type of distribution. | 3 | Yellow |
 
 - Level: Indicates severity between 1 to 5, according to a degree of attention needed in your commercial usage.
-- Traffic Light: Straightforward display in red, yellow, or green colors according to Level.
+- Traffic Light (Restriction in use): Straightforward display in red, yellow, or green colors according to Level.
   - 1: Green
   - 2-3: Yellow
   - 4-5: Red
