@@ -5,7 +5,7 @@
 ### Description about "Restriction" name and "Traffic Light" (Restriction in use)
 Restriction indicates any usage restrictions about an Open Source Software (OSS) or its license in your usage. There may be multiple restrictions in a single OSS or license.
 
-| **Restriction Name** | **Description** | **LEVEL** | **Traffic Light (Restriction in use)** |
+| **Restriction Name** | **Description** | **LEVEL** | **Traffic Light<br>(Restriction in use)** |
 | --- | --- | --- | --- |
 | Non-Commercial Use | Not allowed for commercial use<br> Cannot use the complimentary software from the publishing corp.| 5 | Red |
 | Internal Use Only | Allowed only for internal use in your organization | 4 | Red |
