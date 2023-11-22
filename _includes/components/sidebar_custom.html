@@ -3,7 +3,7 @@
   Depends on: page(?), site.
   Results in: HTML for the side bar.
   Includes:
-    title.html, nav_custom.html, nav_footer_custom.html
+    title.html, nav.html, nav_footer_custom.html
   Overwrites: 
     pages_top_size, collections_size, collection_entry,
     collection_key, collection_value, collection, nav_footer_custom.
@@ -24,7 +24,7 @@
           | where_exp:"item", "item.nav_exclude != true"
           | size %}
     {% if pages_top_size > 0 %}
-      {% include_cached nav_custom.html pages=site.html_pages %}
+      {% include_cached nav.html pages=site.html_pages %}
     {% endif %}
     {%- if site.nav_external_links -%}
       <ul class="nav-list">
@@ -55,15 +55,15 @@
                   </button>
                   {%- endif -%}
                   <div class="nav-category">{{ collection_value.name }}</div>
-                  {% include_cached nav_custom.html pages=collection %}
+                  {% include_cached nav.html pages=collection %}
                 </li>
               </ul>
             {% else %}
               <div class="nav-category">{{ collection_value.name }}</div>
-              {% include_cached nav_custom.html pages=collection %}
+              {% include_cached nav.html pages=collection %}
             {% endif %}
           {% else %}
-            {% include_cached nav_custom.html pages=collection %}
+            {% include_cached nav.html pages=collection %}
           {% endif %}
         {% endif %}
       {% endfor %}
