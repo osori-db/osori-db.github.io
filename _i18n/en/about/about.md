@@ -13,7 +13,7 @@ The goal of the OSORI project is to contribute to building a more transparent an
 
 ## Member introduction
 - Board Members: Kakao, LG Electronics, Samsung Electronics
-- Sponsors: Korea Copyright Commission
+- Sponsors: Korea Copyright Commission (Soobin Kim)
 - Steering Committee: Eunkyung Hwang, Younghwan Kim (both from Kakao), Kyoungae Kim, Soim Kim (both from LG Electronics), Moonki Hong, Yoonhwan Jung (both from Samsung Electronics)
 - Project Manager: Soim Kim (LG Electronics)
 
