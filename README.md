@@ -1,5 +1,7 @@
 # 오소리 프로젝트 소개
 
+## 홈페이지 : https://olis.or.kr/osori/
+
 ## 명칭
 오소리(OSORI: Open Source DB Integration)는 “오픈소스 소리내다!” 라는 의미를 담고 있습니다. 자발적인 기여와 협력을 통해 더 나은 오픈소스 생태계를 만들겠다는 의지를 표현하였습니다.
 
@@ -13,9 +15,7 @@
 
 ## 멤버 소개
 - Board Member : 삼성전자, LG전자, 카카오
-- Sponsor : 한국저작권위원회 (김수빈)
-- 운영위원 : 홍문기, 정윤환(이상 삼성전자), 김경애, 김소임(이상 LG전자), 황은경, 김영환(이상 카카오)
-- Project Manager : 김소임(LG전자)
+- Sponsor : 한국저작권위원회
 
 ## 연혁
 1. 오소리 프로젝트 최초 논의
@@ -27,10 +27,6 @@
 3. 오소리 프로젝트 업무협약 (보도자료 배포)
    - 일시 및 장소 : 2023.4.26. @한국저작권위원회 서울사무소
    - 참석자:문화체육관광부, 한국저작권위원회, 삼성전자, LG전자, 카카오
-4. 오소리 프로젝트 대외 발표
-   - 2023.8.31 @공유저작물 및 오픈소스SW 라이선스 콘퍼런스, 김소임/정윤환
-   - 2023.10.11 @EOST, 정윤환
-   - 2023.11.15 @SDC23 Korea, 김소임/김영환
 
 # 라이선스
 
@@ -62,8 +58,6 @@ The goal of the OSORI project is to contribute to building a more transparent an
 ## Member introduction
 - Board Members: Kakao, LG Electronics, Samsung Electronics
 - Sponsors: Korea Copyright Commission
-- Steering Committee: Eunkyung Hwang, Younghwan Kim (both from Kakao), Kyoungae Kim, Soim Kim (both from LG Electronics), Moonki Hong, Yoonhwan Jung (both from Samsung Electronics)
-- Project Manager: Soim Kim (LG Electronics)
 
 ## History
 1. First ever proposal of the OSORI project
@@ -75,10 +69,6 @@ The goal of the OSORI project is to contribute to building a more transparent an
 3. MOU ceremony (Press Release Distribution)
    - Date and Place: 2023.4.26. @Korea Copyright Commission Seoul Office
    - Attendees: Ministry of Culture, Sports and Tourism, Korea Copyright Commission, Kakao, LG Electronics, Samsung Electronics 
-4. OSORI presentation in public
-   - 2023.8.31 @ Sharing Works and Open Source SW License Conference, Soim Kim and Yoonhwan Jung
-   - 2023.10.11 @ EOST, Yoonhwan Jung
-   - 2023.11.15 @ SDC23 Korea, Soim Kim and Younghwan Kim
 
 # License
 
